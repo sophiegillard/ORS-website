@@ -19,13 +19,13 @@
 
   <h3>Service d'aide aux Justiciables</h3>
 
-  <p class="py-6">
+  <p class="py-6 font-light">
     Nous proposons une <span class="markup-text">aide psychologique et/ou sociale</span>
     <br />
     à toute personne confrontée au monde judiciaire.
   </p>
 
-  <p>Nous nous adressons dès lors :</p>
+  <p class="font-normal">Nous nous adressons dès lors :</p>
 
   <div>
     <GroupButtons>

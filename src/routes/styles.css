@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 @import '@fontsource/fira-mono';
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=League+Spartan:wght@300;400;500;700&display=swap');
 
 :root {
-	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	--font-body: "Epilogue", sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--color-bg-0: rgb(202, 216, 228);
 	--color-bg-1: hsl(209, 36%, 86%);
@@ -32,7 +32,31 @@
 }
 
 .markup-text{
-	font-style: italic;
+	font-family: "Dancing Script" , cursive;
+}
+
+
+
+h2{
+font-family: 'Arial';
+font-style: normal;
+font-weight: 500;
+font-size: 2rem;
+display: flex;
+position: relative;
+width: fit-content;
+left: -20px;
+padding-bottom: 30px;
+}
+
+h2::after {
+	content: "";
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+    width: calc(100% + 15px); 
+    border-bottom: 3px solid theme('colors.pink'); 
+    margin-bottom: 27px; 
 }
 
 h3{
@@ -55,4 +79,48 @@ h3::after {
 	bottom: 0;
 	width: 70%;
 	border-bottom: theme('colors.dark-blue') 2px solid;
+}
+
+h5{
+	font-family: Gyst Variable;
+	font-size: 35px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 55px;
+	letter-spacing: 0em;
+	text-align: center;
+	border-bottom: theme('colors.dark-blue') 2px solid;
+}
+
+p{
+font-family: 'Epilogue';
+}
+
+.mention-service{
+font-family: 'Gyst Variable';
+font-style: italic;
+font-weight: 600;
+font-size: 20px;
+text-align: center;
+}
+
+.onglet{
+	font-family: 'Epilogue';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	font-variant: all-small-caps;
+}
+
+.form-text{
+	font-family: Epilogue;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0em;
+	text-align: center;
+	color:theme('colors.grey');
 }

@@ -1,26 +1,87 @@
+<script>
+  import InformationItem from "$lib/components/InformationItem.svelte"
+</script>
+
 <svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
+  <title>Contact</title>
+  <meta name="Contact" content="Contact, adresses, formulaire" />
 </svelte:head>
 
 <div class="text-column">
-	<h1>About this app</h1>
+  <h2>Contact</h2>
 
-	<p>
-		This is a <a href="https://kit.svelte.dev">SvelteKit</a> app. You can make your own by typing the
-		following into your command line and following the prompts:
-	</p>
+  <section class="flex flex-col px-16 gap-6">
+    <div class="flex flex-row items-center justify-around">
+      <div>
+        <InformationItem title="Adresse">
+          <p>123 rue de la Paix</p>
+          <p>75000 Paris</p>
+        </InformationItem>
+        <InformationItem title="Mail">
+          <p>contact@espacelibre.be</p>
+        </InformationItem>
+      </div>
+      <div>
+        <InformationItem title="Horaire">
+          <p>Du lundi au jeudi : 8h30 - 17h</p>
+          <p>Vendredi : 8h30 - 15h</p>
+          <p class="text-sm">(possibilité d'adaptation)</p>
+        </InformationItem>
+      </div>
+      <div>
+        <InformationItem title="Téléphone">
+          <a href="tel:+3271278800">071/27.88.00</a>
+        </InformationItem>
+        <InformationItem title="Téléphone">
+          <p>071/27.88.01</p>
+        </InformationItem>
+      </div>
+    </div>
 
-	<pre>npm create svelte@latest</pre>
+    <div class="map bg-blue rounded-xl border"></div>
 
-	<p>
-		The page you're looking at is purely static HTML, with no client-side interactivity needed.
-		Because of that, we don't need to load any JavaScript. Try viewing the page's source, or opening
-		the devtools network panel and reloading.
-	</p>
-
-	<p>
-		The <a href="/sverdle">Sverdle</a> page illustrates SvelteKit's data loading and form handling. Try
-		using it with JavaScript disabled!
-	</p>
+    <div class="contact-form flex flex-col justify-center items-center">
+      <h5>Formulaire de contact</h5>
+      <form action="submit" class="w-full pt-10">
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-2">
+            <input type="text" id="nom" name="nom" placeholder="Nom" class="form-text" />
+          </div>
+          <div class="flex flex-col gap-2">
+            <input type="email" id="email" name="email" placeholder="Email" class="form-text" />
+          </div>
+          <div class="flex flex-col gap-2">
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Message"
+              class="form-text"
+              style="min-height: 150px; "
+            ></textarea>
+          </div>
+          <button class="bg-grey text-white text-lg rounded-lg py-2 px-4">Envoyer</button>
+        </div>
+      </form>
+    </div>
+  </section>
 </div>
+
+<style>
+  .map {
+    height: 300px;
+  }
+  input,
+  textarea {
+    background-color: theme("colors.white");
+    padding: 15px 20px;
+    text-align: left;
+    border: 1px solid theme("colors.grey");
+    border-radius: 10px;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: theme("colors.grey");
+    font-weight: 200;
+  }
+</style>

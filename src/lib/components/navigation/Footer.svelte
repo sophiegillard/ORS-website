@@ -2,7 +2,7 @@
 </script>
 
 <footer class="pt-6">
-  <div class="bg-pink w-100 italic text-center text-grey py-2">
+  <div class="bg-pink w-100 italic text-center text-grey py-2 mention-service">
     Service gratuit • Confidentiel • Indépendant des instances judiciaires
   </div>
   <div class=" bg-grey w-100 py-6 px-14 flex flex-row items-end justify-between">

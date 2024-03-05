@@ -2,11 +2,11 @@
   let pages = ["Accueil", "Qui sommes nous", "Nos Missions", "Contact", "Nous aider", "Actualités"]
 </script>
 
-<header class="p-10 flex-col-center">
+<header class="p-6 flex-col-center">
   <nav class="navbar border rounded-full px-4">
     {#each pages as page, index (page)}
       <li class="nav-item uppercase py-1 px-4">
-        <a href="/{page.toLowerCase().split(' ').join('-')}">{page}</a>
+        <a class="onglet" href="/{page.toLowerCase().split(' ').join('-')}">{page}</a>
       </li>
       {#if index !== pages.length - 1}
         <span class="flex justify-center items-center">|</span>

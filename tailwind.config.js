@@ -9,6 +9,12 @@ export default {
         "blue": "#DBE7FF",
         "dark-blue":"#5863F8",
         "pink":"#FFBFA9",
+        "white": "#FFF6F3",
+      },
+      fontFamily: {
+        'sans': ['"Poppins"', 'sans-serif'],
+        'serif': ['"Playfair Display"', 'serif'],
+        'script': ['"Dancing Script"', 'cursive'],
       },
     extend: {
       colors:{
