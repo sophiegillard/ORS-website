@@ -9,10 +9,10 @@
     "N° utiles",
   ]
 
-  let nav_height = 0
+  export let nav_height = 0
 </script>
 
-<header class="p-6 pt-12 flex-col-center">
+<header class="p-6 pt-10 flex-col-center fixed w-full bg-off-white z-10">
   <div class="flex-row-center gap-4 w-full" style="{' max-width: 80rem;'}">
     <img
       src="$lib/assets/img/logo/ors-logo.png"
@@ -41,5 +41,11 @@
   }
   .nav-item {
     list-style: none;
+  }
+
+  @media (min-width: 640px) and (max-width: 1023px) {
+    img {
+      max-height: 40px !important;
+    }
   }
 </style>

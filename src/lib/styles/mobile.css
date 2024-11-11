@@ -1,31 +1,29 @@
 /* Tablet styles */
 @media (max-width: 480px) {
     h3{
-        font-family: "Epilogue" !important;
-        font-size: 20px !important;
+        font-size: 18px !important;
         font-weight: 500 !important;
         line-height: 20.5px !important;
         text-align: center !important;
+    
     }
 
     p{
-        font-family: "Epilogue" !important;
-        font-size: 20px !important;
-        font-weight: 400 !important;
+        font-size: 18px !important;
+        font-weight: 300 !important;
         line-height: 25px !important;
         text-align: center !important;
         }
 
     .p-secondary{
-        font-family: "Epilogue" !important;
-        font-size: 20px !important;
-        font-weight: 500 !important;
+        font-size: 18px !important;
+        font-weight: 400 !important;
         line-height: 25px !important;
         text-align: center !important;
     }
 
     .markup-text{
-        font-family: Gyst Variable !important;
+        font-family: "Gyst Variable" !important;
         font-size: 20px !important;
         font-style: italic !important;
         font-weight: 550 !important;
@@ -37,8 +35,47 @@
         font-family: "Epilogue";
         font-size: 17px;
         font-weight: 400;
-        line-height: 40px;
+        line-height: 30px;
         text-align: right;
         text-transform: uppercase;
     }
+
+    .mention-service{
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        line-height: 20px !important;
+        text-align: center !important;
+    }
+
+    /* ---------------- FOOTER ---------------- */
+    .footer-title{
+        font-size: 18px !important;
+        font-weight: 500 !important;
+        line-height: 20px !important;
+        text-align: center !important;
+    }
+
+    .footer-secondary{
+        font-size: 15px !important;
+        line-height: 24px !important;
+    }
+
+    .footer-contact-info{
+        font-size: 15px !important;
+        line-height: 15px !important;
+    }
+
+    .mention-legales{
+        font-size: 15px !important;
+        line-height: 22px !important;
+        text-align: center !important;
+
+    }
+
+    .mention-footer{
+        font-size: 12px !important;
+        line-height: 12px !important;
+        text-align: center !important;
+    }
+
   }

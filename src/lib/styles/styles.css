@@ -54,14 +54,14 @@
 .p-secondary{
 	font-family: Epilogue;
 	font-size: 30px;
-	font-weight: 500;
+	font-weight: 400;
 	line-height: 35px;
 	text-align: center;
 }
 
 .markup-text{
  font-family: "gyst-variable",sans-serif;
-  font-variation-settings: 'wght' 550;
+  font-variation-settings: 'wght' 450;
   font-size: 32px;
   line-height: 40px;
   font-style: italic;
@@ -141,7 +141,7 @@ h7 {
 
 p{
 font-family: 'Epilogue';
-font-weight: 400;
+font-weight: 300;
 padding-block: 7px;
 line-height: 35px;
 font-size: 30px;
@@ -154,7 +154,7 @@ font-size: 30px;
 	font-style: normal;
 	font-weight: 300;
 	font-size: 20px;
-	line-height: 20px;
+	line-height: 30px;
 	display: flex;
 	align-items: center;
 	font-variant: all-small-caps;
@@ -182,9 +182,8 @@ font-size: 30px;
 	font-family: Epilogue;
 	font-size: 28px;
 	font-weight: 500;
-	line-height: 50px;
+	line-height: 30px;
 	text-align: center;
-	
 }
 
 .footer-secondary{
@@ -201,7 +200,7 @@ font-size: 30px;
 	font-family: Epilogue;
 	font-size: 20px;
 	font-weight: 300;
-	line-height: 40px;
+	line-height: 25px;
 	text-align: center;
 	text-underline-position: from-font;
 	text-decoration-skip-ink: none;

@@ -4,32 +4,43 @@
   import Footer from "$lib/components/navigation/Footer.svelte"
   import "$lib/styles/styles.css"
 
+  let nav_height = 0
   let mobile_nav_height = 0
   let isMobile = false
   let isTablet = false
   let innerWidth
   let innerHeight
+  let isMenuOpen = false
 
   $: {
     isMobile = innerWidth && innerWidth <= 480
     isTablet = innerWidth && innerWidth <= 768
   }
+
+  $: console.log("isMobile", isMobile)
+  $: console.log("isTablet", isTablet)
+  $: console.log("nav_height", nav_height)
+  $: console.log("mobile_nav_height", mobile_nav_height)
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
 <div class="">
   {#if !isMobile && !isTablet}
-    <TopNav />
+    <TopNav bind:nav_height />
   {:else}
-    <MobileNav bind:nav_height="{mobile_nav_height}" />
+    <MobileNav bind:mobile_nav_height bind:isMenuOpen />
   {/if}
 
-  <div class="app relative" style="{`top: ${mobile_nav_height}px; z-index: -1`}">
+  <div
+    class="app relative"
+    class:z-negative="{isMenuOpen}"
+    style="{`top: ${!isMobile && !isTablet ? nav_height + 40 : mobile_nav_height}px;`}"
+  >
     <main>
-      <slot />
+      <slot {isMobile} {isTablet} />
     </main>
 
-    <Footer />
+    <Footer {isMobile} {isTablet} />
   </div>
 </div>
 
@@ -40,14 +51,16 @@
   .app {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+  }
+  .z-negative {
+    z-index: -1;
   }
 
   main {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 1rem;
+    padding: 2rem;
     width: 100%;
     max-width: 80rem;
     margin: 0 auto;
@@ -70,5 +83,8 @@
     footer {
       padding: 12px 0;
     }
+  }
+
+  @media (min-width: 768px) {
   }
 </style>

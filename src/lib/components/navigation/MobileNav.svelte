@@ -11,8 +11,8 @@
     "N° utiles",
   ]
 
-  export let nav_height = 0
-  let isMenuOpen = false
+  export let mobile_nav_height = 0
+  export let isMenuOpen = false
 
   function toggleMenu() {
     isMenuOpen = !isMenuOpen
@@ -20,8 +20,8 @@
 </script>
 
 <div
-  class="bg-off-white flex justify-between px-10 py-5 fixed w-full"
-  bind:offsetHeight="{nav_height}"
+  class="bg-off-white flex justify-between px-6 py-5 fixed w-full"
+  bind:offsetHeight="{mobile_nav_height}"
 >
   <img
     src="$lib/assets/img/logo/ors-logo.png"
@@ -33,7 +33,7 @@
   <button class="menu-button nav-onglet" on:click="{toggleMenu}"> Menu </button>
 
   {#if isMenuOpen}
-    <div class="menu bg-off-white" style="{`top: ${nav_height}px`}" transition:slide>
+    <div class="menu bg-off-white z-10" style="{`top: ${mobile_nav_height}px`}" transition:slide>
       {#each pages as page, index}
         <a class="menu-item nav-onglet" href="/{page.toLowerCase().split(' ').join('-')}">{page}</a>
         {#if index !== pages.length - 1}
