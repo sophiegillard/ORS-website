@@ -1,0 +1,231 @@
+
+@import 'tablet.css';
+@import 'mobile.css';
+@import 'extra-small-mobile.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '@fontsource/fira-mono';
+@import url('https://fonts.googleapis.com/css2?family=Jim+Nightshade&family=League+Spartan:wght@300;400;500;700&display=swap');
+
+
+
+:root {
+	--font-body: "Epilogue", sans-serif;
+	--font-mono: 'Fira Mono', monospace;
+	--color-bg-0: rgb(202, 216, 228);
+	--color-bg-1: hsl(209, 36%, 86%);
+	--color-bg-2: hsl(224, 44%, 95%);
+	--color-theme-1: #ff3e00;
+	--color-theme-2: #4075a6;
+	--color-text: theme('colors.grey'); 
+	--column-width: 42rem;
+	--column-margin-top: 4rem;
+	font-family: var(--font-body);
+	color: var(--color-text);
+}
+
+@font-face {
+	font-family: 'epilogue';
+	src: url('/src/assets/fonts/Epilogue-VariableFont_wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'epilogue-italic';
+	src: url('/src/assets/fonts/Epilogue-Italic-VariableFont_wght.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+}
+
+.flex-col-center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.flex-row-center{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.p-secondary{
+	font-family: Epilogue;
+	font-size: 30px;
+	font-weight: 500;
+	line-height: 35px;
+	text-align: center;
+}
+
+.markup-text{
+ font-family: "gyst-variable",sans-serif;
+  font-variation-settings: 'wght' 550;
+  font-size: 32px;
+  line-height: 40px;
+  font-style: italic;
+}
+
+
+
+h2{
+font-family: 'Arial';
+font-style: normal;
+font-weight: 500;
+font-size: 2rem;
+display: flex;
+position: relative;
+width: fit-content;
+left: -20px;
+padding-bottom: 30px;
+}
+
+/* h2::after {
+	content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: calc(100% + 25px); 
+    border-bottom: 3px solid theme('colors.pink'); 
+    margin-bottom: 27px; 
+} */
+
+h3{
+font-family: 'Epilogue';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 70px;
+display: flex;
+align-items: center;
+text-align: center;
+position: relative;
+z-index: -2;
+padding-top: 19px;
+}
+
+
+h3::after {
+	content: "";
+	position: absolute;
+	left: 15%; /* Center the element */
+	bottom: 0;
+	width: 70%;
+	border-bottom: theme('colors.dark-blue') 3px solid;
+}
+
+h5{
+	font-family: Gyst Variable;
+	font-size: 35px;
+	font-style: italic;
+	font-weight: 400;
+	line-height: 55px;
+	letter-spacing: 0em;
+	text-align: center;
+	border-bottom: theme('colors.dark-blue') 2px solid;
+}
+
+h7 {
+    font-family: Gyst Variable;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 0em;
+    border-bottom: 1px solid theme("colors.grey");
+    padding-block: 5px;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+p{
+font-family: 'Epilogue';
+font-weight: 400;
+padding-block: 7px;
+line-height: 35px;
+font-size: 30px;
+}
+
+
+
+.onglet{
+	font-family: 'Epilogue';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 20px;
+	display: flex;
+	align-items: center;
+	font-variant: all-small-caps;
+}
+
+.form-text{
+	font-family: Epilogue;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 21px;
+	letter-spacing: 0em;
+	text-align: center;
+	color:theme('colors.grey');
+}
+
+.mention-service{
+	font-family: 'Epilogue';
+	font-size: 26px;
+	line-height: 25px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.footer-title{
+	font-family: Epilogue;
+	font-size: 28px;
+	font-weight: 500;
+	line-height: 50px;
+	text-align: center;
+	
+}
+
+.footer-secondary{
+	font-family: Epilogue;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 30px;
+	text-align: center;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+}
+
+.footer-contact-info{
+	font-family: Epilogue;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 40px;
+	text-align: center;
+	text-underline-position: from-font;
+	text-decoration-skip-ink: none;
+}
+
+
+.mention-footer{
+font-family: Epilogue;
+font-size: 15px;
+font-weight: 200;
+line-height: 5px;
+text-align: right;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+}
+
+.mention-legales{
+	font-family: Epilogue;
+font-size: 20px;
+font-weight: 400;
+line-height: 20.5px;
+text-align: right;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+

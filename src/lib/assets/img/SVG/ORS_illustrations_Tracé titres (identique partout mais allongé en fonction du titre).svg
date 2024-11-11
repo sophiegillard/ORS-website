@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="illu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 248.37 76.63">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #ffbfa9;
+        stroke-linecap: round;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <path class="cls-1" d="M24.7,38.81h49.97c35.98,0,72.34-1.57,108.26.87,10.4.71,21.91,1.29,31.96,4.51,4.15,1.33,6.14,2.4,8.78,5.8"/>
+</svg>
