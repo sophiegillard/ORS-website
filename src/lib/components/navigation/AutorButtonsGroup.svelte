@@ -7,18 +7,29 @@
 <div class="w-full">
   <GroupButtons>
     <LinkButton href="/accueil/victimes">
-      <p>Aux <span class="markup-text">victimes</span> <br /> & leurs proches</p>
+      <p class="p-accueil">
+        Aux <span class="markup-text-accueil">victimes</span> <br /> & leurs proches
+      </p>
     </LinkButton>
 
     <LinkButton href="/accueil/auteurs">
-      <p>
-        Aux <span class="markup-text">auteur.e.s <br /> non incarcéré.e.s</span><br /> & leurs proches
+      <p class="p-accueil">
+        Aux <span class="markup-text-accueil">auteur.e.s <br /> non incarcéré.e.s</span><br /> & leurs
+        proches
       </p>
     </LinkButton>
 
     <LinkButton href="/accueil/détenus">
-      <p>Aux <span class="markup-text">personnes détenues</span> <br />& leurs proches</p>
+      <p class="p-accueil">
+        Aux <span class="markup-text-accueil">personnes détenues</span> <br />& leurs proches
+      </p>
     </LinkButton>
   </GroupButtons>
   <div class="flex justify-center pt-8 pb-4"><ContactButton /></div>
 </div>
+
+<style>
+  p {
+    text-align: center;
+  }
+</style>

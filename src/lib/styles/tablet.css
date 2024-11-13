@@ -8,6 +8,13 @@
         line-height: 28px !important;
         text-align: center !important;
     }
+
+
+    h2{
+        font-size: 30px !important;
+        line-height: 30px !important;
+    }
+
     h3::after {
         content: "" !important;
         position: absolute !important;
@@ -19,12 +26,17 @@
 
 
     p{
+        font-size: 16px !important;
+        line-height: 24px !important;
+        }
+
+    .p-accueil{
         font-family: "Epilogue" !important;
-        font-size: 22px !important;
+        font-size: 18px !important;
         font-weight: 400 !important;
         line-height: 28px !important;
         text-align: center !important;
-        }
+    }
 
     .p-secondary{
         font-family: "Epilogue" !important;
@@ -35,12 +47,14 @@
     }
 
     .markup-text{
-        font-family: "top" !important;
-        font-size: 24px !important;
-        font-style: italic !important;
+        font-size: 16px !important;
+        line-height: 16px !important;
+    }
+    
+    .markup-text-accueil{
+        font-size: 18px !important;
         font-weight: 550 !important;
         line-height: 28px !important;
-        text-align: center !important;
     }
 
     .nav-onglet{

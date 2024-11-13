@@ -16,11 +16,6 @@
     isMobile = innerWidth && innerWidth <= 480
     isTablet = innerWidth && innerWidth <= 768
   }
-
-  $: console.log("isMobile", isMobile)
-  $: console.log("isTablet", isTablet)
-  $: console.log("nav_height", nav_height)
-  $: console.log("mobile_nav_height", mobile_nav_height)
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
@@ -34,9 +29,9 @@
   <div
     class="app relative"
     class:z-negative="{isMenuOpen}"
-    style="{`top: ${!isMobile && !isTablet ? nav_height + 40 : mobile_nav_height}px;`}"
+    style="{`top: ${!isMobile && !isTablet ? nav_height + 90 : mobile_nav_height}px;`}"
   >
-    <main>
+    <main class="p-8 px-10">
       <slot {isMobile} {isTablet} />
     </main>
 
@@ -60,9 +55,9 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
+
     width: 100%;
-    max-width: 80rem;
+    max-width: 65rem;
     margin: 0 auto;
     box-sizing: border-box;
   }

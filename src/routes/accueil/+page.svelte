@@ -15,8 +15,8 @@
   <h3>Service d'aide aux Justiciables</h3>
 
   <div class="">
-    <p class="py-8 sm:py-14 sm:px-8 lg:px-44">
-      Nous proposons une <span class="markup-text"> aide psychologique et/ou sociale</span>
+    <p class="p-accueil py-8 sm:py-14 sm:px-8 lg:px-44">
+      Nous proposons une <span class="markup-text-accueil"> aide psychologique et/ou sociale</span>
 
       à toute personne confrontée au monde judiciaire.
     </p>

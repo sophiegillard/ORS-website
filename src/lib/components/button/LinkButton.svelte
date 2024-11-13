@@ -4,7 +4,7 @@
 
 <button
   on:click="{() => (window.location.href = href)}"
-  class="bg-blue hover:bg-blue-hover py-3 px-3 md:py-8 rounded-3xl border-grey border lg:w-1/5 grow"
+  class="bg-blue hover:bg-blue-hover px-3 py-3 md:py-8 rounded-3xl border-grey border lg:w-1/5 grow"
 >
   <slot />
 </button>

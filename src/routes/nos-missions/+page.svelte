@@ -13,8 +13,8 @@
     <img
       src="$lib/assets/img/illustration/nos_missions_bonhomme.png"
       alt="illustration"
-      class="float-right hidden md:block relative"
-      style="width: 330px"
+      class="float-right hidden sm:block w-1/3 relative"
+      style="max-width: 330px"
     />
 
     <p>
@@ -51,6 +51,14 @@
       sont également envisageables sous certaines conditions.
     </p>
   </SectionWithTitle>
+
+  <div class="flex justify-center">
+    <img
+      src="$lib/assets/img/illustration/nos_missions_bonhomme.png"
+      alt="illustration"
+      class="sm:hidden w-2/3 max-w-60 pb-8"
+    />
+  </div>
 
   <AutorButtonsGroup />
 </div>

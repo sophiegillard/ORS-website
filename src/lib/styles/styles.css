@@ -62,23 +62,26 @@
 .markup-text{
  font-family: "gyst-variable",sans-serif;
   font-variation-settings: 'wght' 450;
-  font-size: 32px;
-  line-height: 40px;
+  font-size: 20px;
+  line-height: 30px;
   font-style: italic;
 }
 
-
+.markup-text-accueil{
+	font-family: "gyst-variable",sans-serif;
+	 font-variation-settings: 'wght' 450;
+	 font-size: 25px;
+	 line-height: 35px;
+	 font-style: italic;
+}
 
 h2{
-font-family: 'Arial';
-font-style: normal;
-font-weight: 500;
-font-size: 2rem;
-display: flex;
-position: relative;
-width: fit-content;
-left: -20px;
-padding-bottom: 30px;
+	font-family: Epilogue;
+	font-size: 40px;
+	font-weight: 500;
+	line-height: 41px;
+	text-align: left;
+	padding-bottom: 50px;
 }
 
 /* h2::after {
@@ -140,14 +143,21 @@ h7 {
   }
 
 p{
-font-family: 'Epilogue';
-font-weight: 300;
-padding-block: 7px;
-line-height: 35px;
-font-size: 30px;
+	font-family: Epilogue;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 28px;
+	text-align: left;
+	padding-block: 10px;
 }
 
-
+.p-accueil{
+	font-family: 'Epilogue';
+	font-weight: 300;
+	padding-block: 7px;
+	line-height: 35px;
+	font-size: 25px;
+}
 
 .onglet{
 	font-family: 'Epilogue';

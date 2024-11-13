@@ -11,7 +11,7 @@
   <meta name="qui-sommes-nous" content="Présentation de l'asbl" />
 </svelte:head>
 
-<div class="text-column">
+<div class="text-column lg:pt-14">
   <div>
     <SectionWithTitle title="Quelques mots d’histoire...">
       <p>
@@ -41,8 +41,7 @@
       <img
         src="$lib/assets/img/illustration/illu_qui_sommes_nous.png"
         alt="illustration"
-        class="float-right hidden md:block relative"
-        style="width: 300px"
+        class="float-right hidden md:block relative m-5 w-1/3 lg:w-1/3"
       />
 
       <p>
@@ -51,13 +50,17 @@
         Maisons de Justice. Il bénéficie également d'un soutien financier de la Région wallonne, de
         la Ville de Charleroi et du Fonds Social Européen.
       </p>
+
+      <div class="flex justify-center">
+        <img
+          src="$lib/assets/img/illustration/illu_qui_sommes_nous.png"
+          alt="illustration"
+          class="md:hidden relative m-5 w-3/4"
+        />
+      </div>
     </SectionWithTitle>
 
-    <SectionWithTitle
-      title="Objectifs et valeurs"
-      line_img_src="trace_quiSommesNous_2.png"
-      width="{300}"
-    >
+    <SectionWithTitle title="Objectifs et valeurs" line_img_src="trace_quiSommesNous_2.png">
       <p>
         De par ses missions, notre service <span class="markup-text">offre une aide</span> à toute personne
         confrontée à la justice, qu’elle soit victime ou auteur·e des faits.
@@ -110,14 +113,13 @@
       <div class=" flex justify-center">
         <img
           src="$lib/assets/img/illustration/qui_sommes-nous_valeurs.svg"
-          class=""
-          style="width: 40%;"
+          class="md:w-2/3 lg:w-1/2"
           alt="ORS logo"
         />
       </div>
     </SectionWithTitle>
 
-    <SectionWithTitle title="Equipe psychosociale" width="{330}">
+    <SectionWithTitle title="Equipe psychosociale">
       <p>
         Notre <span class="markup-text">équipe</span> compte assistants sociaux, criminologues et psychologues.
       </p>
@@ -150,7 +152,7 @@
       </p>
     </SectionWithTitle>
 
-    <SectionWithTitle title="Collaborations" width="{230}">
+    <SectionWithTitle title="Collaborations">
       <div>
         <p>
           Notre service porte une attention particulière à une approche globale de la personne, de
@@ -174,53 +176,17 @@
       <div class="flex justify-center">
         <img
           src="$lib/assets/img/illustration/qui_sommes-nous_organigramme_web.svg"
-          class=""
+          class=" hidden md:block"
           alt="ORS logo"
         />
+        <div class="image-container md:hidden flex justify-center">
+          <img
+            src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Mobile.svg"
+            class="zoomed md:hidden"
+            alt="ORS logo"
+          />
+        </div>
       </div>
-
-      <!-- <div class="flex flex-row gap-20 relative pt-10" bind:offsetHeight="{section_height}">
-        <div class="collab-section w-1/3">
-          <h7 class="col-title" bind:offsetHeight="{biggest_title}"
-            >Sphère Judiciaire / Juridique</h7
-          >
-          <p class="pl-4">Avocats</p>
-          <p class="">Maisons de Justice</p>
-          <p class="pl-10">Prisons</p>
-          <p class="pr-4">Magistrats</p>
-        </div>
-
-        <img
-          src="$lib/assets/img/illustration/qui_sommes_nous_separator_1.png"
-          alt="illustration"
-          class="separator"
-          style="{`left: 22%; max-height:${section_height}px;`}"
-        />
-
-        <div class="collab-section w-1/3">
-          <h7 class="col-title" style="{`min-height: ${biggest_title}px`}">Services d'aide</h7>
-          <p class="relative right-2">Soins de santé</p>
-          <p class="pr-4">Aide de 1ère ligne</p>
-          <p class="pl-4">Logements</p>
-          <p class="relative left-6">Formations/insertion</p>
-          <p class="relative right-6">Médiation</p>
-        </div>
-
-        <img
-          src="$lib/assets/img/illustration/qui_sommes_nous_separator_2.png"
-          alt="illustration"
-          class="separator"
-          style="{`left: 66%; max-height:${section_height}px;`}"
-        />
-
-        <div class="collab-section w-1/3">
-          <h7 class="col-title">Organismes socio-administratifs</h7>
-          <p class="pl-4">CPAS</p>
-          <p class="relative right-16">Forem</p>
-          <p class="pl-8">Mutuelles</p>
-          <p class="relative right-10">Onem</p>
-        </div>
-      </div> -->
     </SectionWithTitle>
 
     <div class="flex flex-col justify-center items-center pt-10">
@@ -252,5 +218,26 @@
 
   .collab-section p:nth-child(even) {
     text-align: left;
+  }
+
+  .image-container {
+    width: 100%; /* Or specify your preferred width */
+    overflow: hidden; /* Prevents the zoomed image from causing scroll */
+    min-height: 850px;
+  }
+
+  .zoomed {
+    transform: scale(1.3); /* Adjust scale as needed */
+    transform-origin: center center; /* Center the zoom */
+    overflow: hidden; /* Hide any overflow from scaling */
+    margin-top: 35%; /* Centers the zoomed image within the container */
+  }
+
+  @media (min-width: 550px) {
+    .zoomed {
+      transform: none;
+      width: 70%;
+      margin-top: 0%;
+    }
   }
 </style>

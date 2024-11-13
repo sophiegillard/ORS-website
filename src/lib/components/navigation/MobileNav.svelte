@@ -20,7 +20,7 @@
 </script>
 
 <div
-  class="bg-off-white flex justify-between px-6 py-5 fixed w-full"
+  class="bg-off-white flex justify-between px-6 py-5 fixed w-full z-10"
   bind:offsetHeight="{mobile_nav_height}"
 >
   <img
@@ -33,9 +33,13 @@
   <button class="menu-button nav-onglet" on:click="{toggleMenu}"> Menu </button>
 
   {#if isMenuOpen}
-    <div class="menu bg-off-white z-10" style="{`top: ${mobile_nav_height}px`}" transition:slide>
+    <div class="menu bg-off-white" style="{`top: ${mobile_nav_height}px`}" transition:slide>
       {#each pages as page, index}
-        <a class="menu-item nav-onglet" href="/{page.toLowerCase().split(' ').join('-')}">{page}</a>
+        <a
+          class="menu-item nav-onglet"
+          href="/{page.toLowerCase().split(' ').join('-')}"
+          on:click="{() => (isMenuOpen = false)}">{page}</a
+        >
         {#if index !== pages.length - 1}
           <hr class="menu-divider" />
         {/if}
