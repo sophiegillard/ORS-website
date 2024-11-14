@@ -60,7 +60,7 @@
 }
 
 .markup-text{
- font-family: "gyst-variable",sans-serif;
+font-family: theme('fontFamily.gyst');
   font-variation-settings: 'wght' 450;
   font-size: 20px;
   line-height: 30px;
@@ -68,7 +68,7 @@
 }
 
 .markup-text-accueil{
-	font-family: "gyst-variable",sans-serif;
+	font-family: theme('fontFamily.gyst');
 	 font-variation-settings: 'wght' 450;
 	 font-size: 25px;
 	 line-height: 35px;
@@ -119,18 +119,29 @@ h3::after {
 }
 
 h5{
-	font-family: Gyst Variable;
+
+	font-family: theme('fontFamily.gyst');
 	font-size: 35px;
 	font-style: italic;
 	font-weight: 400;
 	line-height: 55px;
 	letter-spacing: 0em;
 	text-align: center;
-	border-bottom: theme('colors.dark-blue') 2px solid;
+	/* border-bottom: 3px solid theme('colors.dark-blue'); */
+}
+
+
+h5::after {
+	content: "";
+	position: relative;
+	width: 115%;
+	display: block;
+	right: 20px;
+	border-bottom: theme('colors.dark-blue') 3px solid;
 }
 
 h7 {
-    font-family: Gyst Variable;
+	font-family: theme('fontFamily.gyst');
     font-size: 1.5rem;
     font-style: italic;
     font-weight: 400;
@@ -235,6 +246,29 @@ line-height: 20.5px;
 text-align: right;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
-
 }
 
+/* ----------- CONTACT PAGE ----------- */
+h4{
+	font-family: theme('fontFamily.gyst');
+	font-size: 30px;
+	font-style: italic;
+	line-height: 36.9px;
+	text-align: center;
+	padding-bottom: 6px;
+}
+
+	.remarque {
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 30px;
+		text-align: center;
+	}
+
+	.error_message{
+		color: theme("colors.dark-blue") !important;
+		font-family: "Epilogue";
+		font-size: 17px;
+		line-height: 20.5px;
+		text-align: center;
+	}

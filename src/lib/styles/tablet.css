@@ -118,9 +118,23 @@
         line-height: 13px !important;
 
     }
-
-
  
+     /* ----------- CONTACT PAGE ----------- */
+    h4{
+        font-size: 24px !important;
+        line-height: 35px !important;
+    }
+    .remarque {
+		font-size: 12px !important;
+		line-height: 25px !important;
+	}
+    .error_message{
+        font-size: 12px;
+		line-height: 12px;
+	}
 
 
-  }
+
+}
+
+

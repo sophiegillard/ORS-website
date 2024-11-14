@@ -1,5 +1,8 @@
 <script>
+  import ContactForm from "$lib/components/ContactForm.svelte"
+
   import InformationItem from "$lib/components/InformationItem.svelte"
+  import SectionWithTitle from "$lib/components/layout/SectionWithTitle.svelte"
 </script>
 
 <svelte:head>
@@ -8,62 +11,59 @@
 </svelte:head>
 
 <div class="text-column">
-  <h2>Contact</h2>
+  <SectionWithTitle title="Contact">
+    <section class="flex flex-col gap-6">
+      <div class="flex flex-col sm:flex-row">
+        <div class="flex flex-col sm:grow md:grow-0 md:w-1/ lg:w-auto">
+          <InformationItem title="Adresse">
+            <p>Rue Léon Bernus 27</p>
+            <p>6000 Charleroi</p>
+          </InformationItem>
+          <InformationItem title="Mail">
+            <p>contact@espacelibre.be</p>
+          </InformationItem>
+        </div>
+        <div class="grow sm:hidden md:block md:w-1/3 lg:w-auto">
+          <InformationItem title="Horaire">
+            <p>Du lundi au jeudi : 8h30 - 17h</p>
+            <div class="flex flex-row justify-center">
+              <p>Vendredi : 8h30 - 16h</p>
+              <p class="remarque text-xs mb-5 lg:ml-2">(possibilité d'adaptation)</p>
+            </div>
 
-  <section class="flex flex-col px-16 gap-6">
-    <div class="flex flex-row items-center justify-around">
-      <div>
-        <InformationItem title="Adresse">
-          <p>123 rue de la Paix</p>
-          <p>75000 Paris</p>
-        </InformationItem>
-        <InformationItem title="Mail">
-          <p>contact@espacelibre.be</p>
-        </InformationItem>
+            <p>Permanence téléphonique :</p>
+            <p>Mardi et jeudi : 8h30 - 11h30</p>
+            <p>Mercredi : 8h30 - 16h</p>
+          </InformationItem>
+        </div>
+        <div class="lg:pr-5 sm:w-1/2 md:w-1/4 md:grow-0 lg:w-auto">
+          <InformationItem title="Téléphone" custom_class="{' sm:pb-8 '}">
+            <a href="tel:+3271278800">071/27.88.00</a>
+          </InformationItem>
+          <InformationItem title="Fax">
+            <p>071/27.88.01</p>
+          </InformationItem>
+        </div>
       </div>
-      <div>
+      <div class="grow hidden sm:block md:hidden">
         <InformationItem title="Horaire">
           <p>Du lundi au jeudi : 8h30 - 17h</p>
-          <p>Vendredi : 8h30 - 15h</p>
-          <p class="text-sm">(possibilité d'adaptation)</p>
+          <div class="flex flex-row justify-center">
+            <p>Vendredi : 8h30 - 16h</p>
+            <p class="remarque text-xs mb-5 lg:ml-2">(possibilité d'adaptation)</p>
+          </div>
+
+          <p>Permanence téléphonique :</p>
+          <p>Mardi et jeudi : 8h30 - 11h30</p>
+          <p>Mercredi : 8h30 - 16h</p>
         </InformationItem>
       </div>
-      <div>
-        <InformationItem title="Téléphone">
-          <a href="tel:+3271278800">071/27.88.00</a>
-        </InformationItem>
-        <InformationItem title="Téléphone">
-          <p>071/27.88.01</p>
-        </InformationItem>
-      </div>
-    </div>
 
-    <div class="map bg-blue rounded-xl border"></div>
+      <div class="map bg-blue rounded-xl border"></div>
 
-    <div class="contact-form flex flex-col justify-center items-center">
-      <h5>Formulaire de contact</h5>
-      <form action="submit" class="w-full pt-10">
-        <div class="flex flex-col gap-4">
-          <div class="flex flex-col gap-2">
-            <input type="text" id="nom" name="nom" placeholder="Nom" class="form-text" />
-          </div>
-          <div class="flex flex-col gap-2">
-            <input type="email" id="email" name="email" placeholder="Email" class="form-text" />
-          </div>
-          <div class="flex flex-col gap-2">
-            <textarea
-              id="message"
-              name="message"
-              placeholder="Message"
-              class="form-text"
-              style="min-height: 150px; "
-            ></textarea>
-          </div>
-          <button class="bg-grey text-white text-lg rounded-lg py-2 px-4">Envoyer</button>
-        </div>
-      </form>
-    </div>
-  </section>
+      <ContactForm></ContactForm>
+    </section>
+  </SectionWithTitle>
 </div>
 
 <style>
@@ -83,5 +83,10 @@
   textarea::placeholder {
     color: theme("colors.grey");
     font-weight: 200;
+  }
+
+  p {
+    text-align: center;
+    padding: 0 !important;
   }
 </style>

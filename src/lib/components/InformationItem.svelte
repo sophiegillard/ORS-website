@@ -1,8 +1,9 @@
 <script>
   export let title = ""
+  export let custom_class = ""
 </script>
 
-<div class="text-center py-2">
-  <p class="italic font-script">{title}</p>
+<div class="text-center py-2 grow-1 {custom_class}">
+  <h4>{title}</h4>
   <slot />
 </div>
