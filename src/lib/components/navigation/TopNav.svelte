@@ -1,12 +1,12 @@
 <script>
   let pages = [
-    "Accueil",
-    "Qui sommes nous",
-    "Nos Missions",
-    "Nous soutenir",
-    "Contact",
-    "Actualités",
-    "N° utiles",
+    { label: "Accueil", value: "accueil" },
+    { label: "Qui sommes-nous", value: "qui-sommes-nous" },
+    { label: "Nos Missions", value: "nos-missions" },
+    { label: "Nous soutenir", value: "nous-soutenir" },
+    { label: "Contact", value: "contact" },
+    { label: "Actualités", value: "actualites" },
+    { label: "N° utiles", value: "numeros-utiles" },
   ]
 
   export let nav_height = 0
@@ -23,7 +23,7 @@
     <nav class="navbar border rounded-full w-full flex" bind:offsetHeight="{nav_height}">
       {#each pages as page, index (page)}
         <li class="nav-item uppercase py-1">
-          <a class="onglet" href="/{page.toLowerCase().split(' ').join('-')}">{page}</a>
+          <a class="onglet" href="/{page.value}">{page.label}</a>
         </li>
         {#if index !== pages.length - 1}
           <span class="flex justify-center items-center">|</span>

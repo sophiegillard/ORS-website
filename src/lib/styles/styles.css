@@ -155,9 +155,9 @@ h7 {
 
 p{
 	font-family: Epilogue;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: 300;
-	line-height: 28px;
+	line-height: 30px;
 	text-align: left;
 	padding-block: 10px;
 }
@@ -271,4 +271,13 @@ h4{
 		font-size: 17px;
 		line-height: 20.5px;
 		text-align: center;
+	}
+
+/* ----------- NUMEROS UTILES PAGE ----------- */
+
+	.phone_link{
+		font-family: 'Epilogue';
+		font-size: 18px;
+		font-weight: 500;
+		color: theme("colors.dark-blue")
 	}

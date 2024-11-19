@@ -133,7 +133,11 @@
 		line-height: 12px;
 	}
 
+/* ----------- NUMEROS UTILES PAGE ----------- */
 
+.phone_link{
+    font-size: 16px !important;
+}
 
 }
 

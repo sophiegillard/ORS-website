@@ -2,13 +2,13 @@
   import { slide } from "svelte/transition"
 
   let pages = [
-    "Accueil",
-    "Qui sommes-nous",
-    "Nos Missions",
-    "Nous soutenir",
-    "Contact",
-    "Actualités",
-    "N° utiles",
+    { label: "Accueil", value: "accueil" },
+    { label: "Qui sommes-nous", value: "qui-sommes-nous" },
+    { label: "Nos Missions", value: "nos-missions" },
+    { label: "Nous soutenir", value: "nous-soutenir" },
+    { label: "Contact", value: "contact" },
+    { label: "Actualités", value: "actualites" },
+    { label: "N° utiles", value: "numeros-utiles" },
   ]
 
   export let mobile_nav_height = 0
@@ -35,10 +35,8 @@
   {#if isMenuOpen}
     <div class="menu bg-off-white" style="{`top: ${mobile_nav_height}px`}" transition:slide>
       {#each pages as page, index}
-        <a
-          class="menu-item nav-onglet"
-          href="/{page.toLowerCase().split(' ').join('-')}"
-          on:click="{() => (isMenuOpen = false)}">{page}</a
+        <a class="menu-item nav-onglet" href="/{page.value}" on:click="{() => (isMenuOpen = false)}"
+          >{page.label}</a
         >
         {#if index !== pages.length - 1}
           <hr class="menu-divider" />

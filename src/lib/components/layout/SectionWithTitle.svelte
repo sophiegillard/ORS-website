@@ -18,12 +18,12 @@
           src="src/lib/assets/img/lines/{line_img_src}"
           alt="title bottom border"
           class="absolute z-10 subtitle-line"
-          style="{`width : ${title_width + 40}px; top: 30px; left: ${left}px; height: 15px;`}"
+          style="{`width : ${title_width + 40}px; top: 38px; left: ${left}px; height: 15px;`}"
         />
       {/if}
     </div>
   {/if}
-  <div class="text-content">
+  <div class="text-content pt-5 md:pt-0">
     <slot />
   </div>
 </div>
