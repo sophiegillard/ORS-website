@@ -13,6 +13,7 @@ export default {
       },
       fontFamily: {
         'gyst': ['"gyst-variable"', 'sans-serif'],
+        'epilogue': ['"Epilogue"', 'sans-serif'],
         'sans': ['"Poppins"', 'sans-serif'],
         'serif': ['"Playfair Display"', 'serif'],
         'script': ['"Dancing Script"', 'cursive'],

@@ -16,14 +16,6 @@
       class="float-right hidden sm:block w-1/3 relative"
     />
 
-    <!-- <div class="justify-center float-right bg-pink" style="max-height:270px">
-      <img
-        src="$lib/assets/img/SVG/ORS_illustrations_Numéros utiles.svg"
-        alt="illustration"
-        class=" object-cover"
-      />
-    </div> -->
-
     <p>
       Télé-Accueil – Quelqu’un à qui parler 24h/24 : <a class="phone_link" href="tel:107">107</a>
     </p>

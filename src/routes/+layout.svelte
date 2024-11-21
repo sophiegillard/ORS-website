@@ -57,7 +57,7 @@
     flex-direction: column;
 
     width: 100%;
-    max-width: 65rem;
+    max-width: 75rem;
     margin: 0 auto;
     box-sizing: border-box;
   }

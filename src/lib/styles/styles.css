@@ -62,7 +62,7 @@
 .markup-text{
 font-family: theme('fontFamily.gyst');
   font-variation-settings: 'wght' 450;
-  font-size: 20px;
+  font-size:18px;
   line-height: 30px;
   font-style: italic;
 }
@@ -76,8 +76,8 @@ font-family: theme('fontFamily.gyst');
 }
 
 h2{
-	font-family: Epilogue;
-	font-size: 40px;
+	font-family: theme('fontFamily.gyst');
+	font-size: 37px;
 	font-weight: 500;
 	line-height: 41px;
 	text-align: left;
@@ -153,13 +153,19 @@ h7 {
     flex-direction: column;
   }
 
-p{
+p {
 	font-family: Epilogue;
 	font-size: 18px;
 	font-weight: 300;
 	line-height: 30px;
 	text-align: left;
 	padding-block: 10px;
+}
+
+li {
+	font-family: Epilogue;
+	font-size: 18px;
+	font-weight: 300;
 }
 
 .p-accueil{

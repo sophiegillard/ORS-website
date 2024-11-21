@@ -1,24 +1,32 @@
 <script>
   export let title
-  export let text
+  export let first_line_title
   export let custom_class = ""
   export let left = -30
 
-  export let line_img_src = "trace_quiSommesNous_1.png"
+  export let line_img_src = "/src/lib/assets/img/lines/trace_quiSommesNous_1.png"
 
   let title_width = 0
 </script>
 
-<div class="{custom_class} lg:pt-10">
+<div class="{custom_class} ">
   {#if title}
     <div class="relative z-0">
-      <h2 class="w-fit" bind:offsetWidth="{title_width}">{title}</h2>
+      <h2 class="p-0 {custom_class} ">
+        {#if first_line_title}
+          {first_line_title}
+          <br />
+        {/if}
+      </h2>
+      <h2 class="w-fit {custom_class} " bind:offsetWidth="{title_width}">
+        {title}
+      </h2>
       {#if line_img_src}
         <img
-          src="src/lib/assets/img/lines/{line_img_src}"
+          src="{line_img_src}"
           alt="title bottom border"
           class="absolute z-10 subtitle-line"
-          style="{`width : ${title_width + 40}px; top: 38px; left: ${left}px; height: 15px;`}"
+          style="{`width : ${title_width + 40}px; top: ${first_line_title ? ' 90px' : '38px'}; left: ${left}px; height: 15px;`}"
         />
       {/if}
     </div>

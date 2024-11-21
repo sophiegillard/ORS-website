@@ -19,6 +19,10 @@
         line-height: 18px !important;
     }
 
+    li{
+        font-size: 15px !important;
+        }
+
     .p-accueil{
         font-size: 18px !important;
         font-weight: 300 !important;

@@ -6,7 +6,12 @@
 
 <button
   on:click="{() => (window.location.href = href)}"
-  class=" bg-blue hover:bg-blue-hover py-3 px-8 rounded-full border-grey border w-1/5 {custom_class}"
+  class=" bg-blue hover:bg-blue-hover px-8 rounded-full border-grey border w-auto {custom_class}"
+  style="min-width: 20%;"
 >
-  {title}
+  {#if title}
+    {title}
+  {:else}
+    <slot></slot>
+  {/if}
 </button>

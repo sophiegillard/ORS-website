@@ -3,9 +3,6 @@
   import ContactButton from "$lib/components/button/ContactButton.svelte"
   import SecondaryLinkButton from "$lib/components/button/SecondaryLinkButton.svelte"
   import Event from "$lib/components/Event.svelte"
-
-  let section_height
-  let biggest_title
 </script>
 
 <svelte:head>
@@ -15,30 +12,26 @@
 
 <div class="text-column">
   <div>
-    <SectionWithTitle>
-      <img
-        src="$lib/assets/img/illustration/victime_illu_mains.png"
-        alt="illustration"
-        class="float-right relative top--10 z-10 hidden md:block w-1/4"
-      />
+    <SectionWithTitle
+      first_line_title="Aide aux victimes d’infractions pénales"
+      title="et à leurs proches"
+      width="{220}"
+      custom_class="font-epilogue"
+      line_img_src="{'../src/lib/assets/img/lines/trace_quiSommesNous_1.png'}"
+    >
       <div>
-        <div class="relative z-0">
-          <h2>
-            Aide aux victimes d’infractions pénales <br /> et à leurs proches"
-          </h2>
-          <img
-            src="$lib/assets/img/lines/title_bottom_border.svg"
-            alt="title bottom border"
-            class="absolute z-10"
-            style="{'width : 350px; top: 45px; left: -60px; }"'}"
-          />
-        </div>
         <ul>
+          <img
+            src="$lib/assets/img/illustration/victime_illu_mains.png"
+            alt="illustration"
+            class="float-right relative z-0 bottom-28 hidden md:block"
+            style="width: 26%;"
+          />
           <li>
             Vous êtes victime ou vous êtes <span class="markup-text">proche</span> d'une personne
             victime de faits pouvant être qualifiés
             <span class="markup-text">d'infraction pénale</span> (agression physique, verbale, violence
-            sexuelle, harcèlement, cambriolage, hold-up,...)
+            sexuelle, harcèlement, cambriolage, hold-up...)
           </li>
           <li>
             Vous vivez une <span class="markup-text">situation de violence conjugale</span>, de
@@ -52,28 +45,42 @@
             Vous avez <span class="markup-text">perdu un proche</span> suite à un accident de la route,
             un suicide...
           </li>
-          <li>
-            Que les faits soient <span class="markup-text">actuels</span> ou
-            <span class="markup-text">passés</span>
-            ou qu'une <span class="markup-text">procédure judiciaire</span> soit en cours ou non.
-          </li>
         </ul>
+        <p>
+          Que les faits soient <span class="markup-text">actuels</span> ou
+          <span class="markup-text">passés</span>
+          ou qu'une <span class="markup-text">procédure judiciaire</span> soit en cours ou non.
+        </p>
         <p>Nous proposons :</p>
-      </div>
-
-      <div class="flex flex-row gap-6 pt-4">
-        <SecondaryLinkButton title="un accompagnement psychologique" custom_class="grow" />
-        <SecondaryLinkButton title="une aide sociale" />
-        <SecondaryLinkButton title="des groupes de paroles" custom_class="grow" />
-        <SecondaryLinkButton title="une aide pour les proches" custom_class="grow" />
+        <div class="flex flex-row gap-6 pt-3 pb-6">
+          <SecondaryLinkButton custom_class="grow">
+            <p class="text-center">Accompagnement <span class="markup-text">psychologique</span></p>
+          </SecondaryLinkButton>
+          <SecondaryLinkButton custom_class="grow">
+            <p class="text-center">Aide <span class="markup-text">sociale</span></p>
+          </SecondaryLinkButton>
+          <SecondaryLinkButton custom_class="grow">
+            <p class="text-center">Accompagnement <span class="markup-text">collectif</span></p>
+          </SecondaryLinkButton>
+          <SecondaryLinkButton custom_class="grow">
+            <p class="text-center">Aide pour les <span class="markup-text">proches</span></p>
+          </SecondaryLinkButton>
+        </div>
       </div>
     </SectionWithTitle>
 
-    <SectionWithTitle title="Accompagnement psychologique">
+    <SectionWithTitle
+      title="Accompagnement psychologique"
+      width="{220}"
+      line_img_src="{'../src/lib/assets/img/lines/trace_quiSommesNous_1.png'}"
+    >
       <div>
         <ul>
-          <li>Reconstitution</li>
-          <li>Conséquences du traumatisme et assimilation...</li>
+          <li>Assimilation du traumatisme et de ses répercussions</li>
+          <li>Soutien dans un processus de reconstruction</li>
+          <li>Soutien durant la procédure pénale</li>
+          <li>Mise en évidence des besoins et des ressources</li>
+          <li>...</li>
         </ul>
       </div>
       <div class="parent grid grid-cols-4 grid-rows-3 gap-20">
