@@ -1,115 +1,137 @@
 /* Tablet styles */
 @media (max-width: 480px) {
-    h3{
-        font-size: 18px !important;
-        font-weight: 500 !important;
-        line-height: 20.5px !important;
-        text-align: center !important;
-    }
-
-    h2{
-        font-size: 22px !important;
-        line-height: 22px !important;
-        padding-bottom: 30px !important;
-
-    }
-
-    p{
-        font-size: 15px !important;
-        line-height: 18px !important;
-    }
-
-    li{
-        font-size: 15px !important;
-        }
-
-    .p-accueil{
-        font-size: 18px !important;
-        font-weight: 300 !important;
-        line-height: 25px !important;
-        text-align: center !important;
-    }
-
-    .p-secondary{
-        font-size: 18px !important;
-        font-weight: 400 !important;
-        line-height: 25px !important;
-        text-align: center !important;
-    }
-
-    .markup-text{
-        font-size: 15px !important;
-        line-height: 18px !important;
-    } 
-        
-    .markup-text-accueil{
-        font-size: 20px !important;
-        font-weight: 550 !important;
-        line-height: 24.6px !important;
-    }
-
-    .nav-onglet{
-        font-family: "Epilogue";
-        font-size: 17px;
-        font-weight: 400;
-        line-height: 30px;
-        text-align: right;
-        text-transform: uppercase;
-    }
-
-    .mention-service{
-        font-size: 15px !important;
-        font-weight: 600 !important;
-        line-height: 20px !important;
-        text-align: center !important;
-    }
-
-    /* ---------------- FOOTER ---------------- */
-    .footer-title{
-        font-size: 18px !important;
-        font-weight: 500 !important;
-        line-height: 20px !important;
-        text-align: center !important;
-    }
-
-    .footer-secondary{
-        font-size: 15px !important;
-        line-height: 24px !important;
-    }
-
-    .footer-contact-info{
-        font-size: 15px !important;
-        line-height: 15px !important;
-    }
-
-    .mention-legales{
-        font-size: 15px !important;
-        line-height: 22px !important;
-        text-align: center !important;
-
-    }
-
-    .mention-footer{
-        font-size: 12px !important;
-        line-height: 12px !important;
-        text-align: center !important;
-    }
-  /* ----------- CONTACT PAGE ----------- */
-    h4{
-        font-size: 24px !important;
-        line-height: 27px !important;
-    }
-    .remarque {
-		font-size: 12px !important;
-		line-height: 15px !important;
-	}
-    .error_message{
-		font-size: 12px;
-		line-height: 12px;
-	}
-
-    .phone_link{
-        font-size: 15px !important;
-    }
+  h3 {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 20.5px !important;
+    text-align: center !important;
   }
 
+  h2 {
+    font-size: 22px !important;
+    line-height: 22px !important;
+  }
+
+  p {
+    font-size: 15px !important;
+    line-height: 18px !important;
+  }
+
+  li {
+    font-size: 15px !important;
+  }
+
+  .p-accueil {
+    font-size: 18px !important;
+    font-weight: 300 !important;
+    line-height: 25px !important;
+    text-align: center !important;
+  }
+
+  .p-secondary {
+    font-size: 18px !important;
+    font-weight: 400 !important;
+    line-height: 25px !important;
+    text-align: center !important;
+  }
+
+  .markup-text {
+    font-size: 15px !important;
+    line-height: 18px !important;
+  }
+
+  .markup-text-accueil {
+    font-size: 20px !important;
+    font-weight: 550 !important;
+    line-height: 24.6px !important;
+  }
+
+  .nav-onglet {
+    font-family: 'Epilogue';
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  .mention-service {
+    font-size: 15px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
+    text-align: center !important;
+  }
+
+  /* ---------------- FOOTER ---------------- */
+  .footer-title {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    text-align: center !important;
+  }
+
+  .footer-secondary {
+    font-size: 15px !important;
+    line-height: 24px !important;
+  }
+
+  .footer-contact-info {
+    font-size: 15px !important;
+    line-height: 15px !important;
+  }
+
+  .mention-legales {
+    font-size: 15px !important;
+    line-height: 22px !important;
+    text-align: center !important;
+  }
+
+  .mention-footer {
+    font-size: 12px !important;
+    line-height: 12px !important;
+    text-align: center !important;
+  }
+  /* ----------- CONTACT PAGE ----------- */
+  h4 {
+    font-size: 24px !important;
+    line-height: 27px !important;
+  }
+  .remarque {
+    font-size: 12px !important;
+    line-height: 15px !important;
+  }
+  .error_message {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  .phone_link {
+    font-size: 15px !important;
+  }
+
+  /* ----------- VICITMES ----------- */
+  h8 {
+    font-size: 18px !important;
+    line-height: 18px !important;
+  }
+
+  .blue_title {
+    font-size: 15px;
+    line-height: 18px;
+  }
+
+  .objectif {
+    font-size: 16px;
+    line-height: 16.4px;
+  }
+
+  /* ----------- MENTIONS LEGALES ----------- */
+
+  h6 {
+    font-size: 20px !important;
+    font-weight: 400;
+    padding-bottom: 0px !important;
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
+}

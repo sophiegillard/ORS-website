@@ -3,6 +3,7 @@
   import MobileNav from "$lib/components/navigation/MobileNav.svelte"
   import Footer from "$lib/components/navigation/Footer.svelte"
   import "$lib/styles/styles.css"
+  import Device from 'svelte-device-info'
 
   let nav_height = 0
   let mobile_nav_height = 0
@@ -16,6 +17,9 @@
     isMobile = innerWidth && innerWidth <= 480
     isTablet = innerWidth && innerWidth <= 768
   }
+
+
+
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight />
@@ -31,7 +35,7 @@
     class:z-negative="{isMenuOpen}"
     style="{`top: ${!isMobile && !isTablet ? nav_height + 90 : mobile_nav_height}px;`}"
   >
-    <main class="p-8 px-10">
+    <main class="p-8 px-6">
       <slot {isMobile} {isTablet} />
     </main>
 

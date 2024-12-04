@@ -1,6 +1,21 @@
 <script>
+  
 </script>
 
-<div class="flex flex-row justify-center gap-5 lg:gap-20 gap-md-10 py-6 flex-wrap">
+<div class="flex flex-custom gap-5 sm:w-3/4 md:w-full lg:gap-16  py-6 flex-wrap">
   <slot />
 </div>
+
+<style>
+
+  @media (max-width: 480px) {
+    .flex-custom {
+    flex-direction: column !important;
+    justify-content: center !important;
+    }
+  }
+  .flex-custom {
+    flex-direction: row;
+    justify-content: center !important;
+  }
+</style>

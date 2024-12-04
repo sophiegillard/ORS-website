@@ -1,149 +1,162 @@
-
 /* Tablet styles */
 @media (max-width: 1024px) {
-    h3{
-        font-family: "Epilogue" !important;
-        font-size: 23px !important;
-        font-weight: 500 !important;
-        line-height: 28px !important;
-        text-align: center !important;
-    }
+  h3 {
+    font-family: 'Epilogue' !important;
+    font-size: 23px !important;
+    font-weight: 500 !important;
+    line-height: 28px !important;
+    text-align: center !important;
+  }
 
+  h2 {
+    font-size: 30px !important;
+    line-height: 30px !important;
+  }
 
-    h2{
-        font-size: 30px !important;
-        line-height: 30px !important;
-    }
+  h3::after {
+    content: '' !important;
+    position: absolute !important;
+    left: 0% !important; /* Center the element */
+    bottom: -5px !important;
+    width: 100% !important;
+    border-bottom: theme('colors.dark-blue') 3px solid !important;
+  }
 
-    h3::after {
-        content: "" !important;
-        position: absolute !important;
-        left: 0% !important; /* Center the element */
-        bottom: -10px !important;
-        width: 100% !important;
-        border-bottom: theme('colors.dark-blue') 2px solid !important;
-    }
-
-
-    p{
-        font-size: 16px !important;
-        line-height: 24px !important;
-        }
-
-
-    li{
-        font-size: 16px !important;
-        }
-
-    .p-accueil{
-        font-family: "Epilogue" !important;
-        font-size: 18px !important;
-        font-weight: 400 !important;
-        line-height: 28px !important;
-        text-align: center !important;
-    }
-
-    .p-secondary{
-        font-family: "Epilogue" !important;
-        font-size: 23px !important;
-        font-weight: 500 !important;
-        line-height: 28px !important;
-        text-align: center !important;
-    }
-
-    .markup-text{
-        font-size: 16px !important;
-        line-height: 16px !important;
-    }
-    
-    .markup-text-accueil{
-        font-size: 18px !important;
-        font-weight: 550 !important;
-        line-height: 28px !important;
-    }
-
-    .nav-onglet{
-        font-family: "Epilogue";
-        font-size: 19px;
-        font-weight: 400;
-        line-height: 40px;
-        text-align: right;
-        text-transform: uppercase;
-    }
-
-
-    .onglet{
-        font-family: 'Epilogue';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 16px !important;
-        line-height: 20px;
-        display: flex;
-        align-items: center;
-        font-variant: all-small-caps;
-    }
-
-    .mention-service{
-        font-family: "Epilogue" !important;
-        font-size: 16px !important;
-        font-weight: 700 !important;
-        line-height: 25px !important;
-        text-align: center !important;
-    }
-
-
-    /* ---------------- FOOTER ---------------- */
-    .footer-title{
-        font-family: Epilogue !important;
-        font-size: 24px !important;
-        font-weight: 500 !important;
-        line-height: 35px !important;
-        text-align: center !important;
-    }
-
-   
-    .footer-secondary{
-        font-size: 18px !important;
-        line-height: 28px !important;
-    }
-
-    .footer-contact-info{
-        font-size: 18px !important;
-        line-height: 28px !important;
-    }
-
-    .mention-legales{
-        font-size: 18px !important;
-        line-height: 18px !important;
-
-    }
-
-    .mention-footer{
-        font-size: 13px !important;
-        line-height: 13px !important;
-
-    }
- 
-     /* ----------- CONTACT PAGE ----------- */
-    h4{
-        font-size: 24px !important;
-        line-height: 35px !important;
-    }
-    .remarque {
-		font-size: 12px !important;
-		line-height: 25px !important;
-	}
-    .error_message{
-        font-size: 12px;
-		line-height: 12px;
-	}
-
-/* ----------- NUMEROS UTILES PAGE ----------- */
-
-.phone_link{
+  p {
     font-size: 16px !important;
+    line-height: 24px !important;
+  }
+
+  li {
+    font-size: 16px !important;
+  }
+
+  .p-accueil {
+    font-family: 'Epilogue' !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    line-height: 28px !important;
+    text-align: center !important;
+  }
+
+  .p-secondary {
+    font-family: 'Epilogue' !important;
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    text-align: center !important;
+  }
+
+  .markup-text {
+    font-size: 20px !important;
+    line-height: 18px !important;
+  }
+
+  .markup-text-accueil {
+    font-size: 20px !important;
+    font-weight: 550 !important;
+    line-height: 28px !important;
+  }
+
+  .nav-onglet {
+    font-family: 'Epilogue';
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: right;
+    text-transform: uppercase;
+  }
+
+  .onglet {
+    font-family: 'Epilogue';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px !important;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+    font-variant: all-small-caps;
+  }
+
+  .mention-service {
+    font-family: 'Epilogue' !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    line-height: 25px !important;
+    text-align: center !important;
+  }
+
+  /* ---------------- FOOTER ---------------- */
+  .footer-title {
+    font-family: Epilogue !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+    line-height: 35px !important;
+    text-align: center !important;
+  }
+
+  .footer-secondary {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+
+  .footer-contact-info {
+    font-size: 18px !important;
+    line-height: 28px !important;
+  }
+
+  .mention-legales {
+    font-size: 18px !important;
+    line-height: 18px !important;
+  }
+
+  .mention-footer {
+    font-size: 13px !important;
+    line-height: 13px !important;
+  }
+
+  /* ----------- CONTACT PAGE ----------- */
+  h4 {
+    font-size: 24px !important;
+    line-height: 35px !important;
+  }
+  .remarque {
+    font-size: 12px !important;
+    line-height: 25px !important;
+  }
+  .error_message {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  /* ----------- NUMEROS UTILES PAGE ----------- */
+
+  .phone_link {
+    font-size: 16px !important;
+  }
+
+  /* ----------- VICITMES ----------- */
+  h8 {
+    font-size: 22px !important;
+    line-height: 22px !important;
+  }
+
+  .blue_title {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .objectif {
+    font-size: 20px;
+    line-height: 18px;
+  }
+
+  /* ----------- MENTIONS LEGALES ----------- */
+
+  h6 {
+    font-size: 28px !important;
+    padding-bottom: 5px; /* Adjust the space between border and text */
+    margin-bottom: 10px;
+    margin-top: 40px;
+  }
 }
-
-}
-
-

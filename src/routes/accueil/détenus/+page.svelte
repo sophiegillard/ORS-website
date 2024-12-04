@@ -1,0 +1,382 @@
+<script>
+  import SectionWithTitle from "$lib/components/layout/SectionWithTitle.svelte"
+  import ContactButton from "$lib/components/button/ContactButton.svelte"
+  import SecondaryLinkButton from "$lib/components/button/SecondaryLinkButton.svelte"
+  import { fly } from "svelte/transition"; 
+
+
+  let selected_section = "";
+
+function handleGoToSection(section_id) {
+  selected_section = section_id;  
+  const section = document.getElementById("section_accompagnement");
+  if (section) {
+    const offsetTop = section.offsetTop; // Get the top position relative to the document
+    window.scrollTo({
+      top: offsetTop,
+      behavior: "smooth"
+    });
+  }
+}
+
+</script>
+
+<svelte:head>
+  <title>Détenu.e.s</title>
+  <meta name="détenus" content="détenus" />
+</svelte:head>
+
+<div class="text-column">
+  <div>
+    <SectionWithTitle
+      title="Aide aux personnes détenueset à leurs proches"
+      width="{220}"
+      custom_class="font-epilogue"
+      line_img_src="{'../src/lib/assets/img/lines/trace_quiSommesNous_1.png'}"
+    >
+      <div>
+        <ul class="flex flex-col items-center">
+          <img
+            src="$lib/assets/img/SVG/ORS_illustrations_Aides aux détenus.svg"
+            alt="illustration"
+            class="float-right relative z-0 bottom-28 hidden md:block"
+            style="width: 26%;"
+          />
+          <img
+          src="$lib/assets/img/SVG/ORS_illustrations_Aides aux détenus.svg"
+          alt="illustration"
+          class="pb-6 "
+          
+        />
+          <li>
+          Vous êtes prévenu, condamné, interné au sein de la prison de <span class="markup-text">Jamioulx</span>,
+          </li>
+          <li>
+          Vous exécutez une peine au sein d'une autre prison et vous souhaitez vous <span class="markup-text">réinsérer</span> dans l'arrondissement de Charleroi,
+          </li>
+          <li>
+          Un de vos proches est <span class="markup-text">incarcéré</span> au sein d'un établissement pénitentiaire ou de défense sociale,
+          </li>
+         
+        </ul>
+        
+        <p>Nous proposons :</p>
+        <div class="flex flex-col  items-center  ">
+          <div class="flex flex-col  items-center  lg:flex-row gap-6 pt-3 pb-6" style="max-width: 70%;">
+          
+            <SecondaryLinkButton custom_class="grow"
+            on:click={()=> handleGoToSection("psychologique")}
+            >
+            <p class="text-center">Accompagnement <span class="markup-text">psychologique</span></p>
+          </SecondaryLinkButton>
+
+          <SecondaryLinkButton custom_class="grow"
+          on:click={()=> handleGoToSection("sociale")}
+          >
+           <p class="text-center">Aide <span class="markup-text">sociale</span></p>
+          </SecondaryLinkButton>
+
+          <SecondaryLinkButton custom_class="grow"
+          on:click={()=> handleGoToSection("adform")}
+          >
+           <p class="text-center"><span class="markup-text">ADForm</span> - Aide Formations</p>
+          </SecondaryLinkButton>
+
+          <SecondaryLinkButton custom_class="grow"
+          on:click={()=> handleGoToSection("collectif")}
+          >
+           <p class="text-center">Accompagnement <span class="markup-text">collectif</span></p>
+          </SecondaryLinkButton>
+
+          <SecondaryLinkButton custom_class="grow"
+          on:click={()=> handleGoToSection("proches")}
+          >
+           <p class="text-center">Aide pour les <span class="markup-text">proches</span></p>
+          </SecondaryLinkButton>
+
+          <SecondaryLinkButton custom_class="grow"
+          on:click={()=> handleGoToSection("visiteurs")}
+          >
+           <p class="text-center"><span class="markup-text">Visiteur.euse</span> de prison</p>
+          </SecondaryLinkButton>
+        </div>
+        </div>
+      </div>
+    </SectionWithTitle>
+
+    <div id="section_accompagnement">
+
+      <div id="psychologique" class="pt-5">
+        {#if selected_section === "psychologique"}
+          <div  in:fly="{{ y: 50, duration: 3000 }}">
+            <SectionWithTitle
+              title="Accompagnement psychologique"
+              width="{220}"
+              line_img_src="{'../src/lib/assets/img/lines/trace_quiSommesNous_1.png'}"
+            >
+              <div class='pb-8'>
+                <ul>
+                  <li>Limiter les impacts psychologiques de la détention</li>
+                  <li>Aider à "mieux-vivre" la période de détention</li>
+                  <li>Favoriser la responsabilisation et la gestion de soi</li>
+                  <li>Soutenir un processus de changement</li>
+                  <li>Comprendre et gérer ses émotions</li>
+                  <li>Relais/orientation vers des services adéquats intra ou extra-muros selon les situations</li>
+                </ul>
+              </div>
+
+              <div class="">
+                <img
+                src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Acc. psy - Web.svg"
+                class=" hidden md:block"
+                  alt="ORS logo"
+                />
+              
+                <div class="relative py-4 overflow-hidden md:hidden">
+                  <img
+                  src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Acc. psy - Mobile.svg"
+                    alt="Illustration of psychological support for victims"
+                    class="h-full w-full object-cover transition-transform duration-300 ease-in-out scale-140"
+                  />
+                </div>
+          
+              </div>
+            </SectionWithTitle>
+          </div>
+        {/if}
+      </div>
+
+      <div id="sociale" class="pt-5">
+        {#if selected_section === "sociale"}
+        <div  in:fly="{{ y: 50, duration: 3000 }}">
+          <SectionWithTitle title="Aide social"
+            >
+        <div class='pb-8'>
+          <ul>
+            <li>Accueil - écoute - Soutien</li>
+            <li>Informations (organisation de la prison, services accessibles, procédures judiciaires...)</li>
+            <li>Accompagner dans les démarches sociales, administratives, juridiques... pour atténuer les conséquences de la détention et en vue de préparer la libération</li>
+            <li>Construire et préparer un projet de réinsertion (en alternative à la détention préventive ou en vue d'une libération anticipée)</li>
+            <li>Mettre en lien avec les services extérieurs</li>
+            <li>Favoriser le maintien des relations familiales</li>
+            <li>...</li>
+          </ul>
+        </div>
+        <div class="">
+          <img
+          src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Aide sociale - Web.svg"
+          class=" hidden md:block"
+            alt="ORS logo"
+          />
+        
+          <div class="relative py-4 overflow-hidden md:hidden">
+            <img
+            src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Aide sociale - Mobile.svg"
+              alt="Illustration of psychological support for victims"
+              class="h-full w-full object-cover transition-transform duration-300 ease-in-out scale-140"
+            />
+          </div>
+        </div>
+      </SectionWithTitle>
+        </div>
+        {/if}
+      </div>
+
+      <div id="adform" class="pt-5">
+        {#if selected_section === "adform"}
+        <div  in:fly="{{ y: 50, duration: 3000 }}">
+
+          <SectionWithTitle title="ADForm - Aide Formations">
+        <div class='pb-8'>
+          <p>
+            Notre équipe compte un référent formation au sein de la prison de Jamioulx pour vous aider dans votre parcours de formation.
+          <ul>
+            <li>Informer sur les formations disponibles durant et après la détention, y compris l’enseignement à distance (à Jamioulx ou dans une autre prison, en cas de transfert)</li>
+            <li>Suivi et accompagnement tout au long de la formation</li>
+            <li>Construire un projet professionnel</li>
+            <li>Renseigner sur les formations extérieures (en vue d’une libération)</li>
+          </ul>
+
+        </div>
+        <div class="">
+          <img
+          src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Aide sociale - Web.svg"
+          class=" hidden md:block"
+            alt="ORS logo"
+          />
+        
+          <div class="relative py-4 pt-10 overflow-hidden md:hidden">
+            <img
+            src="$lib/assets/img/SVG/ORS_illustrations_Détenus - AD Form - Mobile.svg"
+              alt="Illustration of psychological support for victims"
+              class="h-full w-full object-cover transition-transform duration-300 ease-in-out scale-140"
+            />
+          </div>
+        </div>
+      </SectionWithTitle>
+        </div>
+        {/if}
+      </div>
+
+  
+      <div id="collectif" class="pt-5">
+        {#if selected_section === "collectif"}
+          <div  in:fly="{{ y: 50, duration: 3000 }}">
+            <SectionWithTitle title="Accompagnement collectif"
+            >
+            <div class="image-container flex justify-center">
+              <img
+              src="$lib/assets/img/SVG/ORS_illustrations_Aide auteur.es & Détenus - Acc. collectif.svg"
+              class="zoomed pt-6 lg:pt-0 w-3/4"
+                alt="ORS logo"
+              />
+            </div>
+            
+
+            <div>
+
+              <h8 >Groupe de réflexion pour auteurs de violence conjugale</h8>
+              <ul>
+                <li>15 séances de 3 heures, soit en journée, soit en soirée, au rythme d’une fois par semaine</li>
+                <li>10 participants maximum</li>
+                <li>Groupe fermé avec 2 entretiens d’admission préalable</li>
+                <li>Sur base volontaire ou sous condition judiciaire</li>
+              </ul>
+
+              <p class="objectif">
+                → Objectifs
+              </p> 
+             
+              <ul>
+                <li>Sensibiliser aux comportements violents et à leurs conséquences (sur le conjoint, sur les enfants, sur la famille élargie, etc.)</li>
+                <li>Identifier et réfléchir sur les croyances et les schémas relationnels dysfonctionnels</li>
+                <li>Reconnaitre ses émotions et ses besoins, plus particulièrement dans la dynamique du couple</li>
+                <li>Développer des manières d’agir et de communiquer dans le respect de soi et des autres</li>
+              </ul>
+
+              <hr class="text-nude bg-nude w-3/4 mb-5 mb-9 mt-7" style="height:2px !important">
+
+              <h8 >Plate-forme d’informations</h8>
+              <ul>
+                <li>Rencontre au sein de la prison de Jamioulx, tous les deux mois, qui rassemble des représentants de services extérieurs susceptibles de vous aider dans votre réinsertion </li>
+                <li>Echanges avec les services pour connaitre les aides dont vous pourrez bénéficier </li>
+                <li>Recevoir une information globale sur les démarches à accomplir lors de votre libération </li>
+              </ul>
+
+              <hr class="text-nude bg-nude w-3/4 mb-5 mb-9 mt-7" style="height:2px !important">
+
+              <h8 >Brochure d’informations</h8>
+              <p>Brochure distribuée à tous les entrants de la prison de Jamioulx, réalisée en collaboration avec la prison et reprenant une série d’informations utiles sur :</p>
+              <ul>
+                <li>Le fonctionnement de la prison</li>
+                <li>Les procédures judiciaires</li>
+                <li>Les démarches et services d’aide durant la détention et/ou en vue de préparer la réinsertion</li>
+              </ul>
+
+              <hr class="text-nude bg-nude w-3/4 mb-5 mb-9 mt-7" style="height:2px !important">
+              <h8 >Groupe de rencontre pour les proches</h8>
+              
+            A venir
+    
+            </div>
+          
+            </SectionWithTitle>
+          </div>
+        {/if}
+      </div>
+
+      <div id="proches" class="pt-5">
+          {#if selected_section === "proches"}
+          <div  in:fly="{{ y: 50, duration: 3000 }}">
+            <SectionWithTitle title="Aide pour les proches"
+            >
+              <p>
+                Un de vos proches a subi un acte délictueux et vous vous sentez en souffrance et/ou en
+                questionnement par rapport à cette situation?
+              </p>
+              <p>Nous vous proposons :</p>
+              <ul>
+                <li>Un soutien</li>
+                <li>Un accompagnement psychologique individuel</li>
+                <li>
+                  Une aide et un accompagnement dans vos démarches sociales, administratives et juridiques
+                </li>
+                <li class="text-dark-blue italic">Un accompagnement collectif</li>
+
+              </ul>
+
+              <div class="">
+                <img
+                src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Aide proches - Web.svg"
+                class=" hidden md:block"
+                  alt="ORS logo"
+                />
+              
+                <div class="relative py-4 pt-10 overflow-hidden md:hidden">
+                  <img
+                  src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Aide proches - Mobile.svg"
+                    alt="Illustration of psychological support for victims"
+                    class="h-full w-full object-cover transition-transform duration-300 ease-in-out scale-140"
+                  />
+                </div>
+              </div>
+            </SectionWithTitle>
+            </div>
+          {/if}
+      </div>
+
+      <div id="visiteurs" class="pt-5">
+        {#if selected_section === "visiteurs"}
+        <div  in:fly="{{ y: 50, duration: 3000 }}">
+          <SectionWithTitle title="Soutien pour les visiteurs de prison" >
+          <p> Notre service compte, au sein de la prison de Jamioulx, une équipe de visiteur·euse·s bénévoles, citoyens non professionnels, indépendants du monde judiciaire et de la prison, qui font le choix de vous consacrer du temps et qui sont sensibles à votre situation.</p>
+          <p>Le rôle du visiteur est de vous soutenir, de se mettre à votre écoute et de dialoguer avec vous dans un climat de confiance réciproque. Il n'effectue aucune démarche mais peut aborder avec vous tous les sujets qui vous préoccupent. Il représente un lien neutre avec l'extérieur et peut vous aider à rompre avec l'isolement.</p>
+          </SectionWithTitle>
+          </div>
+        {/if}
+      </div>
+    </div>
+   
+    <div class="flex flex-col justify-center items-center pt-10">
+      <ContactButton />
+    </div>
+  </div>
+</div>
+
+<style>
+  ul {
+    list-style-type: disc;
+    font-weight: 300;
+    padding-left: 30px;
+  }
+
+  h7 {
+    padding-top: 30px;
+  }
+
+
+  .zoomed {
+    transform: scale(1.3); /* Adjust scale as needed */
+    transform-origin: center center; /* Center the zoom */
+    overflow: hidden; /* Hide any overflow from scaling */
+    margin-top: -10%; /* Centers the zoomed image within the container */
+  }
+
+  @media (min-width: 550px) {
+    .zoomed {
+      transform: none;
+      width: 70%;
+      margin-top: 0%;
+    }
+  }
+
+  .projet{
+  font-family: Epilogue;
+  font-size: 15px;
+
+  line-height: 18px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  }
+  </style>
