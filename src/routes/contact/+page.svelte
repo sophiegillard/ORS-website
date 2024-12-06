@@ -15,6 +15,35 @@
   let map;
   let marker;
 
+  let formData = {
+        name: '',
+        email: '',
+        message: '',
+    };
+    let status = '';
+
+    async function handleSubmit() {
+        try {
+            const response = await fetch('/api/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            if (response.ok) {
+                status = 'Email sent successfully!';
+                formData = { name: '', email: '', message: '' }; // Reset form
+            } else {
+                status = 'Failed to send email. Try again later.';
+            }
+        } catch (error) {
+            console.error(error);
+            status = 'An error occurred. Please try again.';
+        }
+    }
+
   // Coordinates for 27 Rue Léon Bernus, 6000 Charleroi
   const coordinates = fromLonLat([4.449926368761656, 50.414745108157106]); // [longitude, latitude]
 
@@ -125,6 +154,26 @@
       <ContactForm></ContactForm>
     </section>
   </SectionWithTitleMain>
+
+
+  <form on:submit|preventDefault={handleSubmit}>
+    <label>
+        Name:
+        <input type="text" bind:value={formData.name} required />
+    </label>
+    <label>
+        Email:
+        <input type="email" bind:value={formData.email} required />
+    </label>
+    <label>
+        Message:
+        <textarea bind:value={formData.message} required></textarea>
+    </label>
+    <button type="submit">Send</button>
+    {#if status}
+        <p>{status}</p>
+    {/if}
+</form>
 </div>
 
 <style>

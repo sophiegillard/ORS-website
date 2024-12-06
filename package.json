@@ -21,6 +21,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"nodemailer": "^6.9.16",
 		"ol": "^10.3.0",
 		"svelte-device-info": "^1.0.6"
 	}
