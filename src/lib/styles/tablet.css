@@ -1,6 +1,17 @@
 /* Tablet styles */
 @media (max-width: 1024px) {
+  h2 {
+    font-size: 24px !important;
+    line-height: 24px !important;
+  }
+
   h3 {
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    line-height: 29px !important;
+  }
+
+  .sub-title {
     font-family: 'Epilogue' !important;
     font-size: 23px !important;
     font-weight: 500 !important;
@@ -8,12 +19,7 @@
     text-align: center !important;
   }
 
-  h2 {
-    font-size: 30px !important;
-    line-height: 30px !important;
-  }
-
-  h3::after {
+  .sub-title::after {
     content: '' !important;
     position: absolute !important;
     left: 0% !important; /* Center the element */
@@ -22,8 +28,20 @@
     border-bottom: theme('colors.dark-blue') 3px solid !important;
   }
 
+  h5 {
+    font-size: 24px !important;
+    font-weight: 400;
+    line-height: 30px !important;
+  }
+
+  h7 {
+    font-size: 24px !important;
+    font-weight: 400 !important;
+    line-height: 29px !important;
+  }
+
   p {
-    font-size: 16px !important;
+    font-size: 17px !important;
     line-height: 24px !important;
   }
 
@@ -48,7 +66,7 @@
   }
 
   .markup-text {
-    font-size: 20px !important;
+    font-size: 17px !important;
     line-height: 18px !important;
   }
 
@@ -115,13 +133,21 @@
     line-height: 13px !important;
   }
 
+  /* ----------- EVENT PAGE ----------- */
+
+  .date {
+    font-size: 18px !important;
+    line-height: 22px !important;
+    font-weight: 300 !important;
+  }
+
   /* ----------- CONTACT PAGE ----------- */
   h4 {
     font-size: 24px !important;
     line-height: 35px !important;
   }
   .remarque {
-    font-size: 12px !important;
+    font-size: 15px !important;
     line-height: 25px !important;
   }
   .error_message {
@@ -135,15 +161,11 @@
     font-size: 16px !important;
   }
 
-  /* ----------- VICITMES ----------- */
-  h8 {
-    font-size: 22px !important;
-    line-height: 22px !important;
-  }
+  /* ----------- VICTIMES ----------- */
 
   .blue_title {
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 18px !important;
+    line-height: 22px !important;
   }
 
   .objectif {
@@ -151,6 +173,16 @@
     line-height: 18px;
   }
 
+  h8 {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: 16px !important;
+  }
+
+  .projet {
+    font-size: 15px !important;
+    line-height: 20px !important;
+  }
   /* ----------- MENTIONS LEGALES ----------- */
 
   h6 {

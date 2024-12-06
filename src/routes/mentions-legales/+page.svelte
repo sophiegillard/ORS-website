@@ -1,5 +1,5 @@
 <script>
-  import SectionWithTitle from "$lib/components/layout/SectionWithTitle.svelte"
+  import SectionWithTitleMain from "$lib/components/layout/SectionWithTitleMain.svelte"
   import ContactButton from "$lib/components/button/ContactButton.svelte"
 </script>
 
@@ -9,7 +9,7 @@
 </svelte:head>
 
 <div class="text-column">
-  <SectionWithTitle title="Mentions légales">
+  <SectionWithTitleMain title="Mentions légales">
     
     <p>L'accès et l'utilisation de ce site sont soumis aux conditions suivantes. </p>
     
@@ -34,7 +34,7 @@
 </p>
 
 
-  </SectionWithTitle>
+  </SectionWithTitleMain>
 
   <div class="flex flex-col justify-center items-center gap-10">
 

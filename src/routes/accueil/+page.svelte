@@ -14,7 +14,7 @@
     <img src="$lib/assets/img/logo/ors-logo.png" alt="ORS logo" />
   </div>
 
-  <h3>Service d'Aide aux Justiciables</h3>
+  <p class="sub-title ">Service d'Aide aux Justiciables</p>
 
   <div class="">
     <p class="p-accueil pb-10 sm:px-14 md:px-28 text-center">

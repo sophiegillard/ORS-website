@@ -1,15 +1,33 @@
 /* Tablet styles */
 @media (max-width: 480px) {
-  h3 {
+  .sub-title {
     font-size: 18px !important;
     font-weight: 500 !important;
     line-height: 20.5px !important;
     text-align: center !important;
   }
 
-  h2 {
+  h3 {
     font-size: 22px !important;
+    font-weight: 400 !important;
+    line-height: 27px !important;
+  }
+
+  h2 {
+    font-size: 20px !important;
     line-height: 22px !important;
+  }
+
+  h5 {
+    font-size: 22px !important;
+    font-weight: 400;
+    line-height: 27px !important;
+  }
+
+  h7 {
+    font-size: 22px !important;
+    font-weight: 400 !important;
+    line-height: 27.06px !important;
   }
 
   p {
@@ -19,6 +37,7 @@
 
   li {
     font-size: 15px !important;
+    line-height: 1.2rem !important;
   }
 
   .p-accueil {
@@ -89,40 +108,53 @@
   .mention-footer {
     font-size: 12px !important;
     line-height: 12px !important;
-    text-align: center !important;
   }
+
+  /* ----------- EVENT PAGE ----------- */
+
+  .date {
+    font-size: 16px !important;
+    line-height: 16px !important;
+  }
+
   /* ----------- CONTACT PAGE ----------- */
   h4 {
     font-size: 24px !important;
     line-height: 27px !important;
   }
   .remarque {
-    font-size: 12px !important;
+    font-size: 15px !important;
     line-height: 15px !important;
   }
   .error_message {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 12px !important;
+    line-height: 12px !important;
   }
 
   .phone_link {
     font-size: 15px !important;
   }
 
-  /* ----------- VICITMES ----------- */
-  h8 {
-    font-size: 18px !important;
-    line-height: 18px !important;
-  }
+  /* ----------- VITIMES ----------- */
 
   .blue_title {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 15px !important;
+    line-height: 18px !important;
+    padding-top: 30px !important;
   }
 
   .objectif {
     font-size: 16px;
     line-height: 16.4px;
+  }
+
+  h8 {
+    font-size: 16px !important;
+  }
+
+  .projet {
+    font-size: 15px !important;
+    line-height: 18px !important;
   }
 
   /* ----------- MENTIONS LEGALES ----------- */

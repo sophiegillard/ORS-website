@@ -1,61 +1,32 @@
 <script>
-  import welcome from "$lib/images/svelte-welcome.webp"
-  import welcome_fallback from "$lib/images/svelte-welcome.png"
+  import AutorButtonsGroup from "$lib/components/navigation/AutorButtonsGroup.svelte"
+
+
+
 </script>
 
 <svelte:head>
-  <title>Home</title>
-  <meta name="description" content="Svelte demo app" />
+  <title>Accueil</title>
+  <meta name="Accueil" content="Accueil" />
 </svelte:head>
 
-<section>
-  <h1 class="text-3xl font-bold underline">Hello world!</h1>
+<div class="text-column text-center flex flex-col items-center justify-center">
+  <div class="py-6 w-64 md:py-0 md:w-2/5 md:pb-14 lg:w-1/2 lg:pt-0 lg:pb-28">
+    <img src="$lib/assets/img/logo/ors-logo.png" alt="ORS logo" />
+  </div>
 
-  <h1>
-    <span class="welcome">
-      <picture>
-        <source srcset="{welcome}" type="image/webp" />
-        <img src="{welcome_fallback}" alt="Welcome" />
-      </picture>
-    </span>
+  <p class="sub-title">Service d'Aide aux Justiciables</p>
 
-    to your new<br />SvelteKit app
-  </h1>
+  <div class="">
+    <p class="p-accueil pb-10 sm:px-14 md:px-28 text-center">
+      Nous proposons une <span class="markup-text-accueil block sm:inline-block"> aide psychologique et/ou sociale</span>
 
-  <h2>
-    try editing <strong>src/routes/+page.svelte</strong>
-  </h2>
-</section>
+      à toute personne confrontée au monde judiciaire.
+    </p>
+  </div>
 
-<style lang="postcss">
-  :global(html) {
-    background-color: theme(colors.off-white);
-  }
-  section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex: 0.6;
-  }
+  <p class="pb-0 lg:pb-8 p-secondary">Nous nous adressons dès lors :</p>
 
-  h1 {
-    width: 100%;
-  }
+  <AutorButtonsGroup />
+</div>
 
-  .welcome {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 0;
-    padding: 0 0 calc(100% * 495 / 2048) 0;
-  }
-
-  .welcome img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    display: block;
-  }
-</style>

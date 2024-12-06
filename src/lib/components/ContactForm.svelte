@@ -34,7 +34,7 @@
   }
 </script>
 
-<div class="contact-form flex flex-col justify-center items-center">
+<div class="contact-form flex flex-col justify-center items-center pt-10">
   <h5>Formulaire de contact</h5>
   <form on:submit="{handleSubmit}" class="w-full pt-10">
     <div class="flex flex-col gap-8">

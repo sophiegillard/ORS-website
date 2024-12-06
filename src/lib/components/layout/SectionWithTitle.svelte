@@ -12,22 +12,22 @@
 
 <div class="{custom_class}">
   {#if title}
-    <div class="relative z-0">
-      <h2 class="p-0 pb-0 {custom_class} ">
+    <div class="relative z-0 md:pb-5">
+      <h3 class="p-0 pb-0 {custom_class} ">
         {#if first_line_title}
           {first_line_title}
           <br />
         {/if}
-      </h2>
-      <h2 class="w-fit {custom_class}"  bind:offsetWidth="{title_width}">
+      </h3>
+      <h3 class="w-fit {custom_class}"  bind:offsetWidth="{title_width}">
         {title}
-      </h2>
+      </h3>
       {#if line_img_src}
         <img
           src="{line_img_src}"
           alt="title bottom border"
           class=" z-10 subtitle-line"
-          style="{`width : ${title_width + 40}px; top: ${first_line_title ? ' 90px' : '34px'}; left: ${left}px; height: 15px;`}"
+          style="{`width : ${title_width +10}px; top: ${first_line_title ? ' 90px' : '34px'}; left: ${left}px; height: 15px;`}"
         />
       {/if}
     </div>

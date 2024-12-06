@@ -3,7 +3,7 @@
   export let year = ""
 </script>
 
-<div class="pb-10">
+<div class="pb-10 lg:pt-6">
   <h7 class="flex flex-row justify-between">
     <div>{month}</div>
     <div>{year}</div>

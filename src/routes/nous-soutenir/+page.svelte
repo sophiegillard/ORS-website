@@ -1,19 +1,20 @@
 <script>
-  import SectionWithTitle from "$lib/components/layout/SectionWithTitle.svelte"
+  import SectionWithTitleMain from "$lib/components/layout/SectionWithTitleMain.svelte"
   import ContactButton from "$lib/components/button/ContactButton.svelte"
 </script>
 
 <svelte:head>
   <title>Nous soutenir</title>
-  <meta name="nous-aider" content="Aide / volontariat" />
+  <meta name="nous-soutenir" content="Aide / volontariat" />
 </svelte:head>
 
 <div class="text-column">
-  <SectionWithTitle title="Nous aider">
+  <SectionWithTitleMain title="Nous soutenir">
     <div class="image-container flex justify-center">
       <img
         src="$lib/assets/img/SVG/ORS_illustrations_Nous soutenir-12.svg"
         class="zoomed pt-6 lg:pt-0"
+       
         alt="ORS logo"
       />
     </div>
@@ -39,12 +40,12 @@
         N’hésitez pas à <span class="markup-text">prendre contact</span> avec nous pour tout renseignement.
       </p>
     </div>
-  </SectionWithTitle>
+  </SectionWithTitleMain>
 
   <div class="flex flex-col justify-center items-center gap-10">
     <img
       src="$lib/assets/img/SVG/ORS_illustrations_Nous soutenir-07_2.svg"
-      class="sm:w-3/5"
+      class="sm:w-2/5"
       alt="ORS logo"
     />
     <ContactButton />
@@ -82,7 +83,7 @@
 
   @media (min-width: 900px) {
     .zoomed {
-      transform: scale(0.7); /* Adjust scale as needed */
+      transform: scale(0.6); /* Adjust scale as needed */
     }
   }
 </style>

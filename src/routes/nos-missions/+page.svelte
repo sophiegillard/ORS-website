@@ -1,5 +1,5 @@
 <script>
-  import SectionWithTitle from "$lib/components/layout/SectionWithTitle.svelte"
+  import SectionWithTitleMain from "$lib/components/layout/SectionWithTitleMain.svelte"
   import AutorButtonsGroup from "$lib/components/navigation/AutorButtonsGroup.svelte"
 </script>
 
@@ -9,11 +9,11 @@
 </svelte:head>
 
 <div class="text-column">
-  <SectionWithTitle title="Nos missions" width="{220}">
+  <SectionWithTitleMain title="Nos missions" width="{220}">
     <img
       src="$lib/assets/img/illustration/nos_missions_bonhomme.png"
       alt="illustration"
-      class="float-right hidden sm:block w-1/3 relative"
+      class="float-right hidden md:block w-1/3 relative"
       style="max-width: 330px"
     />
 
@@ -50,17 +50,20 @@
       Nous recevons sur rendez-vous au sein du service. Des visites à domicile et/ou à l'extérieur
       sont également envisageables sous certaines conditions.
     </p>
-  </SectionWithTitle>
+  </SectionWithTitleMain>
 
   <div class="flex justify-center">
     <img
       src="$lib/assets/img/illustration/nos_missions_bonhomme.png"
       alt="illustration"
-      class="sm:hidden w-2/3 max-w-60 pb-8"
+      class="md:hidden w-2/3 max-w-60 pb-8"
     />
   </div>
 
-  <AutorButtonsGroup />
+  <div class="flex flex-col items-center">
+    <AutorButtonsGroup />
+
+  </div>
 </div>
 
 <style>

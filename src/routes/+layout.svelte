@@ -15,7 +15,7 @@
 
   $: {
     isMobile = innerWidth && innerWidth <= 480
-    isTablet = innerWidth && innerWidth <= 768
+    isTablet = innerWidth && innerWidth <= 850
   }
 
 
@@ -35,7 +35,7 @@
     class:z-negative="{isMenuOpen}"
     style="{`top: ${!isMobile && !isTablet ? nav_height + 90 : mobile_nav_height}px;`}"
   >
-    <main class="p-8 px-6">
+    <main class="p-8 px-6 lg:pt-20">
       <slot {isMobile} {isTablet} />
     </main>
 

@@ -18,11 +18,11 @@
       src="$lib/assets/img/logo/ors-logo.png"
       class=""
       alt="ORS logo"
-      style="{`max-height:${nav_height + 20}px;`}"
+      style="{`max-height:${nav_height}px;`}"
     />
     <nav class="navbar border rounded-full w-full flex" bind:offsetHeight="{nav_height}">
       {#each pages as page, index (page)}
-        <li class="nav-item uppercase py-1">
+        <li class="nav-item uppercase py-1 m-0 p-0">
           <a class="onglet" href="/{page.value}">{page.label}</a>
         </li>
         {#if index !== pages.length - 1}

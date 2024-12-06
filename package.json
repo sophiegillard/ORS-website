@@ -21,6 +21,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"ol": "^10.3.0",
 		"svelte-device-info": "^1.0.6"
 	}
 }

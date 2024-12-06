@@ -1,5 +1,5 @@
 <script>
-  import SectionWithTitle from "$lib/components/layout/SectionWithTitle.svelte"
+  import SectionWithTitleMain from "$lib/components/layout/SectionWithTitleMain.svelte"
   import ContactButton from "$lib/components/button/ContactButton.svelte"
 
   let section_height
@@ -13,7 +13,7 @@
 
 <div class="text-column lg:pt-14">
   <div>
-    <SectionWithTitle title="Quelques mots d’histoire...">
+    <SectionWithTitleMain title="Quelques mots d’histoire...">
       <p>
         Notre association est âgée de plus de <span class="markup-text">130 ans</span> et trouve son
         origine dans les « Comités de Patronage » dont le but était de porter secours aux personnes démunies
@@ -41,7 +41,7 @@
       <img
         src="$lib/assets/img/illustration/illu_qui_sommes_nous.png"
         alt="illustration"
-        class="float-right hidden md:block relative m-5 w-1/3 lg:w-1/3"
+        class="float-right hidden sm:block relative m-5 w-1/3 lg:w-1/3"
       />
 
       <p>
@@ -51,16 +51,18 @@
         la Ville de Charleroi et du Fonds Social Européen.
       </p>
 
+
+
       <div class="flex justify-center">
         <img
           src="$lib/assets/img/illustration/illu_qui_sommes_nous.png"
           alt="illustration"
-          class="md:hidden relative m-5 w-3/4"
+          class="sm:hidden relative m-5 w-3/4 max-w-56"
         />
       </div>
-    </SectionWithTitle>
+    </SectionWithTitleMain>
 
-    <SectionWithTitle title="Objectifs et valeurs" line_img_src="trace_quiSommesNous_2.png">
+    <SectionWithTitleMain title="Objectifs et valeurs" >
       <p>
         De par ses missions, notre service <span class="markup-text">offre une aide</span> à toute personne
         confrontée à la justice, qu’elle soit victime ou auteur·e des faits.
@@ -113,13 +115,13 @@
       <div class=" flex justify-center">
         <img
           src="$lib/assets/img/illustration/qui_sommes-nous_valeurs.svg"
-          class="md:w-2/3 lg:w-1/2"
+          class="md:w-2/3 lg:w-1/2 max-w-96 lg:max-w-none"
           alt="ORS logo"
         />
       </div>
-    </SectionWithTitle>
+    </SectionWithTitleMain>
 
-    <SectionWithTitle title="Equipe psychosociale">
+    <SectionWithTitleMain title="Equipe psychosociale">
       <p>
         Notre <span class="markup-text">équipe</span> compte assistants sociaux, criminologues et psychologues.
       </p>
@@ -150,9 +152,9 @@
         Enfin, toutes les missions du service sont également rendues réalisables grâce à l'appui
         d'un personnel administratif (secrétariat, direction, etc.).
       </p>
-    </SectionWithTitle>
+    </SectionWithTitleMain>
 
-    <SectionWithTitle title="Collaborations">
+    <SectionWithTitleMain title="Collaborations">
       <div>
         <p>
           Notre service porte une attention particulière à une approche globale de la personne, de
@@ -176,18 +178,25 @@
       <div class="flex justify-center">
         <img
           src="$lib/assets/img/illustration/qui_sommes-nous_organigramme_web.svg"
-          class=" hidden md:block"
+          class=" hidden md:block "
           alt="ORS logo"
         />
+
+        <!-- TABLET -->
+        <img
+        src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Mobile.svg"
+        class=" md:hidden sm:block bg-blue"
+        alt="ORS logo"
+      />
         <div class="image-container md:hidden flex justify-center">
           <img
             src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Mobile.svg"
-            class="zoomed md:hidden"
+            class="zoomed sm:hidden "
             alt="ORS logo"
           />
         </div>
       </div>
-    </SectionWithTitle>
+    </SectionWithTitleMain>
 
     <div class="flex flex-col justify-center items-center pt-10">
       <ContactButton />

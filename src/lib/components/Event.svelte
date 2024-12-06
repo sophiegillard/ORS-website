@@ -1,4 +1,6 @@
 <script>
+  import InfoButton from '$lib/components/button/InfoButton.svelte';
+
   export let nom_evenement = ""
   export let date = ""
   export let prix = ""
@@ -7,14 +9,17 @@
   export let is_last = true
   export let is_detail = true
   export let description = ""
-  export let line_img_src = "ORS_illustrations_Actu_tracé_1.svg"
+  export let btn_line_img_src = "ORS_illustrations_Actu_tracé_1.svg"
   export let info_button = true
+  export let btn_title = "Infos"
 </script>
 
-<div class="{info_button && 'lg:w-10/12'}">
+<div class="{info_button && 'md:w-10/12'}">
   <div class="flex flex-col sm:flex-row justify-between">
     <div class="">
-      <p class="pb-0 font-medium">{nom_evenement}</p>
+      {#if nom_evenement}
+      <p class="pb-3" style="font-weight:400">{nom_evenement}</p>
+      {/if}
       <div>
         {#if is_detail}
           <p class="pt-0">
@@ -39,44 +44,24 @@
     </div>
 
     {#if info_button}
-      <div class="flex row sm:pt-0">
-        <div
-          class="line_img relative left-3 bottom-2 w-1/3 sm:block sm:left-0 sm:bottom-0 sm:w-full"
-          style="width: 100px; min-height: 100%;"
-        >
-          <img
-            src="src/lib/assets/img/SVG/{line_img_src}"
-            class="w-full h-full object-cover rotate-45 sm:rotate-0"
-            alt="ORS logo"
-          />
-        </div>
-
-        <div class=" items-center flex">
-          <button
-            class="border-grey border-solid border-2 hover:bg-brown-hover rounded-full hover:text-off-white px-8 py-1 lg:px-10 lg:py-2 font-light"
-          >
-            Infos
-          </button>
-        </div>
-      </div>
+     <InfoButton title={btn_title} line_img_src={btn_line_img_src}
+     on:click={() => {
+      const url = new URL('/contact', window.location.origin);
+      url.searchParams.append('title', nom_evenement);
+      window.location.href = url.toString();
+    }}
+     >
+    </InfoButton>
     {/if}
   </div>
 
   {#if !is_last}
-    <hr class=" border border-pink my-3" />
+    <hr class=" border border-pink my-4 md:my-0" style="height:2px !important"/>
   {/if}
 </div>
 
 <style>
-  .date {
-    font-family: Gyst Variable;
-    font-style: italic;
-    font-weight: 550;
-    letter-spacing: 0em;
-    text-align: left;
-    color: theme("colors.dark-blue");
-  }
-
+ 
   span:not(:last-child)::after {
     content: " | ";
     color: theme("colors.grey");
@@ -95,5 +80,10 @@
       height: 50px !important
       ;
     }
+  }
+  .info-button {
+    border : 1px solid theme("colors.grey");
+    font-weight: 500 !important;
+    letter-spacing: 0.05rem;
   }
 </style>

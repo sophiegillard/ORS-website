@@ -1,6 +1,5 @@
 <script>
-  import SectionWithTitle from "$lib/components/layout/SectionWithTitle.svelte"
-  import AutorButtonsGroup from "$lib/components/navigation/AutorButtonsGroup.svelte"
+  import SectionWithTitleMain from "$lib/components/layout/SectionWithTitleMain.svelte"
 </script>
 
 <svelte:head>
@@ -9,14 +8,14 @@
 </svelte:head>
 
 <div class="text-column">
-  <SectionWithTitle title="Numéros utiles" width="{220}">
+  <SectionWithTitleMain title="Numéros utiles" width="{220}">
     <img
       src="$lib/assets/img/SVG/ORS_illustrations_Numéros utiles_1.png"
       alt="illustration"
       class="float-right hidden sm:block w-1/3 relative"
     />
 
-    <p>
+    <p class="lg:mt-7">
       Télé-Accueil – Quelqu’un à qui parler 24h/24 : <a class="phone_link" href="tel:107">107</a>
     </p>
     <p>
@@ -39,13 +38,21 @@
       SéOS – Service d’écoute et d’orientation spécialisé en matière sexuelle :
       <a class="phone_link" href="tel: 0800 200 99"> 0800 200 99</a>
     </p>
-  </SectionWithTitle>
+  </SectionWithTitleMain>
 
   <div class="flex justify-center" style="max-height:270px">
     <img
       src="$lib/assets/img/SVG/ORS_illustrations_Numéros utiles.svg"
       alt="illustration"
       class="sm:hidden object-cover"
+      style="max-height: 370px !important"
+
     />
   </div>
 </div>
+
+<style>
+  p {
+    padding-block: 4px;
+  }
+</style>
