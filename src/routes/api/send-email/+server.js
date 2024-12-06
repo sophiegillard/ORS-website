@@ -12,7 +12,7 @@ export async function POST({ request }) {
       secure: false, // Use true if the SMTP server requires SSL
       auth: {
         user: 'sophie.gillard11@gmail.com', // Replace with your email
-        pass: 'SallyOnGoogle-112', // Replace with your email password
+        pass: 'pass', // Replace with your email password
       },
     });
 
