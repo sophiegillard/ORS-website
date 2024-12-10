@@ -1,57 +1,28 @@
 <script>
-  import { onMount } from 'svelte';
-  import ContactForm from "$lib/components/ContactForm.svelte";
-  import InformationItem from "$lib/components/InformationItem.svelte";
-  import SectionWithTitleMain from "$lib/components/layout/SectionWithTitleMain.svelte";
+  import { onMount } from "svelte"
+  import ContactForm from "$lib/components/ContactForm.svelte"
+  import ContactFormTest from "$lib/components/ContactFormTest.svelte"
+  import InformationItem from "$lib/components/InformationItem.svelte"
+  import SectionWithTitleMain from "$lib/components/layout/SectionWithTitleMain.svelte"
 
-  import 'ol/ol.css'; // Import OpenLayers default styles
-  import Map from 'ol/Map';
-  import View from 'ol/View';
-  import TileLayer from 'ol/layer/Tile';
-  import OSM from 'ol/source/OSM';
-  import { fromLonLat } from 'ol/proj';
-  import Overlay from 'ol/Overlay';
+  import "ol/ol.css" // Import OpenLayers default styles
+  import Map from "ol/Map"
+  import View from "ol/View"
+  import TileLayer from "ol/layer/Tile"
+  import OSM from "ol/source/OSM"
+  import { fromLonLat } from "ol/proj"
+  import Overlay from "ol/Overlay"
 
-  let map;
-  let marker;
-
-  let formData = {
-        name: '',
-        email: '',
-        message: '',
-    };
-    let status = '';
-
-    async function handleSubmit() {
-        try {
-            const response = await fetch('/api/send-email', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify(formData),
-            });
-
-            if (response.ok) {
-                status = 'Email sent successfully!';
-                formData = { name: '', email: '', message: '' }; // Reset form
-            } else {
-                status = 'Failed to send email. Try again later.';
-            }
-        } catch (error) {
-            console.error(error);
-            status = 'An error occurred. Please try again.';
-        }
-    }
+  let map
+  let marker
 
   // Coordinates for 27 Rue Léon Bernus, 6000 Charleroi
-  const coordinates = fromLonLat([4.449926368761656, 50.414745108157106]); // [longitude, latitude]
-
+  const coordinates = fromLonLat([4.449926368761656, 50.414745108157106]) // [longitude, latitude]
 
   onMount(() => {
     // Initialize the map
     map = new Map({
-      target: 'map', // Target div ID
+      target: "map", // Target div ID
       layers: [
         new TileLayer({
           source: new OSM(), // OpenStreetMap tiles
@@ -61,24 +32,24 @@
         center: coordinates,
         zoom: 17,
       }),
-    });
+    })
 
     // Create a marker element
-    const markerElement = document.createElement('div');
-    markerElement.className = 'marker';
-    markerElement.innerHTML = '📍';
+    const markerElement = document.createElement("div")
+    markerElement.className = "marker"
+    markerElement.innerHTML = "📍"
 
     // Create and add the overlay (marker)
     marker = new Overlay({
       position: coordinates,
-      positioning: 'center-center',
+      positioning: "center-center",
       element: markerElement,
       stopEvent: false,
-    });
-    map.addOverlay(marker);
-  });
+    })
+    map.addOverlay(marker)
+  })
 
-  const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=50.406573,4.444029`; // Redirect to Google Maps
+  const googleMapsUrl = `https://www.google.com/maps/dir/?api=1&destination=50.406573,4.444029` // Redirect to Google Maps
 </script>
 
 <svelte:head>
@@ -136,13 +107,13 @@
       </div>
 
       <!-- Map Section -->
-        
-        <div id="map" class="map rounded-xl border w-full h-full"></div>
+
+      <div id="map" class="map rounded-xl border w-full h-full"></div>
 
       <!-- Google Maps Redirect -->
       <div class="text-center">
         <a
-          href={googleMapsUrl}
+          href="{googleMapsUrl}"
           target="_blank"
           rel="noopener noreferrer"
           class="text-blue-500 underline hover:text-blue-700"
@@ -151,29 +122,9 @@
         </a>
       </div>
 
-      <ContactForm></ContactForm>
+      <ContactFormTest></ContactFormTest>
     </section>
   </SectionWithTitleMain>
-
-
-  <form on:submit|preventDefault={handleSubmit}>
-    <label>
-        Name:
-        <input type="text" bind:value={formData.name} required />
-    </label>
-    <label>
-        Email:
-        <input type="email" bind:value={formData.email} required />
-    </label>
-    <label>
-        Message:
-        <textarea bind:value={formData.message} required></textarea>
-    </label>
-    <button type="submit">Send</button>
-    {#if status}
-        <p>{status}</p>
-    {/if}
-</form>
 </div>
 
 <style>

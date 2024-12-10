@@ -1,5 +1,5 @@
 <script>
-  import InfoButton from '$lib/components/button/InfoButton.svelte';
+  import InfoButton from "$lib/components/button/InfoButton.svelte"
 
   export let nom_evenement = ""
   export let date = ""
@@ -18,7 +18,7 @@
   <div class="flex flex-col sm:flex-row justify-between">
     <div class="">
       {#if nom_evenement}
-      <p class="pb-3" style="font-weight:400">{nom_evenement}</p>
+        <p class="pb-3" style="font-weight:400">{nom_evenement}</p>
       {/if}
       <div>
         {#if is_detail}
@@ -44,24 +44,24 @@
     </div>
 
     {#if info_button}
-     <InfoButton title={btn_title} line_img_src={btn_line_img_src}
-     on:click={() => {
-      const url = new URL('/contact', window.location.origin);
-      url.searchParams.append('title', nom_evenement);
-      window.location.href = url.toString();
-    }}
-     >
-    </InfoButton>
+      <InfoButton
+        title="{btn_title}"
+        line_img_src="{btn_line_img_src}"
+        on:click="{() => {
+          const url = new URL('/contact', window.location.origin)
+          url.searchParams.append('title', nom_evenement)
+          window.location.href = url.toString()
+        }}"
+      ></InfoButton>
     {/if}
   </div>
 
   {#if !is_last}
-    <hr class=" border border-pink my-4 md:my-0" style="height:2px !important"/>
+    <hr class=" border border-pink my-4 md:my-0" style="height:2px !important" />
   {/if}
 </div>
 
 <style>
- 
   span:not(:last-child)::after {
     content: " | ";
     color: theme("colors.grey");
@@ -82,7 +82,7 @@
     }
   }
   .info-button {
-    border : 1px solid theme("colors.grey");
+    border: 1px solid theme("colors.grey");
     font-weight: 500 !important;
     letter-spacing: 0.05rem;
   }

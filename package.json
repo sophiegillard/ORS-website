@@ -11,7 +11,7 @@
 		"@neoconfetti/svelte": "^1.0.0",
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.0.0",
-		"@sveltejs/vite-plugin-svelte": "^3.0.0",
+		"@sveltejs/vite-plugin-svelte": "^3.1.2",
 		"autoprefixer": "^10.4.18",
 		"postcss": "^8.4.35",
 		"svelte": "^4.2.7",
@@ -21,8 +21,11 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@sveltejs/adapter-netlify": "^4.4.0",
+		"dotenv": "^16.4.7",
 		"nodemailer": "^6.9.16",
 		"ol": "^10.3.0",
-		"svelte-device-info": "^1.0.6"
+		"svelte-device-info": "^1.0.6",
+		"svelte-email": "^0.0.4"
 	}
 }

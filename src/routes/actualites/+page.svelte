@@ -3,7 +3,6 @@
   import Event from "$lib/components/Event.svelte"
   import MonthActualites from "$lib/components/MonthActualites.svelte"
   import ContactButton from "$lib/components/button/ContactButton.svelte"
-
 </script>
 
 <svelte:head>
@@ -32,7 +31,7 @@
       nom_evenement="Groupe de réflexion pour auteurs de violence conjugale"
       lieu="{'ORS-Espace Libre'}"
       btn_line_img_src="ORS_illustrations_Actu tracé 3.svg"
-           btn_title="S'inscrire"
+      btn_title="S'inscrire"
     />
   </MonthActualites>
 
@@ -41,7 +40,6 @@
       description="Les candidatures pour les stages d’assistant·e social·e et de psychologue sont clôturées pour l’année académique 2024/2025"
       is_detail="{false}"
       info_button="{false}"
- 
     />
   </MonthActualites>
 
@@ -55,6 +53,5 @@
 </SectionWithTitleMain>
 
 <div class="flex flex-col justify-center items-center gap-10">
-  
   <ContactButton />
 </div>

@@ -1,4 +1,5 @@
 <script>
+  import { page } from "$app/stores"
   let pages = [
     { label: "Accueil", value: "accueil" },
     { label: "Qui sommes-nous", value: "qui-sommes-nous" },
@@ -9,17 +10,21 @@
     { label: "N° utiles", value: "numeros-utiles" },
   ]
 
+  export let scrollY
   export let nav_height = 0
 </script>
 
 <header class="p-6 pt-10 flex-col-center fixed w-full bg-off-white z-10">
   <div class="flex-row-center gap-4 w-full" style="{' max-width: 80rem;'}">
-    <img
-      src="$lib/assets/img/logo/ors-logo.png"
-      class=""
-      alt="ORS logo"
-      style="{`max-height:${nav_height}px;`}"
-    />
+    {#if !(scrollY < 130 && $page.url.pathname === "/accueil")}
+      <img
+        src="$lib/assets/img/logo/ors-logo.png"
+        class=""
+        alt="ORS logo"
+        style="{`max-height:${nav_height}px;`}"
+      />
+    {/if}
+
     <nav class="navbar border rounded-full w-full flex" bind:offsetHeight="{nav_height}">
       {#each pages as page, index (page)}
         <li class="nav-item uppercase py-1 m-0 p-0">

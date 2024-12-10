@@ -1,5 +1,6 @@
 <script>
   import { slide } from "svelte/transition"
+  import { page } from "$app/stores"
 
   let pages = [
     { label: "Accueil", value: "accueil" },
@@ -11,6 +12,7 @@
     { label: "N° utiles", value: "numeros-utiles" },
   ]
 
+  export let scrollY
   export let mobile_nav_height = 0
   export let isMenuOpen = false
 
@@ -28,6 +30,7 @@
     class=""
     alt="ORS logo"
     style="{`max-height:40px;`}"
+    class:invisible="{scrollY < 130 && $page.url.pathname === '/accueil'}"
   />
 
   <button class="menu-button nav-onglet" on:click="{toggleMenu}"> Menu </button>

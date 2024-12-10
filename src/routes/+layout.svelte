@@ -3,7 +3,6 @@
   import MobileNav from "$lib/components/navigation/MobileNav.svelte"
   import Footer from "$lib/components/navigation/Footer.svelte"
   import "$lib/styles/styles.css"
-  import Device from 'svelte-device-info'
 
   let nav_height = 0
   let mobile_nav_height = 0
@@ -13,21 +12,19 @@
   let innerHeight
   let isMenuOpen = false
 
+  let y
   $: {
     isMobile = innerWidth && innerWidth <= 480
     isTablet = innerWidth && innerWidth <= 850
   }
-
-
-
 </script>
 
-<svelte:window bind:innerWidth bind:innerHeight />
+<svelte:window bind:innerWidth bind:innerHeight bind:scrollY="{y}" />
 <div class="">
   {#if !isMobile && !isTablet}
-    <TopNav bind:nav_height />
+    <TopNav bind:nav_height scrollY="{y}" />
   {:else}
-    <MobileNav bind:mobile_nav_height bind:isMenuOpen />
+    <MobileNav scrollY="{y}" bind:mobile_nav_height bind:isMenuOpen />
   {/if}
 
   <div
@@ -43,10 +40,19 @@
   </div>
 </div>
 
-<style lang="postcss">
-  :global(html) {
-    background-color: theme(colors.off-white);
+<style>
+  :global(body) {
+    background-image: url("/src/lib/assets/img/Fonds/Fond_Web.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
   }
+
+  @media (max-width: 480px) {
+    :global(body) {
+      background-image: url("/src/lib/assets/img/Fonds/Fond_Mobile.svg");
+    }
+  }
+
   .app {
     display: flex;
     flex-direction: column;
