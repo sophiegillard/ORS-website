@@ -1,7 +1,5 @@
 <script>
   export let isMobile
-
-  $: console.log("isMobile", isMobile)
 </script>
 
 <footer class=" bg-grey flex justify-center flex-col pb-4 items-center">
@@ -71,18 +69,22 @@
     </div>
 
     <!-- LEGAL -->
-    <div class="section flex items-center justify-center section-legale order-3 sm:order-3 lg:flex lg:items-end lg:justify-end">
+    <div
+      class="section flex items-center justify-center section-legale order-3 sm:order-3 lg:flex lg:items-end lg:justify-end"
+    >
       <div>
         <div>
           <a href="/mentions-legales" class="pb-4 lg:pb-32 pt-0 mention-legales">
-            <p class="pb-4 lg:pb-32 pt-0 text-center sm:text-right mention-legales">Mentions Légales</p>
+            <p class="pb-4 lg:pb-32 pt-0 text-center sm:text-right mention-legales">
+              Mentions Légales
+            </p>
           </a>
-
-          
         </div>
-        <div class="text-xs ">
-          <p class="mention-footer text-center  sm:text-right align-middle ">Design © Marion Daubresse</p>
-          <p class="mention-footer text-center  sm:text-right">Développement © Sophie Gillard</p>
+        <div class="text-xs">
+          <p class="mention-footer text-center sm:text-right align-middle">
+            Design © Marion Daubresse
+          </p>
+          <p class="mention-footer text-center sm:text-right">Développement © Sophie Gillard</p>
         </div>
       </div>
     </div>

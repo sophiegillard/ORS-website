@@ -1,11 +1,9 @@
 <script>
-  import { fly, slide } from "svelte/transition"; 
+  import { fly, slide } from "svelte/transition"
   export let title
   export let first_line_title
   export let custom_class = ""
   export let left = -30
-
-  export let line_img_src = "/src/lib/assets/img/lines/trace_quiSommesNous_1.png"
 
   let title_width = 0
 </script>
@@ -19,17 +17,15 @@
           <br />
         {/if}
       </h3>
-      <h3 class="w-fit {custom_class}"  bind:offsetWidth="{title_width}">
+      <h3 class="w-fit {custom_class}" bind:offsetWidth="{title_width}">
         {title}
       </h3>
-      {#if line_img_src}
-        <img
-          src="{line_img_src}"
-          alt="title bottom border"
-          class=" z-10 subtitle-line"
-          style="{`width : ${title_width +10}px; top: ${first_line_title ? ' 90px' : '34px'}; left: ${left}px; height: 15px;`}"
-        />
-      {/if}
+      <img
+        src="$lib/assets/img/lines/trace_quiSommesNous_1.png"
+        alt="title bottom border"
+        class=" z-10 subtitle-line"
+        style="{`width : ${title_width + 10}px; top: ${first_line_title ? ' 90px' : '34px'}; left: ${left}px; height: 15px;`}"
+      />
     </div>
   {/if}
   <div class="text-content pt-5 px-5 md:pt-0">

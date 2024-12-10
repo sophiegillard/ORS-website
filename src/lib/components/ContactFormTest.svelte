@@ -20,11 +20,10 @@
   })
 
   $: if (event) {
-    subject = `Demande d'information - ${event}`
+    subject = `Demande d'information EVENT - ${event}`
   } else {
     subject = "Demande d'information - ORS Charleroi Website"
   }
-  $: console.log("event", event)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
