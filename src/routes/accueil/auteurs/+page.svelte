@@ -432,7 +432,6 @@
   .zoomed {
     transform: scale(1.3); /* Adjust scale as needed */
     overflow: hidden; /* Hide any overflow from scaling */
-    height: fit-content;
   }
 
   @media (min-width: 550px) {

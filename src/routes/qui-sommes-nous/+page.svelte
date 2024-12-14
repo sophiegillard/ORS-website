@@ -11,7 +11,7 @@
   <meta name="qui-sommes-nous" content="Présentation de l'asbl" />
 </svelte:head>
 
-<div class="text-column lg:pt-14">
+<div class="text-column">
   <div>
     <SectionWithTitleMain title="Quelques mots d’histoire...">
       <p>

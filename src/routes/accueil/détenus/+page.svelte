@@ -511,7 +511,16 @@
                   Une aide et un accompagnement dans vos démarches sociales, administratives et
                   juridiques
                 </li>
-                <li class="text-dark-blue italic font-gyst">Un accompagnement collectif</li>
+                <li
+                  class="text-dark-blue italic font-gyst cursor-pointer"
+                  on:click="{() => handleGoToSection('collectif')}"
+                  on:keydown="{(event) => {
+                    if (event.key === 'Enter') handleGoToSection('collectif')
+                  }}"
+                  tabindex="0"
+                >
+                  Un accompagnement collectif
+                </li>
               </ul>
 
               <div class="">
