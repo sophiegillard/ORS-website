@@ -10,7 +10,7 @@
 <div class="text-column">
   <SectionWithTitleMain title="Numéros utiles" width="{220}">
     <img
-      src="$lib/assets/img/SVG/ORS_illustrations_Numéros utiles_1.png"
+      src="$lib/assets/img/SVG/ORS_illustrations_Numeros utiles_1.png"
       alt="illustration"
       class="float-right hidden sm:block w-1/3 relative"
     />
@@ -42,11 +42,10 @@
 
   <div class="flex justify-center" style="max-height:270px">
     <img
-      src="$lib/assets/img/SVG/ORS_illustrations_Numéros utiles.svg"
+      src="$lib/assets/img/SVG/ORS_illustrations_Numeros utiles.svg"
       alt="illustration"
       class="sm:hidden object-cover"
       style="max-height: 370px !important"
-
     />
   </div>
 </div>

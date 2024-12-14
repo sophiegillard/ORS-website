@@ -22,7 +22,7 @@
       nom_evenement="Campagne Ruban Blanc"
       date="Du 22 au 06 "
       lieu="{'Plate-forme Ruban Blanc'}"
-      btn_line_img_src="ORS_illustrations_Actu trace 2.svg"
+      btn_line_img_src="ORS_illustrations_Actu trace_2.svg"
     />
   </MonthActualites>
 

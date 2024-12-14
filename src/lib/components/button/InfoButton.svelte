@@ -2,7 +2,8 @@
   import { createEventDispatcher } from "svelte"
   const dispatch = createEventDispatcher()
 
-  export let line_img_src = "ORS_illustrations_Actu_trace_1.svg"
+  // export let line_img_src = "ORS_illustrations_Actu_trace_1.svg"
+  let line_img_src = "lib/assets/img/SVG/ORS_illustrations_Actu_trace_2.svg"
   export let title = "info"
 </script>
 
@@ -11,11 +12,11 @@
     class="line_img relative left-3 bottom-2 w-1/3 sm:block sm:left-0 sm:bottom-0 sm:w-full"
     style="width: 100px; min-height: 100%;"
   >
-    <!-- <img
-      src="$lib/assets/img/SVG/{line_img_src}"
+    <img
+      src="{line_img_src}"
       class="w-full h-full object-cover rotate-45 sm:rotate-0"
       alt="ORS logo"
-    /> -->
+    />
   </div>
 
   <div class=" items-center flex">

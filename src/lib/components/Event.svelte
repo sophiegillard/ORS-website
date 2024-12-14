@@ -9,7 +9,7 @@
   export let is_last = true
   export let is_detail = true
   export let description = ""
-  export let btn_line_img_src = "ORS_illustrations_Actu trace 2.svg"
+  export let btn_line_img_src = "ORS_illustrations_Actu_trace_2.svg"
   export let info_button = true
   export let btn_title = "Infos"
 </script>
