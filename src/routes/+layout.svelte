@@ -11,7 +11,10 @@
   let innerWidth
   let innerHeight
   let isMenuOpen = false
+  let content_height
+  let footer_height
 
+  $: content_height = innerHeight - (isMobile ? mobile_nav_height : nav_height) - 40
   let y
   $: {
     isMobile = innerWidth && innerWidth <= 480
@@ -30,13 +33,13 @@
   <div
     class="app relative"
     class:z-negative="{isMenuOpen}"
-    style="{`top: ${!isMobile && !isTablet ? nav_height + 90 : mobile_nav_height}px;`}"
+    style="{`top: ${!isMobile && !isTablet ? nav_height + 90 : mobile_nav_height}px; min-height: ${content_height}px;`}"
   >
     <main class="p-8 px-6 lg:pt-20">
       <slot {isMobile} {isTablet} />
     </main>
 
-    <Footer {isMobile} {isTablet} />
+    <Footer {isMobile} {isTablet} bind:footer_height />
   </div>
 </div>
 

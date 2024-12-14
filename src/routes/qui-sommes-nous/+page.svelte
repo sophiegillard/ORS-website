@@ -51,8 +51,6 @@
         la Ville de Charleroi et du Fonds Social Européen.
       </p>
 
-
-
       <div class="flex justify-center">
         <img
           src="$lib/assets/img/illustration/illu_qui_sommes_nous.png"
@@ -62,7 +60,7 @@
       </div>
     </SectionWithTitleMain>
 
-    <SectionWithTitleMain title="Objectifs et valeurs" >
+    <SectionWithTitleMain title="Objectifs et valeurs">
       <p>
         De par ses missions, notre service <span class="markup-text">offre une aide</span> à toute personne
         confrontée à la justice, qu’elle soit victime ou auteur·e des faits.
@@ -178,20 +176,20 @@
       <div class="flex justify-center">
         <img
           src="$lib/assets/img/illustration/qui_sommes-nous_organigramme_web.svg"
-          class=" hidden md:block "
+          class=" hidden md:block"
           alt="ORS logo"
         />
 
         <!-- TABLET -->
         <img
-        src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Mobile.svg"
-        class=" md:hidden sm:block bg-blue"
-        alt="ORS logo"
-      />
+          src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Mobile.svg"
+          class=" md:hidden sm:block"
+          alt="ORS logo"
+        />
         <div class="image-container md:hidden flex justify-center">
           <img
             src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Mobile.svg"
-            class="zoomed sm:hidden "
+            class="zoomed sm:hidden"
             alt="ORS logo"
           />
         </div>

@@ -3,7 +3,7 @@
   import { page } from "$app/stores"
 
   let pages = [
-    { label: "Accueil", value: "accueil" },
+    { label: "Accueil", value: "" },
     { label: "Qui sommes-nous", value: "qui-sommes-nous" },
     { label: "Nos Missions", value: "nos-missions" },
     { label: "Nous soutenir", value: "nous-soutenir" },
@@ -25,13 +25,15 @@
   class="bg-off-white flex justify-between px-6 py-5 fixed w-full z-10"
   bind:offsetHeight="{mobile_nav_height}"
 >
-  <img
-    src="$lib/assets/img/logo/ors-logo.png"
-    class=""
-    alt="ORS logo"
-    style="{`max-height:40px;`}"
-    class:invisible="{scrollY < 130 && $page.url.pathname === '/accueil'}"
-  />
+  <a class="onglet" href="/">
+    <img
+      src="$lib/assets/img/logo/ors-logo.png"
+      class=""
+      alt="ORS logo"
+      style="{`max-height:40px;`}"
+      class:invisible="{scrollY < 130 && $page.url.pathname === '/'}"
+    />
+  </a>
 
   <button class="menu-button nav-onglet" on:click="{toggleMenu}"> Menu </button>
 

@@ -14,7 +14,6 @@
       <img
         src="$lib/assets/img/SVG/ORS_illustrations_Nous soutenir-12.svg"
         class="zoomed pt-6 lg:pt-0"
-       
         alt="ORS logo"
       />
     </div>
@@ -24,8 +23,11 @@
         Si notre asbl est portée par des professionnels de l’aide et financée par divers pouvoirs
         publics, toute forme d’<span class="markup-text">implication citoyenne</span> est précieuse,
         que ce soit via un <span class="markup-text">volontariat</span>
-        (par exemple en devenant <span class="markup-text">visiteur·euse de prison</span> ), ou via
-        un
+        (par exemple en devenant
+        <a href="/accueil/détenus?selected_section=visiteurs">
+          <span class="markup-text text-dark-blue">visiteur·euse de prison</span>
+        </a>
+        ), ou via un
         <span class="markup-text">don</span>, financier ou matériel.
       </p>
 

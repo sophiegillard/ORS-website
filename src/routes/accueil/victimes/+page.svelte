@@ -14,13 +14,13 @@
   } else {
     topValue = 90
   }
-  let selected_section = "collectif"
+  let selected_section = ""
 
   function handleGoToSection(section_id) {
     selected_section = section_id
     const section = document.getElementById("section_accompagnement")
     if (section) {
-      const offsetTop = section.offsetTop // Get the top position relative to the document
+      const offsetTop = section.offsetTop + 40 // Get the top position relative to the document
       window.scrollTo({
         top: offsetTop,
         behavior: "smooth",
@@ -448,7 +448,7 @@
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide proches - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="sm:hidden h-full w-full object-cover transition-transform duration-300 ease-in-out scale-140"
+                    class="sm:hidden pt-8 sm:pt-0 h-full w-full object-cover transition-transform duration-300 ease-in-out scale-140"
                   />
                 </div>
               </div>

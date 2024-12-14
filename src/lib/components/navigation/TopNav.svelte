@@ -1,7 +1,7 @@
 <script>
   import { page } from "$app/stores"
   let pages = [
-    { label: "Accueil", value: "accueil" },
+    { label: "Accueil", value: "" },
     { label: "Qui sommes-nous", value: "qui-sommes-nous" },
     { label: "Nos Missions", value: "nos-missions" },
     { label: "Nous soutenir", value: "nous-soutenir" },
@@ -16,13 +16,15 @@
 
 <header class="p-6 pt-10 flex-col-center fixed w-full bg-off-white z-10">
   <div class="flex-row-center gap-4 w-full" style="{' max-width: 80rem;'}">
-    {#if !(scrollY < 130 && $page.url.pathname === "/accueil")}
-      <img
-        src="$lib/assets/img/logo/ors-logo.png"
-        class=""
-        alt="ORS logo"
-        style="{`max-height:${nav_height}px;`}"
-      />
+    {#if !(scrollY < 130 && ($page.url.pathname === "/accueil" || $page.url.pathname === "/"))}
+      <a class="onglet" href="/">
+        <img
+          src="$lib/assets/img/logo/ors-logo.png"
+          class=""
+          alt="ORS logo"
+          style="{`max-height:${nav_height}px;`}"
+        />
+      </a>
     {/if}
 
     <nav class="navbar border rounded-full w-full flex" bind:offsetHeight="{nav_height}">

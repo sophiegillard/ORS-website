@@ -31,13 +31,13 @@
   }
 
   p {
-    font-size: 15px !important;
-    line-height: 18px !important;
+    font-size: 17px !important;
+    line-height: 22px !important;
   }
 
   li {
-    font-size: 15px !important;
-    line-height: 1.2rem !important;
+    font-size: 17px !important;
+    line-height: 22px !important;
   }
 
   .p-accueil {
@@ -55,7 +55,7 @@
   }
 
   .markup-text {
-    font-size: 15px !important;
+    font-size: 17px !important;
     line-height: 18px !important;
   }
 
@@ -66,7 +66,7 @@
   }
 
   .nav-onglet {
-    font-family: 'Epilogue';
+    font-family: "Epilogue";
     font-size: 17px;
     font-weight: 400;
     line-height: 30px;
@@ -75,7 +75,7 @@
   }
 
   .mention-service {
-    font-size: 15px !important;
+    font-size: 17px !important;
     font-weight: 600 !important;
     line-height: 20px !important;
     text-align: center !important;
@@ -90,17 +90,17 @@
   }
 
   .footer-secondary {
-    font-size: 15px !important;
+    font-size: 17px !important;
     line-height: 24px !important;
   }
 
   .footer-contact-info {
-    font-size: 15px !important;
+    font-size: 17px !important;
     line-height: 15px !important;
   }
 
   .mention-legales {
-    font-size: 15px !important;
+    font-size: 17px !important;
     line-height: 22px !important;
     text-align: center !important;
   }
@@ -123,7 +123,7 @@
     line-height: 27px !important;
   }
   .remarque {
-    font-size: 15px !important;
+    font-size: 17px !important;
     line-height: 15px !important;
   }
   .error_message {
@@ -132,13 +132,13 @@
   }
 
   .phone_link {
-    font-size: 15px !important;
+    font-size: 17px !important;
   }
 
   /* ----------- VITIMES ----------- */
 
   .blue_title {
-    font-size: 15px !important;
+    font-size: 17px !important;
     line-height: 18px !important;
     padding-top: 30px !important;
   }
@@ -153,7 +153,7 @@
   }
 
   .projet {
-    font-size: 15px !important;
+    font-size: 17px !important;
     line-height: 18px !important;
   }
 

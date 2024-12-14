@@ -20,13 +20,13 @@
   } else {
     topValueMobile = 50
   }
-  let selected_section = "collectif"
+  let selected_section = ""
 
   function handleGoToSection(section_id) {
     selected_section = section_id
     const section = document.getElementById("section_accompagnement")
     if (section) {
-      const offsetTop = section.offsetTop // Get the top position relative to the document
+      const offsetTop = section.offsetTop - 40 // Get the top position relative to the document
       window.scrollTo({
         top: offsetTop + 80,
         behavior: "smooth",

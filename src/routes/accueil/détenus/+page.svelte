@@ -1,4 +1,6 @@
 <script>
+  import { onMount } from "svelte"
+
   import SectionWithTitle from "$lib/components/layout/SectionWithTitle.svelte"
   import SectionWithTitleMain from "$lib/components/layout/SectionWithTitleMain.svelte"
   import ContactButton from "$lib/components/button/ContactButton.svelte"
@@ -21,18 +23,30 @@
     topValueMobile = 50
   }
 
-  let selected_section = "collectif"
+  onMount(() => {
+    const params = new URLSearchParams(window.location.search)
+    selected_section = params.get("selected_section")
+    if (selected_section) {
+      handleGoToSection(selected_section)
+    }
+  })
+
+  let selected_section = ""
 
   function handleGoToSection(section_id) {
     selected_section = section_id
-    const section = document.getElementById("section_accompagnement")
-    if (section) {
-      const offsetTop = section.offsetTop // Get the top position relative to the document
-      window.scrollTo({
-        top: offsetTop + 40,
-        behavior: "smooth",
-      })
-    }
+
+    // Defer the scroll action to allow the DOM to be fully ready
+    setTimeout(() => {
+      const section = document.getElementById(section_id)
+      if (section) {
+        const offsetTop = section.offsetTop // Get the top position relative to the document
+        window.scrollTo({
+          top: offsetTop + 40, // Add extra space to offset
+          behavior: "smooth",
+        })
+      }
+    }, 100) // Delay the scroll by 100ms (adjust as needed)
   }
 </script>
 
@@ -533,7 +547,7 @@
       {#if selected_section === "visiteurs"}
         <div id="visiteurs" class="pt-5">
           <div in:fly="{{ y: 50, duration: 3000 }}">
-            <SectionWithTitle title="Visiteur·euse de prison">
+            <SectionWithTitle title="Soutien par des visiteurs de prison">
               <p>
                 Notre service compte, au sein de la prison de Jamioulx, une équipe de
                 visiteur·euse·s bénévoles, citoyens non professionnels, indépendants du monde

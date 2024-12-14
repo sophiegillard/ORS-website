@@ -44,7 +44,6 @@
 
   @media (min-width: 480px) {
     .subtitle-line {
-      top: 50px;
       height: 20px;
     }
   }
