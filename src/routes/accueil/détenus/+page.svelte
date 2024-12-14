@@ -349,7 +349,7 @@
       {/if}
 
       {#if selected_section === "adform"}
-        <div id="sociale" class="pt-5">
+        <div id="adform" class="pt-5">
           <div in:fly="{{ y: 50, duration: 3000 }}">
             <SectionWithTitle title="ADForm - Aide Formations">
               <div>
@@ -591,7 +591,6 @@
   .zoomed {
     transform: scale(1.3); /* Adjust scale as needed */
     overflow: hidden; /* Hide any overflow from scaling */
-    height: fit-content;
   }
 
   @media (min-width: 550px) {
