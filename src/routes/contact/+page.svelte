@@ -118,7 +118,7 @@
           rel="noopener noreferrer"
           class="text-blue-500 underline hover:text-blue-700"
         >
-          Open in Google Maps
+          Ouvrir dans Google Maps
         </a>
       </div>
 

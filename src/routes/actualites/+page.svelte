@@ -22,7 +22,7 @@
       nom_evenement="Campagne Ruban Blanc"
       date="Du 22 au 06 "
       lieu="{'Plate-forme Ruban Blanc'}"
-      btn_line_img_src="ORS_illustrations_Actu trace_2.svg"
+      btn_line_img_src="lib/assets/img/SVG/ORS_illustrations_Actu_trace_2.svg"
     />
   </MonthActualites>
 
@@ -30,7 +30,7 @@
     <Event
       nom_evenement="Groupe de réflexion pour auteurs de violence conjugale"
       lieu="{'ORS-Espace Libre'}"
-      btn_line_img_src="ORS_illustrations_Actu trace 3.svg"
+      btn_line_img_src="lib/assets/img/SVG/ORS_illustrations_Actu_trace_3.svg"
       btn_title="S'inscrire"
     />
   </MonthActualites>

@@ -3,7 +3,7 @@
   const dispatch = createEventDispatcher()
 
   // export let line_img_src = "ORS_illustrations_Actu_trace_1.svg"
-  let line_img_src = "lib/assets/img/SVG/ORS_illustrations_Actu_trace_2.svg"
+  export let line_img_src = "lib/assets/img/SVG/ORS_illustrations_Actu_trace_1.svg"
   export let title = "info"
 </script>
 
