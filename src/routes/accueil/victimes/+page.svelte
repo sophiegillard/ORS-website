@@ -30,7 +30,7 @@
 </script>
 
 <svelte:head>
-  <title>Victimes</title>
+  <title>ORS Espace Libre | Victimes</title>
   <meta name="victimes" content="sociale" />
 </svelte:head>
 

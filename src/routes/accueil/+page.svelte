@@ -6,7 +6,7 @@
 </script>
 
 <svelte:head>
-  <title>Accueil</title>
+  <title>ORS Espace Libre | Accueil</title>
   <meta name="Accueil" content="Accueil" />
 </svelte:head>
 

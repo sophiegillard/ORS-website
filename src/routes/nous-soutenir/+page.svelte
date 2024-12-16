@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>Nous soutenir</title>
+  <title>ORS Espace Libre | Nous soutenir</title>
   <meta name="nous-soutenir" content="Aide / volontariat" />
 </svelte:head>
 

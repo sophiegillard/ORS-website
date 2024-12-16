@@ -36,7 +36,7 @@
 </script>
 
 <svelte:head>
-  <title>Auteurs</title>
+  <title>ORS Espace Libre | Auteurs</title>
   <meta name="auteurs" content="auteurs" />
 </svelte:head>
 

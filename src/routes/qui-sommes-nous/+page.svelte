@@ -7,7 +7,7 @@
 </script>
 
 <svelte:head>
-  <title>Qui sommes-nous</title>
+  <title>ORS Espace Libre | Qui sommes-nous</title>
   <meta name="qui-sommes-nous" content="Présentation de l'asbl" />
 </svelte:head>
 

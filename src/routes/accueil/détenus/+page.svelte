@@ -51,7 +51,7 @@
 </script>
 
 <svelte:head>
-  <title>Détenu.e.s</title>
+  <title>ORS Espace Libre | Détenu.e.s</title>
   <meta name="détenus" content="détenus" />
 </svelte:head>
 

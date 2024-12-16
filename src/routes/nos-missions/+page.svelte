@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-  <title>Nos missions</title>
+  <title>ORS Espace Libre | Nos missions</title>
   <meta name="nos-misisons" content="missions" />
 </svelte:head>
 
@@ -62,7 +62,6 @@
 
   <div class="flex flex-col items-center">
     <AutorButtonsGroup />
-
   </div>
 </div>
 

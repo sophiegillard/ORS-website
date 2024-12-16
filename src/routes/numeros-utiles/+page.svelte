@@ -3,7 +3,7 @@
 </script>
 
 <svelte:head>
-  <title>Numéros utiles</title>
+  <title>ORS Espace Libre | Numéros utiles</title>
   <meta name="numeros-utiles" content="numeros-utiles" />
 </svelte:head>
 

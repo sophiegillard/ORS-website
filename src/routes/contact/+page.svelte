@@ -53,7 +53,7 @@
 </script>
 
 <svelte:head>
-  <title>Contact</title>
+  <title>ORS Espace Libre | Contact</title>
   <meta name="Contact" content="Contact, adresses, formulaire" />
 </svelte:head>
 
