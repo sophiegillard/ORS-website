@@ -237,7 +237,7 @@
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Acc. psy - Web.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Acc. psy - Tablette.svg"
                   class=" hidden sm:block lg:hidden"
                   alt="ORS logo"
                 />
@@ -281,8 +281,8 @@
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide sociale - Web.svg"
-                  class=" hidden md:block lg:hidden"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide sociale - Tablette.svg"
+                  class=" hidden sm:block lg:hidden"
                   alt="ORS logo"
                 />
 
@@ -353,9 +353,7 @@
 
                 <hr class="text-nude bg-nude w-3/4 mb-5 mb-9 mt-7" style="height:2px !important" />
 
-                <h8 class="call_to_action">
-                  Groupe de rencontre pour auteurs de violences conjugales
-                </h8>
+                <h8 class="call_to_action"> Groupe de rencontre pour les proches </h8>
 
                 <p>A venir</p>
               </div>
@@ -390,14 +388,14 @@
                 <!-- WEB -->
                 <img
                   src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide proches - Web.svg"
-                  class="hidden md:block my-6"
+                  class="hidden lg:block my-6"
                   alt="ORS logo"
                 />
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide proches - Web.svg"
-                  class="hidden sm:block md:hidden my-6"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide proche - Tablette.svg"
+                  class="hidden sm:block lg:hidden my-6"
                   alt="ORS logo"
                 />
 

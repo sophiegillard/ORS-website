@@ -101,7 +101,7 @@
           type="tel"
           id="phone"
           name="phone"
-          placeholder="N°de téléphone"
+          placeholder="N° de téléphone"
           class="form-text"
           bind:value="{phone}"
           class:error="{errors.phone}"

@@ -182,11 +182,12 @@
 
         <!-- TABLET -->
         <img
-          src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Mobile.svg"
-          class=" md:hidden sm:block"
+          src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Tablette.svg"
+          class="hidden md:hidden sm:block"
           alt="ORS logo"
         />
-        <div class="image-container md:hidden flex justify-center">
+
+        <div class="image-container sm:hidden flex justify-center">
           <img
             src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Mobile.svg"
             class="zoomed sm:hidden"

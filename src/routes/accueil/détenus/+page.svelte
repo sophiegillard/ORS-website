@@ -276,7 +276,7 @@
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Acc. psy - Web.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Acc. psy - Tablette.svg"
                   class=" hidden sm:block lg:hidden"
                   alt="ORS logo"
                 />
@@ -329,8 +329,8 @@
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Aide sociale - Web.svg"
-                  class=" hidden md:block lg:hidden"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Aide sociale - Tablette.svg"
+                  class=" hidden sm:block lg:hidden"
                   alt="ORS logo"
                 />
 
@@ -378,8 +378,8 @@
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - AD Form - Web.svg"
-                  class=" hidden md:block lg:hidden"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - AD Form - Tablette.svg"
+                  class=" hidden sm:block lg:hidden"
                   alt="ORS logo"
                 />
 
@@ -533,7 +533,7 @@
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide proches - Web.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Aide proche - Tablette.svg"
                   class="hidden sm:block md:hidden my-6"
                   alt="ORS logo"
                 />
@@ -558,17 +558,20 @@
           <div in:fly="{{ y: 50, duration: 3000 }}">
             <SectionWithTitle title="Soutien par des visiteurs de prison">
               <p>
-                Notre service compte, au sein de la prison de Jamioulx, une équipe de
-                visiteur·euse·s bénévoles, citoyens non professionnels, indépendants du monde
-                judiciaire et de la prison, qui font le choix de vous consacrer du temps et qui
-                sont sensibles à votre situation.
+                Notre service compte, au sein de la prison de Jamioulx, une <span
+                  class="markup-text">équipe de visiteur·euse·s bénévoles</span
+                >, citoyens non professionnels, indépendants du monde judiciaire et de la prison,
+                qui font le choix de vous consacrer du temps et qui sont sensibles à votre
+                situation.
               </p>
               <p>
                 Le rôle du visiteur est de vous soutenir, de se mettre à votre écoute et de
-                dialoguer avec vous dans un climat de confiance réciproque. Il n'effectue aucune
-                démarche mais peut aborder avec vous tous les sujets qui vous préoccupent. Il
-                représente un lien neutre avec l'extérieur et peut vous aider à rompre avec
-                l'isolement.
+                <span class="markup-text">dialoguer</span> avec vous dans un climat de
+                <span class="markup-text">confiance</span>
+                réciproque. Il n'effectue aucune démarche mais peut aborder avec vous tous les
+                sujets qui vous préoccupent. Il représente un
+                <span class="markup-text">lien neutre</span>
+                avec l'extérieur et peut vous aider à <span class="markup-text">rompre</span> avec l'isolement.
               </p>
             </SectionWithTitle>
           </div>

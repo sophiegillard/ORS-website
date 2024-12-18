@@ -56,7 +56,7 @@
 
 <style>
   .decorated-text p {
-    font-family: Gyst Variable;
+    font-family: theme("fontFamily.gyst");
     font-size: 50px;
     font-style: italic;
     font-weight: 400;

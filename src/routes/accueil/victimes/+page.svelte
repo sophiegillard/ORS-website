@@ -283,7 +283,7 @@
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Acc. psy - Web.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Acc. psy - Tablette.svg"
                   class=" hidden sm:block lg:hidden"
                   alt="ORS logo"
                 />
@@ -324,8 +324,8 @@
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide sociale - Web.svg"
-                  class=" hidden md:block lg:hidden"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide sociale - Tablette.svg"
+                  class=" hidden sm:block lg:hidden"
                   alt="ORS logo"
                 />
 
@@ -413,8 +413,10 @@
           <div in:fly="{{ y: 50, duration: 3000 }}">
             <SectionWithTitle title="Aide pour les proches">
               <p>
-                Un de vos proches a subi un acte délictueux et vous vous sentez en souffrance et/ou
-                en questionnement par rapport à cette situation?
+                Un de vos proches a subi un acte délictueux et vous vous sentez en
+                <span class="markup-text">souffrance</span>
+                et/ou en
+                <span class="markup-text">questionnement</span> par rapport à cette situation?
               </p>
               <p>Nous vous proposons :</p>
               <ul>
@@ -438,7 +440,7 @@
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide proches - Web.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide proche - Tablette.svg"
                   class="hidden sm:block md:hidden my-6"
                   alt="ORS logo"
                 />
