@@ -8,6 +8,7 @@
   let title_width = 0
 </script>
 
+<div class=" lg:pt-16"></div>
 <div class="{custom_class}">
   {#if title}
     <div class="relative z-0">

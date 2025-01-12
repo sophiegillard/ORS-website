@@ -36,17 +36,21 @@
   function handleGoToSection(section_id) {
     selected_section = section_id
 
-    // Defer the scroll action to allow the DOM to be fully ready
-    setTimeout(() => {
-      const section = document.getElementById(section_id)
+    function scrollToSection() {
+      const section = document.getElementById(selected_section)
+
       if (section) {
-        const offsetTop = section.offsetTop // Get the top position relative to the document
+        const offsetTop = section.offsetTop + 40
         window.scrollTo({
-          top: offsetTop + 40, // Add extra space to offset
+          top: offsetTop,
           behavior: "smooth",
         })
+      } else {
+        setTimeout(scrollToSection, 100)
       }
-    }, 100) // Delay the scroll by 100ms (adjust as needed)
+    }
+
+    scrollToSection()
   }
 </script>
 
@@ -59,7 +63,7 @@
   <div>
     <!-- MOBILE -->
     <SectionWithTitleMain
-      first_line_title="Aide aux personnes détenues et"
+      first_line_title="Aide aux personnes détenues"
       title="et à leurs proches"
       custom_class="font-epilogue block sm:hidden"
       top="{topValueMobile}"
@@ -145,7 +149,7 @@
     />
     <!-- DESKTOP -->
     <SectionWithTitleMain
-      first_line_title="Aide aux personnes détenues et"
+      first_line_title="Aide aux personnes détenues"
       title="et à leurs proches"
       custom_class="top-custom hidden sm:block"
       top="{topValue}"
@@ -172,7 +176,7 @@
 
         <p>Nous proposons :</p>
         <div class="flex flex-col items-center sm:items-start pb-20">
-          <div class="sm:flex flex-col hidden lg:flex-row gap-6 pt-3 pb-6 w-3/4 md:w-11/12">
+          <div class="sm:flex flex-col hidden lg:flex-row gap-6 pt-3 pb-6 w-3/4 md:w-7/12">
             <div class="grid grid-cols-5 gap-6">
               <!-- First Column (Wider) -->
               <div class="col-span-3 flex">
@@ -448,7 +452,10 @@
                   </li>
                 </ul>
 
-                <hr class="text-nude bg-nude w-3/4 mb-5 mb-9 mt-7" style="height:2px !important" />
+                <hr
+                  class="text-nude bg-nude w-3/4 mb-5 lg:mb-9 mt-7"
+                  style="height:2px !important"
+                />
 
                 <h8>Plate-forme d’informations</h8>
                 <ul>
@@ -466,7 +473,10 @@
                   </li>
                 </ul>
 
-                <hr class="text-nude bg-nude w-3/4 mb-5 mb-9 mt-7" style="height:2px !important" />
+                <hr
+                  class="text-nude bg-nude w-3/4 mb-5 lg:mb-9 mt-7"
+                  style="height:2px !important"
+                />
 
                 <h8>Brochure d’informations</h8>
                 <p>
@@ -482,7 +492,10 @@
                   </li>
                 </ul>
 
-                <hr class="text-nude bg-nude w-3/4 mb-5 mb-9 mt-7" style="height:2px !important" />
+                <hr
+                  class="text-nude bg-nude w-3/4 mb-5 lg:mb-9 mt-7"
+                  style="height:2px !important"
+                />
                 <h8>Groupe de rencontre pour les proches</h8>
 
                 <p>A venir</p>
@@ -511,16 +524,11 @@
                   Une aide et un accompagnement dans vos démarches sociales, administratives et
                   juridiques
                 </li>
-                <li
-                  class="text-dark-blue italic font-gyst cursor-pointer"
-                  on:click="{() => handleGoToSection('collectif')}"
-                  on:keydown="{(event) => {
-                    if (event.key === 'Enter') handleGoToSection('collectif')
-                  }}"
-                  tabindex="0"
-                >
-                  Un accompagnement collectif
-                </li>
+                <button on:click="{() => (selected_section = 'collectif')}">
+                  <li>
+                    <span class="markup-text text-dark-blue"> Un accompagnement collectif</span>
+                  </li>
+                </button>
               </ul>
 
               <div class="">
@@ -568,8 +576,8 @@
                 Le rôle du visiteur est de vous soutenir, de se mettre à votre écoute et de
                 <span class="markup-text">dialoguer</span> avec vous dans un climat de
                 <span class="markup-text">confiance</span>
-                réciproque. Il n'effectue aucune démarche mais peut aborder avec vous tous les
-                sujets qui vous préoccupent. Il représente un
+                réciproque. Il n'effectue aucune démarche mais peut aborder avec vous tous les sujets
+                qui vous préoccupent. Il représente un
                 <span class="markup-text">lien neutre</span>
                 avec l'extérieur et peut vous aider à <span class="markup-text">rompre</span> avec l'isolement.
               </p>

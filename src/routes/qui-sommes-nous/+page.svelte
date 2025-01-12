@@ -33,16 +33,16 @@
         française en 1990.
       </p>
 
-      <p>
-        En <span class="markup-text">2005</span>, l’asbl prendra l’appellation de ce secteur pour se
-        dénommer « ORS - Espace Libre ».
-      </p>
-
       <img
         src="$lib/assets/img/illustration/illu_qui_sommes_nous.png"
         alt="illustration"
         class="float-right hidden sm:block relative m-5 w-1/3 lg:w-1/3"
       />
+
+      <p>
+        En <span class="markup-text">2005</span>, l’asbl prendra l’appellation de ce secteur pour se
+        dénommer « ORS - Espace Libre ».
+      </p>
 
       <p>
         <span class="markup-text">Aujourd'hui</span>, le service est agréé et subsidié par la

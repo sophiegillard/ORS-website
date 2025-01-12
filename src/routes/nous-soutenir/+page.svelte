@@ -13,7 +13,7 @@
     <div class="image-container flex justify-center">
       <img
         src="$lib/assets/img/SVG/ORS_illustrations_Nous soutenir-12.svg"
-        class="zoomed pt-6 lg:pt-0"
+        class="zoomed pt-6 lg:pt-0 w-2/3 md:w-full"
         alt="ORS logo"
       />
     </div>
@@ -47,7 +47,7 @@
   <div class="flex flex-col justify-center items-center gap-10">
     <img
       src="$lib/assets/img/SVG/ORS_illustrations_Nous soutenir-07_2.svg"
-      class="sm:w-2/5"
+      class="w-2/5 sm:w-2/5"
       alt="ORS logo"
     />
     <ContactButton />

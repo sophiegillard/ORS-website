@@ -3,18 +3,18 @@
   import { page } from "$app/stores"
 
   let pages = [
-    { label: "Accueil", value: "" },
-    { label: "Qui sommes-nous", value: "qui-sommes-nous" },
-    { label: "Nos Missions", value: "nos-missions" },
-    { label: "Nous soutenir", value: "nous-soutenir" },
-    { label: "Contact", value: "contact" },
-    { label: "Actualités", value: "actualites" },
-    { label: "N° utiles", value: "numeros-utiles" },
+    { label: "accueil", value: "" },
+    { label: "qui sommes-nous", value: "qui-sommes-nous" },
+    { label: "nos missions", value: "nos-missions" },
+    { label: "nous soutenir", value: "nous-soutenir" },
+    { label: "contact", value: "contact" },
+    { label: "actualités", value: "actualites" },
+    { label: "n° utiles", value: "numeros-utiles" },
   ]
 
   export let scrollY
   export let mobile_nav_height = 0
-  export let isMenuOpen = false
+  export let isMenuOpen = true
 
   function toggleMenu() {
     isMenuOpen = !isMenuOpen
@@ -22,7 +22,7 @@
 </script>
 
 <div
-  class="bg-off-white flex justify-between px-6 py-5 fixed w-full z-10"
+  class="bg-off-white flex justify-between md:px-6 py-5 fixed w-full z-10 p-10 pt-10 md:pb-5"
   bind:offsetHeight="{mobile_nav_height}"
 >
   <a class="onglet" href="/">
@@ -35,7 +35,9 @@
     />
   </a>
 
-  <button class="menu-button nav-onglet" on:click="{toggleMenu}"> Menu </button>
+  <button class="menu-button" on:click="{toggleMenu}">
+    <p class="py-0 menu-button-p">menu</p>
+  </button>
 
   {#if isMenuOpen}
     <div class="menu bg-off-white" style="{`top: ${mobile_nav_height}px`}" transition:slide>
@@ -52,19 +54,19 @@
 </div>
 
 <style>
-  .menu-button {
+  /* .menu-button {
     top: 0;
     right: 0;
     padding-inline: 25px;
     border-radius: 50px;
     border: 0.7px solid grey;
-  }
+  } */
 
   .menu {
     position: fixed;
     left: 0;
     width: 100%;
-    padding: 20px;
+    padding-inline: 40px;
     overflow-y: scroll;
     display: flex;
     flex-direction: column;
@@ -82,7 +84,7 @@
     border:
       0,
       7px solid grey;
-    max-width: 200px;
+    max-width: 150px;
     width: inherit;
   }
 </style>

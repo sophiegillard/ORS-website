@@ -12,7 +12,7 @@
   </div>
 
   <div
-    class="flex flex-col sm:flex-row justify-center px-8 py-5 gap-8"
+    class="flex flex-col sm:flex-row justify-center px-10 py-5 gap-8"
     style="{'max-width: 80rem;'}"
   >
     <!-- LOGOS -->
@@ -53,19 +53,25 @@
     </div>
 
     <!-- TEXT -->
-    <div class="section section-text px-4 order-1 sm:order-2 text-center section">
-      <p class="footer-title uppercase">
+    <div class="section section-text px-4 order-1 sm:order-2 text-center">
+      <p class="footer-title uppercase inline-block">
         Ors-Espace Libre <span class="lowercase">Asbl</span>
       </p>
 
-      <p class="footer-secondary">
-        Service d’aide aux Justiciables de l’arrondissement judiciaire du Hainaut - Division
-        Charleroi
+      <p class="footer-secondary inline-block">
+        Service d’aide aux Justiciables de l’arrondissement
       </p>
+      <p class="footer-secondary inline-block">judiciaire du Hainaut - Division Charleroi</p>
       <p class="footer-contact-info">Rue Léon Bernus 27, 6000 Charleroi</p>
       <p class="footer-contact-info">Tél : 071/27.88.00</p>
       <p class="footer-contact-info">Fax : 071/27.88.01</p>
       <a href="mailto:contact@espacelibre.be" class="footer-contact-info">contact@espacelibre.be</a>
+
+      <div>
+        <a href="/mentions-legales" class="">
+          <p class="text-center mention-legales lg:hidden">Mentions légales</p>
+        </a>
+      </div>
     </div>
 
     <!-- LEGAL -->
@@ -75,7 +81,9 @@
       <div>
         <div>
           <a href="/mentions-legales" class="pb-4 lg:pb-32 pt-0 mention-legales">
-            <p class="pb-4 pt-0 text-center sm:text-right mention-legales">Mentions légales</p>
+            <p class="pb-4 pt-0 text-center hidden lg:block sm:text-right mention-legales">
+              Mentions légales
+            </p>
           </a>
         </div>
         <div class="text-xs">
@@ -110,7 +118,7 @@
     }
     .section-text {
       max-width: 80%;
-      padding-bottom: 60px;
+      /* padding-bottom: 60px; */
     }
     .section-legale {
       position: absolute;

@@ -56,7 +56,7 @@
     <img
       src="$lib/assets/img/illustration/nos_missions_bonhomme.png"
       alt="illustration"
-      class="md:hidden w-2/3 max-w-60 pb-8"
+      class="md:hidden w-1/4 max-w-60 pb-8"
     />
   </div>
 

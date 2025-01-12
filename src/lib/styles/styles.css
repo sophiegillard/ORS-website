@@ -60,7 +60,7 @@
 .markup-text {
   font-family: theme("fontFamily.gyst");
   font-variation-settings: "wght" 450;
-  font-size: 23px;
+  font-size: 21px;
   line-height: 30px;
   font-style: italic;
 }
@@ -138,7 +138,7 @@ h5::after {
   width: 115%;
   display: block;
   right: 20px;
-  border-bottom: theme("colors.dark-blue") 3px solid;
+  border-bottom: theme("colors.dark-blue") 2px solid;
 }
 
 h7 {
@@ -205,6 +205,12 @@ li::marker {
   color: theme("colors.grey");
 }
 
+.btn-send{
+  font-size: 30px ;
+  font-weight: 400;
+  text-align: center;
+}
+
 .mention-service {
   font-family: "Epilogue";
   font-size: 26px;
@@ -265,7 +271,7 @@ li::marker {
 
 .date {
   font-family: theme("fontFamily.gyst") !important;
-  font-size: 24px;
+  font-size: 20px;
   font-style: italic;
   line-height: 29.52px;
   text-align: left;
@@ -294,16 +300,32 @@ h4 {
 .error_message {
   color: theme("colors.dark-blue") !important;
   font-family: "Epilogue";
-  font-size: 17px;
-  line-height: 20.5px;
+  font-size: 20px;
   text-align: center;
 }
+
+/* ----------- ACTUALITES ----------- */
+
+.nom_event{
+  font-family: "Epilogue";
+  font-size: 25px;
+  font-weight: 500;
+  padding-bottom: 4px;
+}
+.info-button{
+  font-family: "Epilogue";
+  font-size: 24px ;
+  font-weight: 500;
+
+}
+
+
 
 /* ----------- NUMEROS UTILES PAGE ----------- */
 
 .phone_link {
   font-family: "Epilogue";
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   color: theme("colors.dark-blue");
 }
@@ -314,10 +336,7 @@ h4 {
   font-family: Epilogue;
   font-size: 26px;
   font-weight: 400;
-  line-height: 40px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+padding-top: 20px;;
   color: theme("colors.dark-blue");
 }
 

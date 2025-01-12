@@ -9,7 +9,7 @@
 
 <div class="flex row sm:pt-0">
   <div
-    class="line_img relative left-3 bottom-2 w-1/3 sm:block sm:left-0 sm:bottom-0 sm:w-full"
+    class="line_img relative left-3 bottom-2 w-1/3 sm:block sm:left-0 sm:bottom-0 sm:w-full mr-3"
     style="width: 100px; min-height: 100%;"
   >
     <img
@@ -21,7 +21,7 @@
 
   <div class=" items-center flex">
     <button
-      class="info-button hover:bg-brown-hover rounded-full hover:text-off-white px-4 py-1 pt-2 my-6 lg:px-10 lg:py-2 font-light"
+      class="info-button hover:bg-brown-hover rounded-full hover:text-off-white px-4 py-1 pt-2 my-6 lg:py-3 font-light"
       on:click="{() => dispatch('click')}"
     >
       {title}
@@ -42,7 +42,7 @@
     }
   }
   .info-button {
-    border: 1px solid theme("colors.grey");
+    border: 2px solid theme("colors.grey");
     font-family: Epilogue;
     font-size: 20px;
     font-weight: 400;
@@ -50,6 +50,7 @@
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
+    width: 158px;
   }
   .info-button:hover {
     background-color: theme("colors.grey");

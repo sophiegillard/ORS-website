@@ -44,7 +44,7 @@
   <div>
     <!-- MOBILE -->
     <SectionWithTitleMain
-      first_line_title="Aide auteur·e·s non incarcéré·e·s"
+      first_line_title="Aide aux auteur·e·s non incarcéré·e·s"
       title="et à leurs proches"
       custom_class="font-epilogue block sm:hidden"
       top="{topValueMobile}"
@@ -120,7 +120,7 @@
 
     <!-- DESKTOP -->
     <SectionWithTitleMain
-      first_line_title="Aide auteur·e·s non incarcéré·e·s"
+      first_line_title="Aide aux auteur·e·s non incarcéré·e·s"
       title="et à leurs proches"
       custom_class="top-custom hidden sm:block"
       top="{topValue}"
@@ -139,7 +139,7 @@
         class="float-right relative hidden sm:block w-1/3 bottom-5"
       />
       <div>
-        <ul class="flex flex-col items-center">
+        <ul class="flex flex-col items-center lg:items-start">
           <li>
             Vous avez commis ou un des vos proches a commis un <span class="markup-text"
               >acte délictueux</span
@@ -230,14 +230,14 @@
               <div class="">
                 <!-- WEB -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Acc. psy - Web.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Acc. psy - Web.svg"
                   class=" hidden lg:block"
                   alt="ORS logo"
                 />
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Acc. psy - Tablette.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Acc. psy - Tablette.svg"
                   class=" hidden sm:block lg:hidden"
                   alt="ORS logo"
                 />
@@ -245,7 +245,7 @@
                 <!-- MOBILE -->
                 <div class="relative py-4 overflow-hidden sm:hidden">
                   <img
-                    src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Acc. psy - Mobile.svg"
+                    src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Acc. psy - Mobile.svg"
                     alt="Illustration of psychological support for victims"
                     class="h-full w-full object-cover transition-transform duration-300 ease-in-out scale-140"
                   />
@@ -381,7 +381,11 @@
                   Une aide et un accompagnement dans vos démarches sociales, administratives et
                   juridiques
                 </li>
-                <li class="text-dark-blue italic font-gyst">Un accompagnement collectif</li>
+                <button on:click="{() => (selected_section = 'collectif')}">
+                  <li>
+                    <span class="markup-text text-dark-blue"> Un accompagnement collectif</span>
+                  </li>
+                </button>
               </ul>
 
               <div class="">

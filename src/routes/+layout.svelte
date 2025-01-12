@@ -1,4 +1,6 @@
 <script>
+  import { page } from "$app/stores"
+
   import TopNav from "$lib/components/navigation/TopNav.svelte"
   import MobileNav from "$lib/components/navigation/MobileNav.svelte"
   import Footer from "$lib/components/navigation/Footer.svelte"
@@ -20,6 +22,8 @@
     isMobile = innerWidth && innerWidth <= 480
     isTablet = innerWidth && innerWidth <= 850
   }
+
+  $: console.log("location.pathname", $page.url, $page.url.pathname.includes("accueil/"))
 </script>
 
 <svelte:window bind:innerWidth bind:innerHeight bind:scrollY="{y}" />
@@ -32,6 +36,7 @@
 
   <div
     class="app relative"
+    class:accueil="{$page.url.pathname.includes('accueil/')}"
     class:z-negative="{isMenuOpen}"
     style="{`top: ${!isMobile && !isTablet ? nav_height + 90 : mobile_nav_height}px; min-height: ${content_height}px;`}"
   >
@@ -50,10 +55,15 @@
     background-repeat: no-repeat;
   }
 
-  @media (max-width: 480px) {
+  @media (max-width: 850px) {
     :global(body) {
       background-image: url("/src/lib/assets/img/Fonds/Fond_Mobile.svg");
     }
+  }
+
+  .accueil {
+    background-color: theme("colors.off-white") !important;
+    background-image: none !important;
   }
 
   .app {
@@ -94,5 +104,8 @@
   }
 
   @media (min-width: 768px) {
+    /* .app {
+      padding: 20px;
+    } */
   }
 </style>

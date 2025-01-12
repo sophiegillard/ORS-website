@@ -12,13 +12,14 @@
   export let btn_line_img_src = "lib/assets/img/SVG/ORS_illustrations_Actu_trace_1.svg"
   export let info_button = true
   export let btn_title = "Infos"
+  export let info_button_url = ""
 </script>
 
 <div class="{info_button && 'md:w-10/12'}">
   <div class="flex flex-col sm:flex-row justify-between">
     <div class="">
       {#if nom_evenement}
-        <p class="pb-3" style="font-weight:400">{nom_evenement}</p>
+        <p class="nom_event" style="font-weight:400">{nom_evenement}</p>
       {/if}
       <div>
         {#if is_detail}
@@ -48,16 +49,20 @@
         title="{btn_title}"
         line_img_src="{btn_line_img_src}"
         on:click="{() => {
-          const url = new URL('/contact', window.location.origin)
+          const url = new URL(info_button_url || '/contact', window.location.origin)
           url.searchParams.append('title', nom_evenement)
-          window.location.href = url.toString()
+          if (info_button_url) {
+            window.open(url.toString(), '_blank')
+          } else {
+            window.location.href = url.toString()
+          }
         }}"
       ></InfoButton>
     {/if}
   </div>
 
   {#if !is_last}
-    <hr class=" border border-pink my-4 md:my-0" style="height:2px !important" />
+    <hr class=" border border-nude my-4 md:my-0 lg:my-4" style="height:1px !important" />
   {/if}
 </div>
 

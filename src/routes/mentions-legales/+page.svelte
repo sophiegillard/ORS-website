@@ -10,7 +10,10 @@
 
 <div class="text-column">
   <SectionWithTitleMain title="Mentions légales">
-    <p>L'accès et l'utilisation de ce site sont soumis aux conditions suivantes.</p>
+    <p>
+      L'accès et l'utilisation de ce site sont soumis aux <span class="markup-text">conditions</span
+      > suivantes.
+    </p>
 
     <h6>Identification et Propriété</h6>
     <p>

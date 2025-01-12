@@ -70,7 +70,7 @@
             <p>contact@espacelibre.be</p>
           </InformationItem>
         </div>
-        <div class="grow sm:hidden md:block md:w-1/3 lg:w-auto">
+        <div class="grow md:block md:w-1/3 lg:w-auto">
           <InformationItem title="Horaire">
             <p>Du lundi au jeudi : 8h30 - 17h</p>
             <div class="flex flex-col justify-center">
@@ -83,7 +83,7 @@
             <p>Mercredi : 8h30 - 16h</p>
           </InformationItem>
         </div>
-        <div class="lg:pr-5 sm:w-1/2 md:w-1/4 md:grow-0 lg:w-auto">
+        <div class="lg:pr-5 sm:w-1/4 md:grow-0 lg:w-auto">
           <InformationItem title="Téléphone" custom_class="{' sm:pb-8 '}">
             <a href="tel:+3271278800"> <p>071/27.88.00</p></a>
           </InformationItem>
@@ -92,7 +92,7 @@
           </InformationItem>
         </div>
       </div>
-      <div class="grow hidden sm:block md:hidden">
+      <!-- <div class="grow hidden sm:block md:hidden">
         <InformationItem title="Horaire">
           <p>Du lundi au jeudi : 8h30 - 17h</p>
           <div class="flex flex-row justify-center">
@@ -104,7 +104,7 @@
           <p>Mardi et jeudi : 8h30 - 11h30</p>
           <p>Mercredi : 8h30 - 16h</p>
         </InformationItem>
-      </div>
+      </div> -->
 
       <!-- Map Section -->
 
@@ -116,7 +116,7 @@
           href="{googleMapsUrl}"
           target="_blank"
           rel="noopener noreferrer"
-          class="text-blue-500 underline hover:text-blue-700"
+          class="text-blue-500 underline hover:text-blue-700 text-sm"
         >
           Ouvrir dans Google Maps
         </a>
@@ -160,5 +160,6 @@
   p {
     text-align: center;
     padding: 0 !important;
+    font-size: 22px;
   }
 </style>

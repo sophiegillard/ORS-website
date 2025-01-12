@@ -9,6 +9,7 @@
   let subject = ""
   let success = false
   let error = null
+
   let errors = {}
   let event = ""
 
@@ -34,6 +35,7 @@
     if (!name) {
       error =
         "*Il est nécessaire de mentionner votre nom ainsi qu’un numéro de téléphone ou une adresse mail"
+      error = error.replace("ou", '<span style="font-weight:600">ou</span>')
       errors["name"] = true
       return
     }
@@ -41,6 +43,7 @@
     if (!email && !phone) {
       error =
         "*Il est nécessaire de mentionner votre nom ainsi qu’un numéro de téléphone ou une adresse mail"
+      error = error.replace("ou", '<span style="font-weight:600">ou</span>')
       errors["email"] = true
       errors["phone"] = true
       return
@@ -76,7 +79,7 @@
   <h5>Formulaire de contact</h5>
   <fieldset class="w-full pt-10">
     <form on:submit|preventDefault="{handleSubmit}" class="">
-      <div class="flex flex-col gap-8">
+      <div class="flex flex-col gap-3 lg:gap-8 last:mpb-0">
         <input
           type="text"
           id="nom"
@@ -121,19 +124,19 @@
           type="submit"
           class="{success
             ? 'bg-dark-blue'
-            : 'bg-grey'} text-white text-lg rounded-lg py-2 px-4 w-100"
+            : 'bg-grey'} text-white text-lg rounded-lg lg:rounded-xl py-2 md:py-3 px-4 w-100"
         >
           {#if mail_sending}
             <Spinner />
-            <p class="invisible">Envoyer</p>
+            <p class="invisible btn-send">Envoyer</p>
           {:else if success}
             <p>C'est envoyé</p>
           {:else}
-            <p>Envoyer</p>
+            <p class=" btn-send">Envoyer</p>
           {/if}
         </button>
         {#if error}
-          <p class="error_message mt-4">{error}</p>
+          <p class="error_message">{@html error}</p>
         {/if}
       </div>
     </form>
@@ -160,6 +163,7 @@
     background-color: theme("colors.white");
     padding: 15px 20px;
     text-align: center;
+    color: theme("colors.grey");
     border: 1px solid theme("colors.grey");
     border-radius: 10px;
   }
@@ -167,6 +171,7 @@
   input::placeholder,
   textarea::placeholder {
     font-weight: 300;
+    color: theme("colors.grey");
   }
 
   input.error::placeholder,
@@ -178,10 +183,5 @@
   textarea.error {
     border-color: theme("colors.dark-blue");
     color: theme("colors.dark-blue") !important;
-  }
-
-  p {
-    text-align: center;
-    padding: 0 !important;
   }
 </style>

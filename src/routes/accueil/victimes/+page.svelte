@@ -18,14 +18,22 @@
 
   function handleGoToSection(section_id) {
     selected_section = section_id
-    const section = document.getElementById("section_accompagnement")
-    if (section) {
-      const offsetTop = section.offsetTop + 40 // Get the top position relative to the document
-      window.scrollTo({
-        top: offsetTop,
-        behavior: "smooth",
-      })
+
+    function scrollToSection() {
+      const section = document.getElementById(selected_section)
+
+      if (section) {
+        const offsetTop = section.offsetTop + 40
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
+        })
+      } else {
+        setTimeout(scrollToSection, 100)
+      }
     }
+
+    scrollToSection()
   }
 </script>
 
@@ -37,91 +45,93 @@
 <div class="text-column" bind:offsetWidth="{page_width}">
   <div>
     <!-- MOBILE -->
-    <SectionWithTitleMain
-      title="Aide aux victimes d’infractions pénales et à leurs proches"
-      custom_class="font-epilogue block sm:hidden"
-      top="{50}"
-    >
-      <div class="flex justify-center">
+    <div class="sm:hidden">
+      <SectionWithTitleMain
+        title="Aide aux victimes d’infractions pénales et à leurs proches"
+        custom_class="font-epilogue block sm:hidden"
+        top="{50}"
+      >
+        <div class="flex justify-center">
+          <img
+            src="$lib/assets/img/illustration/victime_illu_mains.png"
+            alt="illustration"
+            class="pb-6 w-4/5 sm:hidden"
+            style="max-width: 250px;"
+          />
+        </div>
         <img
           src="$lib/assets/img/illustration/victime_illu_mains.png"
           alt="illustration"
-          class="pb-6 w-4/5 sm:hidden"
-          style="max-width: 250px;"
+          class="float-right relative hidden sm:block w-2/5 bottom-5"
         />
-      </div>
-      <img
-        src="$lib/assets/img/illustration/victime_illu_mains.png"
-        alt="illustration"
-        class="float-right relative hidden sm:block w-2/5 bottom-5"
-      />
-      <div>
-        <ul class="flex flex-col items-center">
-          <li>
-            Vous êtes victime ou vous êtes <span class="markup-text">proche</span> d'une personne
-            victime de faits pouvant être qualifiés
-            <span class="markup-text">d'infraction pénale</span> (agression physique, verbale, violence
-            sexuelle, harcèlement, cambriolage, hold-up...)
-          </li>
-          <li>
-            Vous vivez une <span class="markup-text">situation de violence conjugale</span>, de
-            conflit de voisinage,...
-          </li>
-          <li>
-            Vous avez vécu un <span class="markup-text">événement de grande ampleur</span> (attentat,
-            agression collective,...)
-          </li>
-          <li>
-            Vous avez <span class="markup-text">perdu un proche</span> suite à un accident de la route,
-            un suicide...
-          </li>
-        </ul>
+        <div>
+          <ul class="flex flex-col items-center">
+            <li>
+              Vous êtes victime ou vous êtes <span class="markup-text">proche</span> d'une personne
+              victime de faits pouvant être qualifiés
+              <span class="markup-text">d'infraction pénale</span> (agression physique, verbale, violence
+              sexuelle, harcèlement, cambriolage, hold-up...)
+            </li>
+            <li>
+              Vous vivez une <span class="markup-text">situation de violence conjugale</span>, de
+              conflit de voisinage,...
+            </li>
+            <li>
+              Vous avez vécu un <span class="markup-text">événement de grande ampleur</span> (attentat,
+              agression collective,...)
+            </li>
+            <li>
+              Vous avez <span class="markup-text">perdu un proche</span> suite à un accident de la route,
+              un suicide...
+            </li>
+          </ul>
 
-        <p class="py-5 sm:w-2/3 md:w-full">
-          Que les faits soient <span class="markup-text">actuels</span> ou
-          <span class="markup-text">passés</span>
-          ou qu'une <span class="markup-text">procédure judiciaire</span> soit en cours ou non.
-        </p>
+          <p class="py-5 sm:w-2/3 md:w-full">
+            Que les faits soient <span class="markup-text">actuels</span> ou
+            <span class="markup-text">passés</span>
+            ou qu'une <span class="markup-text">procédure judiciaire</span> soit en cours ou non.
+          </p>
 
-        <p>Nous proposons :</p>
-        <div class="flex flex-col items-center sm:items-start">
-          <div
-            class="flex flex-col sm:hidden items-center lg:flex-row gap-6 pt-3 pb-6"
-            style="max-width: 70%;"
-          >
-            <SecondaryLinkButton
-              custom_class="grow"
-              on:click="{() => handleGoToSection('psychologique')}"
+          <p>Nous proposons :</p>
+          <div class="flex flex-col items-center sm:items-start">
+            <div
+              class="flex flex-col sm:hidden items-center lg:flex-row gap-6 pt-3 pb-6"
+              style="max-width: 70%;"
             >
-              <p class="text-center">
-                Accompagnement <span class="markup-text">psychologique</span>
-              </p>
-            </SecondaryLinkButton>
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('psychologique')}"
+              >
+                <p class="text-center">
+                  Accompagnement <span class="markup-text">psychologique</span>
+                </p>
+              </SecondaryLinkButton>
 
-            <SecondaryLinkButton
-              custom_class="grow"
-              on:click="{() => handleGoToSection('sociale')}"
-            >
-              <p class="text-center">Aide <span class="markup-text">sociale</span></p>
-            </SecondaryLinkButton>
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('sociale')}"
+              >
+                <p class="text-center">Aide <span class="markup-text">sociale</span></p>
+              </SecondaryLinkButton>
 
-            <SecondaryLinkButton
-              custom_class="grow"
-              on:click="{() => handleGoToSection('collectif')}"
-            >
-              <p class="text-center">Accompagnement <span class="markup-text">collectif</span></p>
-            </SecondaryLinkButton>
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('collectif')}"
+              >
+                <p class="text-center">Accompagnement <span class="markup-text">collectif</span></p>
+              </SecondaryLinkButton>
 
-            <SecondaryLinkButton
-              custom_class="grow"
-              on:click="{() => handleGoToSection('proches')}"
-            >
-              <p class="text-center">Aide pour les <span class="markup-text">proches</span></p>
-            </SecondaryLinkButton>
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('proches')}"
+              >
+                <p class="text-center">Aide pour les <span class="markup-text">proches</span></p>
+              </SecondaryLinkButton>
+            </div>
           </div>
         </div>
-      </div>
-    </SectionWithTitleMain>
+      </SectionWithTitleMain>
+    </div>
 
     <!-- DESKTOP -->
     <SectionWithTitleMain
@@ -372,7 +382,7 @@
                 <h8>Groupe de parole</h8>
                 <p class="projet">En projet</p>
                 <!-- <hr style="height:2px;border-width:0;color:gray;background-color:gray">  -->
-                <hr class="text-nude bg-nude w-3/4 mb-5" style="height:2px !important" />
+                <hr class="text-nude bg-nude w-3/5 mb-5" style="height:2px !important" />
                 <h8> Intervention en cas d’évènements traumatiques collectifs </h8>
                 <!-- IMAGE DESKTOP -->
                 <img
@@ -381,20 +391,20 @@
                   class="float-right relative hidden md:block w-2/5 bottom-5"
                   style="transform: rotate(-20deg);"
                 />
-                <p class="blue_title">
+                <p class="blue_title" style="padding-left:10px">
                   Defusing et débriefing psychologique immédiatement après un évènement
                 </p>
-                <ul>
+                <ul class=" pl-1" style="padding-left:10px">
                   <li>Verbaliser immédiatement les émotions en lien avec l'événement</li>
                   <li>Mise en évidence des besoins de chacun</li>
                   <li>Mutualiser les ressources</li>
                   <li>Eclaircir le processus de deuil</li>
                 </ul>
 
-                <p class="blue_title">
+                <p class="blue_title" style="padding-left:10px">
                   Atelier de parole pour victimes d’un évènement de grande ampleur
                 </p>
-                <ul>
+                <ul class=" pl-1" style="padding-left:10px">
                   <li>Permettre l'échange autour d'un vécu commun</li>
                   <li>Libérer la parole par rapport aux conséquences de l'événement</li>
                   <li>Assimiler le traumatisme et de ses répercussions</li>
