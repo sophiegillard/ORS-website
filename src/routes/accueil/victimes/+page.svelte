@@ -315,7 +315,7 @@
       {#if selected_section === "sociale"}
         <div id="sociale" class="pt-5">
           <div in:fly="{{ y: 50, duration: 3000 }}">
-            <SectionWithTitle title="Aide social">
+            <SectionWithTitle title="Aide sociale">
               <div>
                 <ul>
                   <li>Accueil - Ecoute - Informations</li>
@@ -365,7 +365,7 @@
 
             <SectionWithTitle title="Accompagnement collectif">
               <p>
-                Nous vous proposons des <span class="markup-text">interventions en groupes</span>
+                Nous vous proposons des <span class="markup-text">interventions en groupe</span>
                 : groupe de parole thérapeutique, intervention précoce lors d'évènement collectif (defusing/debriefing
                 psychologique).
               </p>
@@ -392,11 +392,11 @@
                   style="transform: rotate(-20deg);"
                 />
                 <p class="blue_title" style="padding-left:10px">
-                  Defusing et débriefing psychologique immédiatement après un évènement
+                  Defusing et debriefing psychologique immédiatement après un évènement
                 </p>
                 <ul class=" pl-1" style="padding-left:10px">
                   <li>Verbaliser immédiatement les émotions en lien avec l'événement</li>
-                  <li>Mise en évidence des besoins de chacun</li>
+                  <li>Mise en évidence des <span class="markup-text">besoins de chacun</span></li>
                   <li>Mutualiser les ressources</li>
                   <li>Eclaircir le processus de deuil</li>
                 </ul>
@@ -407,7 +407,7 @@
                 <ul class=" pl-1" style="padding-left:10px">
                   <li>Permettre l'échange autour d'un vécu commun</li>
                   <li>Libérer la parole par rapport aux conséquences de l'événement</li>
-                  <li>Assimiler le traumatisme et de ses répercussions</li>
+                  <li>Assimiler le traumatisme et ses répercussions</li>
                   <li>Mutualiser les ressources</li>
                   <li>Soutenir le processus de reconstruction</li>
                   <li>Travailler sur le processus de deuil</li>

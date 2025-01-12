@@ -19,7 +19,7 @@
 
     <p>
       Notre service s’adresse à <span class="markup-text">tout justiciable</span>, victime ou
-      auteur.e d’une infraction pénale, ainsi qu’à ses proches, en vue de leur apporter une
+      auteur·e·s d’une infraction pénale, ainsi qu’à ses proches, en vue de leur apporter une
       <span class="markup-text">aide sociale et/ou psychologique</span>.
       <br />
       Ces aides sont définies par le décret du 05/10/2023 du Ministère de la Communauté française introduisant
@@ -56,7 +56,7 @@
     <img
       src="$lib/assets/img/illustration/nos_missions_bonhomme.png"
       alt="illustration"
-      class="md:hidden w-1/4 max-w-60 pb-8"
+      class="md:hidden sm:w-1/4 max-w-60 pb-8"
     />
   </div>
 

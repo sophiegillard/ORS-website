@@ -23,7 +23,7 @@
       <a class="phone_link" href="tel:0800 30 030 ">0800 30 030 </a>
     </p>
     <p>
-      Service écoute-Enfants :
+      Service Écoute-Enfants :
       <a class="phone_link" href="tel:103">103</a>
     </p>
     <p>

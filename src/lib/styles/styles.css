@@ -332,11 +332,15 @@ h4 {
 
 /* ----------- VICTIMES ----------- */
 
+.text-content {
+  padding-bottom: 3rem;
+}
+
 .blue_title {
   font-family: Epilogue;
   font-size: 26px;
   font-weight: 400;
-padding-top: 20px;;
+  padding-top: 20px;;
   color: theme("colors.dark-blue");
 }
 

@@ -58,18 +58,26 @@
         Ors-Espace Libre <span class="lowercase">Asbl</span>
       </p>
 
-      <p class="footer-secondary inline-block">
+      <p class="footer-secondary sm:inline-block hidden">
         Service d’aide aux Justiciables de l’arrondissement
       </p>
-      <p class="footer-secondary inline-block">judiciaire du Hainaut - Division Charleroi</p>
-      <p class="footer-contact-info">Rue Léon Bernus 27, 6000 Charleroi</p>
-      <p class="footer-contact-info">Tél : 071/27.88.00</p>
-      <p class="footer-contact-info">Fax : 071/27.88.01</p>
+      <p class="footer-secondary sm:inline-block hidden">
+        judiciaire du Hainaut - Division Charleroi
+      </p>
+
+      <p class="footer-secondary inline-block sm:hidden">
+        Service d’aide aux Justiciables de l’arrondissement judiciaire du Hainaut - Division
+        Charleroi
+      </p>
+
+      <p class="footer-contact-info">Rue Léon Bernus 27 - 6000 Charleroi</p>
+      <p class="footer-contact-info">Tél 071/27.88.00</p>
+      <p class="footer-contact-info">Fax 071/27.88.01</p>
       <a href="mailto:contact@espacelibre.be" class="footer-contact-info">contact@espacelibre.be</a>
 
       <div>
         <a href="/mentions-legales" class="">
-          <p class="text-center mention-legales lg:hidden">Mentions légales</p>
+          <p class="text-center mention-legales hidden sm:block lg:hidden">Mentions légales</p>
         </a>
       </div>
     </div>
@@ -86,6 +94,13 @@
             </p>
           </a>
         </div>
+
+        <div>
+          <a href="/mentions-legales" class="">
+            <p class="text-center mention-legales sm:hidden">Mentions légales</p>
+          </a>
+        </div>
+
         <div class="text-xs">
           <p class="mention-footer text-center sm:text-right align-middle">
             Design © Marion Daubresse

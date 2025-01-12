@@ -92,23 +92,25 @@
     font-family: "Epilogue" !important;
     font-size: 20px !important;
     font-weight: 300 !important;
-    line-height: 14px !important;
-    text-align: center !important;
-  }
-
-  .p-secondary {
-    font-family: "Epilogue" !important;
-    font-size: 17px !important;
-    font-weight: 400 !important;
     line-height: 25px !important;
     text-align: center !important;
   }
 
   .markup-text-accueil {
-    font-size: 18px !important;
+    font-size: 21px !important;
     font-weight: 550 !important;
     line-height: 25px !important;
   }
+
+  .p-secondary {
+    font-family: "Epilogue" !important;
+    font-size: 20px !important;
+    font-weight: 400 !important;
+    line-height: 25px !important;
+    text-align: center !important;
+  }
+
+
 
   .nav-onglet {
     font-family: "Epilogue";
@@ -140,7 +142,7 @@
   }
 
   .btn-send {
-    font-size: 15px !important;
+    font-size: 18px !important;
     padding-block: 0px !important;
   }
 

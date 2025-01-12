@@ -12,7 +12,14 @@
 <style>
   @media (max-width: 1024px) {
     button {
-      max-width: 200px;
+      max-width: 220px;
+      min-height: 116px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    button {
+      max-width: 230px;
       min-height: 116px;
     }
   }

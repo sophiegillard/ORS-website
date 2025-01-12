@@ -48,7 +48,7 @@
         <span class="markup-text">Aujourd'hui</span>, le service est agréé et subsidié par la
         Fédération Wallonie Bruxelles - Direction Partenariat de l'Administration Générale des
         Maisons de Justice. Il bénéficie également d'un soutien financier de la Région wallonne, de
-        la Ville de Charleroi et du Fonds Social Européen.
+        la Ville de Charleroi, du Fonds Maribel Social et du Fonds Social Européen.
       </p>
 
       <div class="flex justify-center">

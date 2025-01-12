@@ -15,7 +15,7 @@
     topValue = 90
   }
 
-  $: if (page_width < 330) {
+  $: if (page_width < 370) {
     topValueMobile = 70
   } else {
     topValueMobile = 50
@@ -24,14 +24,22 @@
 
   function handleGoToSection(section_id) {
     selected_section = section_id
-    const section = document.getElementById("section_accompagnement")
-    if (section) {
-      const offsetTop = section.offsetTop - 40 // Get the top position relative to the document
-      window.scrollTo({
-        top: offsetTop + 80,
-        behavior: "smooth",
-      })
+
+    function scrollToSection() {
+      const section = document.getElementById(selected_section)
+
+      if (section) {
+        const offsetTop = section.offsetTop + 40
+        window.scrollTo({
+          top: offsetTop,
+          behavior: "smooth",
+        })
+      } else {
+        setTimeout(scrollToSection, 100)
+      }
     }
+
+    scrollToSection()
   }
 </script>
 
@@ -43,80 +51,82 @@
 <div class="text-column" bind:offsetWidth="{page_width}">
   <div>
     <!-- MOBILE -->
-    <SectionWithTitleMain
-      first_line_title="Aide aux auteur·e·s non incarcéré·e·s"
-      title="et à leurs proches"
-      custom_class="font-epilogue block sm:hidden"
-      top="{topValueMobile}"
-    >
-      <div class="flex justify-center">
+    <div class="sm:hidden">
+      <SectionWithTitleMain
+        first_line_title="Aide aux auteur·e·s non incarcéré·e·s"
+        title="et à leurs proches"
+        custom_class="font-epilogue block sm:hidden"
+        top="{topValueMobile}"
+      >
+        <div class="flex justify-center">
+          <img
+            src="$lib/assets/img/SVG/ORS_illustrations_Aide aux auteur.es.svg"
+            alt="illustration"
+            class="pb-6 w-4/5 sm:hidden"
+            style="max-width: 250px;"
+          />
+        </div>
         <img
           src="$lib/assets/img/SVG/ORS_illustrations_Aide aux auteur.es.svg"
           alt="illustration"
-          class="pb-6 w-4/5 sm:hidden"
-          style="max-width: 250px;"
+          class="float-right relative hidden sm:block w-2/5 bottom-5"
         />
-      </div>
-      <img
-        src="$lib/assets/img/SVG/ORS_illustrations_Aide aux auteur.es.svg"
-        alt="illustration"
-        class="float-right relative hidden sm:block w-2/5 bottom-5"
-      />
-      <div>
-        <ul class="flex flex-col items-center">
-          <li>
-            Vous avez commis ou un des vos proches a commis un <span class="markup-text"
-              >acte délictueux</span
-            >, même en dehors de toute procédure judiciaire,
-          </li>
-          <li>
-            Vous êtes confronté·e à la justice en tant <span class="markup-text"
-              >qu'auteur·e d'une infraction</span
-            > ,
-          </li>
-          <li>
-            Vous faites l'objet de <span class="markup-text">poursuites pénales </span> (médiation pénale,
-            alternative à la détention préventive...) ou d'une condamnation pénale et vous êtes en libération
-            provisoire, conditionnelle, à l’essai…
-          </li>
-        </ul>
+        <div>
+          <ul class="flex flex-col items-center">
+            <li>
+              Vous avez commis ou un des vos proches a commis un <span class="markup-text"
+                >acte délictueux</span
+              >, même en dehors de toute procédure judiciaire,
+            </li>
+            <li>
+              Vous êtes confronté·e à la justice en tant <span class="markup-text"
+                >qu'auteur·e d'une infraction</span
+              > ,
+            </li>
+            <li>
+              Vous faites l'objet de <span class="markup-text">poursuites pénales </span> (médiation
+              pénale, alternative à la détention préventive...) ou d'une condamnation pénale et vous
+              êtes en libération provisoire, conditionnelle, à l’essai…
+            </li>
+          </ul>
 
-        <p>Nous proposons :</p>
-        <div class="flex flex-col items-center py-6">
-          <div class=" flex flex-col items-center justify-center sm:hidden gap-6 w-2/3">
-            <SecondaryLinkButton
-              custom_class="grow"
-              on:click="{() => handleGoToSection('psychologique')}"
-            >
-              <p class="text-center">
-                Accompagnement <span class="markup-text">psychologique</span>
-              </p>
-            </SecondaryLinkButton>
+          <p>Nous proposons :</p>
+          <div class="flex flex-col items-center py-6">
+            <div class=" flex flex-col items-center justify-center sm:hidden gap-6 w-2/3">
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('psychologique')}"
+              >
+                <p class="text-center">
+                  Accompagnement <span class="markup-text">psychologique</span>
+                </p>
+              </SecondaryLinkButton>
 
-            <SecondaryLinkButton
-              custom_class="grow"
-              on:click="{() => handleGoToSection('sociale')}"
-            >
-              <p class="text-center">Aide <span class="markup-text">sociale</span></p>
-            </SecondaryLinkButton>
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('sociale')}"
+              >
+                <p class="text-center">Aide <span class="markup-text">sociale</span></p>
+              </SecondaryLinkButton>
 
-            <SecondaryLinkButton
-              custom_class="grow"
-              on:click="{() => handleGoToSection('collectif')}"
-            >
-              <p class="text-center">Accompagnement <span class="markup-text">collectif</span></p>
-            </SecondaryLinkButton>
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('collectif')}"
+              >
+                <p class="text-center">Accompagnement <span class="markup-text">collectif</span></p>
+              </SecondaryLinkButton>
 
-            <SecondaryLinkButton
-              custom_class="grow"
-              on:click="{() => handleGoToSection('proches')}"
-            >
-              <p class="text-center">Aide pour les <span class="markup-text">proches</span></p>
-            </SecondaryLinkButton>
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('proches')}"
+              >
+                <p class="text-center">Aide pour les <span class="markup-text">proches</span></p>
+              </SecondaryLinkButton>
+            </div>
           </div>
         </div>
-      </div>
-    </SectionWithTitleMain>
+      </SectionWithTitleMain>
+    </div>
 
     <!-- DESKTOP -->
     <SectionWithTitleMain
@@ -259,10 +269,10 @@
       {#if selected_section === "sociale"}
         <div id="sociale" class="pt-5">
           <div in:fly="{{ y: 50, duration: 3000 }}">
-            <SectionWithTitle title="Aide social">
+            <SectionWithTitle title="Aide sociale">
               <div>
                 <ul>
-                  <li>Accueil - écoute - Informations - Soutien</li>
+                  <li>Accueil - Écoute - Informations - Soutien</li>
                   <li>
                     Accompagnement dans les démarches administratives, sociales, juridiques...
                   </li>
@@ -351,7 +361,10 @@
                   </li>
                 </ul>
 
-                <hr class="text-nude bg-nude w-3/4 mb-5 mb-9 mt-7" style="height:2px !important" />
+                <hr
+                  class="text-nude bg-nude w-3/4 mb-5 lg:mb-9 mt-7"
+                  style="height:2px !important"
+                />
 
                 <h8 class="call_to_action"> Groupe de rencontre pour les proches </h8>
 
@@ -367,7 +380,7 @@
           <div in:fly="{{ y: 50, duration: 3000 }}">
             <SectionWithTitle title="Aide pour les proches">
               <p>
-                Un de vos proches a subi un acte délictueux et vous vous sentez en
+                Un de vos proches a commis un acte délictueux et vous vous sentez en
                 <span class="markup-text">souffrance</span>
                 et/ou en
                 <span class="markup-text">questionnement</span> par rapport à cette situation?

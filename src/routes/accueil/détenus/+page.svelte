@@ -17,7 +17,7 @@
     topValue = 90
   }
 
-  $: if (page_width < 330) {
+  $: if (page_width < 300) {
     topValueMobile = 70
   } else {
     topValueMobile = 50
@@ -62,85 +62,90 @@
 <div class="text-column" bind:offsetWidth="{page_width}">
   <div>
     <!-- MOBILE -->
-    <SectionWithTitleMain
-      first_line_title="Aide aux personnes détenues"
-      title="et à leurs proches"
-      custom_class="font-epilogue block sm:hidden"
-      top="{topValueMobile}"
-    >
-      <div class="flex justify-center">
-        <img
-          src="$lib/assets/img/SVG/ORS_illustrations_Aides aux detenus.svg"
-          alt="illustration"
-          class="pb-3 sm:hidden"
-          style="max-width: 250px;"
-        />
-      </div>
-      <div>
-        <ul class="flex flex-col items-center pb-4">
-          <li>
-            Vous êtes prévenu, condamné, interné au sein de la prison de <span class="markup-text"
-              >Jamioulx</span
-            >,
-          </li>
-          <li>
-            Vous exécutez une peine au sein d'une autre prison et vous souhaitez vous <span
-              class="markup-text">réinsérer</span
-            > dans l'arrondissement de Charleroi,
-          </li>
-          <li>
-            Un de vos proches est <span class="markup-text">incarcéré</span> au sein d'un établissement
-            pénitentiaire ou de défense sociale,
-          </li>
-        </ul>
+    <div class="sm:hidden">
+      <SectionWithTitleMain
+        first_line_title="Aide aux personnes détenues"
+        title="et à leurs proches"
+        custom_class="font-epilogue block sm:hidden"
+        top="{topValueMobile}"
+      >
+        <div class="flex justify-center">
+          <img
+            src="$lib/assets/img/SVG/ORS_illustrations_Aides aux detenus.svg"
+            alt="illustration"
+            class="pb-3 sm:hidden"
+            style="max-width: 250px;"
+          />
+        </div>
+        <div>
+          <ul class="flex flex-col items-center pb-4">
+            <li>
+              Vous êtes prévenu, condamné, interné au sein de la prison de <span class="markup-text"
+                >Jamioulx</span
+              >
+            </li>
+            <li>
+              Vous exécutez une peine au sein d'une autre prison et vous souhaitez vous <span
+                class="markup-text">réinsérer</span
+              > dans l'arrondissement de Charleroi
+            </li>
+            <li>
+              Un de vos proches est <span class="markup-text">incarcéré</span> au sein d'un établissement
+              pénitentiaire ou de défense sociale
+            </li>
+          </ul>
 
-        <p>Nous proposons :</p>
-        <div class="flex flex-col items-center py-6">
-          <div class=" flex flex-col items-center justify-center sm:hidden gap-6 w-3/4">
-            <SecondaryLinkButton
-              custom_class="grow"
-              on:click="{() => handleGoToSection('psychologique')}"
-            >
-              <p class="text-center">
-                Accompagnement <span class="markup-text">psychologique</span>
-              </p>
-            </SecondaryLinkButton>
+          <p>Nous proposons :</p>
+          <div class="flex flex-col items-center py-6">
+            <div class=" flex flex-col items-center justify-center sm:hidden gap-6 w-3/4">
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('psychologique')}"
+              >
+                <p class="text-center">
+                  Accompagnement <span class="markup-text">psychologique</span>
+                </p>
+              </SecondaryLinkButton>
 
-            <SecondaryLinkButton
-              custom_class="grow"
-              on:click="{() => handleGoToSection('sociale')}"
-            >
-              <p class="text-center">Aide <span class="markup-text">sociale</span></p>
-            </SecondaryLinkButton>
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('sociale')}"
+              >
+                <p class="text-center">Aide <span class="markup-text">sociale</span></p>
+              </SecondaryLinkButton>
 
-            <SecondaryLinkButton custom_class="grow" on:click="{() => handleGoToSection('adform')}">
-              <p class="text-center"><span class="markup-text">ADForm</span> - Aide Formations</p>
-            </SecondaryLinkButton>
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('adform')}"
+              >
+                <p class="text-center"><span class="markup-text">ADForm</span> - Aide Formations</p>
+              </SecondaryLinkButton>
 
-            <SecondaryLinkButton
-              custom_class="grow"
-              on:click="{() => handleGoToSection('collectif')}"
-            >
-              <p class="text-center">Accompagnement <span class="markup-text">collectif</span></p>
-            </SecondaryLinkButton>
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('collectif')}"
+              >
+                <p class="text-center">Accompagnement <span class="markup-text">collectif</span></p>
+              </SecondaryLinkButton>
 
-            <SecondaryLinkButton
-              custom_class="grow"
-              on:click="{() => handleGoToSection('proches')}"
-            >
-              <p class="text-center">Aide pour les <span class="markup-text">proches</span></p>
-            </SecondaryLinkButton>
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('proches')}"
+              >
+                <p class="text-center">Aide pour les <span class="markup-text">proches</span></p>
+              </SecondaryLinkButton>
 
-            <SecondaryLinkButton
-              custom_class="grow"
-              on:click="{() => handleGoToSection('visiteurs')}"
-            >
-              <p class="text-center"><span class="markup-text">Visiteur.euse</span> de prison</p>
-            </SecondaryLinkButton>
+              <SecondaryLinkButton
+                custom_class="grow"
+                on:click="{() => handleGoToSection('visiteurs')}"
+              >
+                <p class="text-center"><span class="markup-text">Visiteur.euse</span> de prison</p>
+              </SecondaryLinkButton>
+            </div>
           </div>
         </div>
-      </div>
-    </SectionWithTitleMain>
+      </SectionWithTitleMain>
+    </div>
 
     <img
       src="$lib/assets/img/SVG/ORS_illustrations_Aides aux detenus.svg"
@@ -157,26 +162,26 @@
       <div class="flex justify-center"></div>
 
       <div>
-        <ul class="flex flex-col items-center">
+        <ul class="flex flex-col items-start">
           <li>
             Vous êtes prévenu, condamné, interné au sein de la prison de <span class="markup-text"
               >Jamioulx</span
-            >,
+            >
           </li>
           <li>
             Vous exécutez une peine au sein d'une autre prison et vous souhaitez vous <span
               class="markup-text">réinsérer</span
-            > dans l'arrondissement de Charleroi,
+            > dans l'arrondissement de Charleroi
           </li>
           <li>
             Un de vos proches est <span class="markup-text">incarcéré</span> au sein d'un établissement
-            pénitentiaire ou de défense sociale,
+            pénitentiaire ou de défense sociale
           </li>
         </ul>
 
         <p>Nous proposons :</p>
         <div class="flex flex-col items-center sm:items-start pb-20">
-          <div class="sm:flex flex-col hidden lg:flex-row gap-6 pt-3 pb-6 w-3/4 md:w-7/12">
+          <div class="sm:flex flex-col hidden lg:flex-row gap-6 pt-3 pb-6 lg:w-7/12">
             <div class="grid grid-cols-5 gap-6">
               <!-- First Column (Wider) -->
               <div class="col-span-3 flex">
@@ -302,17 +307,17 @@
       {#if selected_section === "sociale"}
         <div id="sociale" class="pt-5">
           <div in:fly="{{ y: 50, duration: 3000 }}">
-            <SectionWithTitle title="Aide social">
+            <SectionWithTitle title="Aide sociale">
               <div>
                 <ul>
-                  <li>Accueil - écoute - Soutien</li>
+                  <li>Accueil - Écoute - Soutien</li>
                   <li>
                     Informations (organisation de la prison, services accessibles, procédures
                     judiciaires...)
                   </li>
                   <li>
-                    Accompagner dans les démarches sociales, administratives, juridiques... pour
-                    atténuer les conséquences de la détention et en vue de préparer la libération
+                    Accompagner dans les démarches sociales, administratives, juridiques... afin
+                    d'atténuer les conséquences de la détention et en vue de préparer la libération
                   </li>
                   <li>
                     Construire et préparer un projet de réinsertion (en alternative à la détention
@@ -458,7 +463,8 @@
                 />
 
                 <h8>Plate-forme d’informations</h8>
-                <ul>
+
+                <ul class="pt-2 lg:pt-3">
                   <li>
                     Rencontre au sein de la prison de Jamioulx, tous les deux mois, qui rassemble
                     des représentants de services extérieurs susceptibles de vous aider dans votre
@@ -510,7 +516,7 @@
           <div in:fly="{{ y: 50, duration: 3000 }}">
             <SectionWithTitle title="Aide pour les proches">
               <p>
-                Un de vos proches a subi un acte délictueux et vous vous sentez en
+                Un de vos proches a commis un acte délictueux et vous vous sentez en
                 <span class="markup-text">souffrance</span>
                 et/ou en
                 <span class="markup-text">questionnement</span> par rapport à cette situation?
@@ -564,7 +570,7 @@
       {#if selected_section === "visiteurs"}
         <div id="visiteurs" class="pt-5">
           <div in:fly="{{ y: 50, duration: 3000 }}">
-            <SectionWithTitle title="Soutien par des visiteurs de prison">
+            <SectionWithTitle title="Visiteur·euse de prison">
               <p>
                 Notre service compte, au sein de la prison de Jamioulx, une <span
                   class="markup-text">équipe de visiteur·euse·s bénévoles</span

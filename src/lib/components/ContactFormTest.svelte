@@ -77,7 +77,7 @@
 
 <div class="contact-form flex flex-col justify-center items-center pt-10">
   <h5>Formulaire de contact</h5>
-  <fieldset class="w-full pt-10">
+  <fieldset class="w-full pt-5 sm:pt-10">
     <form on:submit|preventDefault="{handleSubmit}" class="">
       <div class="flex flex-col gap-3 lg:gap-8 last:mpb-0">
         <input

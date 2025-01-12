@@ -22,8 +22,8 @@
 
   @media (max-width: 480px) {
     p {
-      font-size: 20px !important;
-      line-height: 20px !important;
+      font-size: 18px !important;
+      line-height: 17px !important;
     }
   }
 </style>

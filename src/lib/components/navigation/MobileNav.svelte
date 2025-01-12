@@ -22,7 +22,7 @@
 </script>
 
 <div
-  class="bg-off-white flex justify-between md:px-6 py-5 fixed w-full z-10 p-10 pt-10 md:pb-5"
+  class="bg-off-white flex justify-between md:px-6 py-4 fixed w-full z-10 p-10 md:pt-10 md:pb-5"
   bind:offsetHeight="{mobile_nav_height}"
 >
   <a class="onglet" href="/">

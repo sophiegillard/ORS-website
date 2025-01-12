@@ -15,5 +15,6 @@
   .flex-custom {
     flex-direction: row;
     justify-content: center !important;
+    align-content: center;
   }
 </style>

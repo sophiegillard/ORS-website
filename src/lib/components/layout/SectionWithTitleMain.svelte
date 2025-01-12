@@ -35,10 +35,6 @@
 </div>
 
 <style>
-  .text-content {
-    padding-bottom: 3rem;
-  }
-
   .subtitle-line {
     top: 25px;
   }
