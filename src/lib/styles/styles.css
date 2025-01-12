@@ -56,6 +56,7 @@
   text-align: center;
 }
 
+
 .markup-text {
   font-family: theme("fontFamily.gyst");
   font-variation-settings: "wght" 450;
@@ -67,7 +68,7 @@
 .markup-text-accueil {
   font-family: theme("fontFamily.gyst");
   font-variation-settings: "wght" 450;
-  font-size: 30px;
+  font-size: 32px;
   line-height: 35px;
   font-style: italic;
 }
@@ -93,20 +94,20 @@ h2 {
 .sub-title {
   font-family: "Epilogue";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 40px;
   position: relative;
   z-index: -2;
-
   margin-bottom: 30px;
 }
 .sub-title::after {
   content: "";
   position: absolute;
-  left: 15%; /* Center the element */
+  left: 11%; /* Center the element */
   bottom: -20%;
-  width: 70%;
-  border-bottom: theme("colors.dark-blue") 4px solid;
+  width: 76%;
+  border-bottom: theme("colors.dark-blue") 3.4px solid;
+  border-radius: 10px; /* Add round edges */
 }
 
 h3 {
@@ -187,12 +188,11 @@ li::marker {
 .onglet {
   font-family: "Epilogue";
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 20px;
-  line-height: 30px;
   display: flex;
   align-items: center;
-  font-variant: all-small-caps;
+  font-variant: small-caps;
 }
 
 .form-text {
@@ -216,7 +216,7 @@ li::marker {
 .footer-title {
   font-family: Epilogue;
   font-size: 28px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 30px;
   text-align: center;
 }
@@ -225,7 +225,7 @@ li::marker {
   font-family: Epilogue;
   font-size: 20px;
   font-weight: 400;
-  line-height: 30px;
+  padding-block: 2px !important;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -235,7 +235,7 @@ li::marker {
   font-family: Epilogue;
   font-size: 20px;
   font-weight: 300;
-  line-height: 25px;
+  padding-block: 2px !important;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -253,6 +253,7 @@ li::marker {
   font-size: 20px;
   font-weight: 400;
   line-height: 20.5px;
+  padding-bottom: 7.4rem;
 }
 
 .font-gyst {

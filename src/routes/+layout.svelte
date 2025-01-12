@@ -35,7 +35,7 @@
     class:z-negative="{isMenuOpen}"
     style="{`top: ${!isMobile && !isTablet ? nav_height + 90 : mobile_nav_height}px; min-height: ${content_height}px;`}"
   >
-    <main class="p-8 px-6 lg:pt-20">
+    <main class="p-8 px-6 lg:pt-15">
       <slot {isMobile} {isTablet} />
     </main>
 

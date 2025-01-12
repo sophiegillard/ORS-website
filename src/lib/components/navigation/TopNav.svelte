@@ -1,13 +1,13 @@
 <script>
   import { page } from "$app/stores"
   let pages = [
-    { label: "Accueil", value: "" },
-    { label: "Qui sommes-nous", value: "qui-sommes-nous" },
-    { label: "Nos Missions", value: "nos-missions" },
-    { label: "Nous soutenir", value: "nous-soutenir" },
-    { label: "Contact", value: "contact" },
-    { label: "Actualités", value: "actualites" },
-    { label: "N° utiles", value: "numeros-utiles" },
+    { label: "accueil", value: "" },
+    { label: "qui sommes-nous", value: "qui-sommes-nous" },
+    { label: "nos missions", value: "nos-missions" },
+    { label: "nous soutenir", value: "nous-soutenir" },
+    { label: "contact", value: "contact" },
+    { label: "actualités", value: "actualites" },
+    { label: "n° utiles", value: "numeros-utiles" },
   ]
 
   export let scrollY
@@ -29,7 +29,7 @@
 
     <nav class="navbar border rounded-full w-full flex" bind:offsetHeight="{nav_height}">
       {#each pages as page, index (page)}
-        <li class="nav-item uppercase py-1 m-0 p-0">
+        <li class="nav-item py-1 m-0 p-0">
           <a class="onglet" href="/{page.value}">{page.label}</a>
         </li>
         {#if index !== pages.length - 1}

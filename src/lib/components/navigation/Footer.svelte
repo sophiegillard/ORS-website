@@ -5,9 +5,9 @@
 <footer class=" bg-grey flex justify-center flex-col pb-4 items-center">
   <div class="bg-pink mention-service w-full text-center text-grey py-3 px-3 lg:py-8">
     {#if isMobile}
-      Service gratuit • Confidentiel <br /> Indépendant des instances judiciaires
+      Service gratuit &nbsp;•&nbsp; Confidentiel <br /> Indépendant des instances judiciaires
     {:else}
-      Service gratuit • Confidentiel • Indépendant des instances judiciaires
+      Service gratuit &nbsp;•&nbsp; Confidentiel &nbsp;•&nbsp; Indépendant des instances judiciaires
     {/if}
   </div>
 
@@ -62,7 +62,7 @@
         Service d’aide aux Justiciables de l’arrondissement judiciaire du Hainaut - Division
         Charleroi
       </p>
-      <p class="footer-contact-info">27 Rue Léon Bernus, 6000 Charleroi</p>
+      <p class="footer-contact-info">Rue Léon Bernus 27, 6000 Charleroi</p>
       <p class="footer-contact-info">Tél : 071/27.88.00</p>
       <p class="footer-contact-info">Fax : 071/27.88.01</p>
       <a href="mailto:contact@espacelibre.be" class="footer-contact-info">contact@espacelibre.be</a>
@@ -75,9 +75,7 @@
       <div>
         <div>
           <a href="/mentions-legales" class="pb-4 lg:pb-32 pt-0 mention-legales">
-            <p class="pb-4 lg:pb-32 pt-0 text-center sm:text-right mention-legales">
-              Mentions Légales
-            </p>
+            <p class="pb-4 pt-0 text-center sm:text-right mention-legales">Mentions légales</p>
           </a>
         </div>
         <div class="text-xs">

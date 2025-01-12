@@ -20,10 +20,11 @@
 
   <div class="">
     <p class="p-accueil pb-10 sm:px-14 md:px-28 text-center">
-      Nous proposons une <span class="markup-text-accueil block sm:inline-block">
-        aide psychologique et/ou sociale</span
-      >
-
+      Nous proposons une
+      <span class="markup-text-accueil block sm:inline-block">
+        aide psychologique et/ou sociale
+      </span>
+      <br />
       à toute personne confrontée au monde judiciaire.
     </p>
   </div>

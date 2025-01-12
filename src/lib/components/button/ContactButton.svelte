@@ -1,14 +1,14 @@
 <button
   on:click="{() => (window.location.href = '/contact')}"
-  class=" bg-brown hover:bg-brown-hover rounded-full text-off-white px-8 py-1 mb-6 mt-8 sm:mb-4 lg:px-10 lg:py-3 lg:my-16 font-light"
+  class=" bg-brown hover:bg-brown-hover rounded-full text-off-white px-8 py-1 mb-6 mt-8 sm:mb-4 lg:px-12 lg:py-2 lg:my-16 font-light"
 >
   <p>Nous contacter</p>
 </button>
 
-<style >
+<style>
   p {
     font-family: "Epilogue", sans-serif;
-    font-size: 28px;
+    font-size: 29px;
     font-weight: 400;
     text-align: center;
   }
