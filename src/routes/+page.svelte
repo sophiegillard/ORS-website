@@ -12,9 +12,7 @@
 
 <svelte:window bind:scrollY="{y}" />
 <div class="text-column text-center flex flex-col items-center justify-center">
-  <div
-    class="pb-6 w-64 md:py-0 md:w-1/2 md:pb-10 lg:w-5/14 xl:w-6/12 lg:pt-12 lg:pb-24 xl:pt-0 xl:pb-18"
-  >
+  <div class="pb-6 w-64 md:py-0 md:w-1/2 md:pb-10 lg:w-5/14 xl:w-6/12 lg:pt-12 xl:pb-24 xl:pt-0">
     <img src="$lib/assets/img/logo/ors-logo.png" alt="ORS logo" class:is-scrolled="{isScrolled}" />
   </div>
 

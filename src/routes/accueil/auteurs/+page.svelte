@@ -257,11 +257,12 @@
                 />
 
                 <!-- MOBILE -->
-                <div class="relative overflow-hidden sm:hidden">
+                <div class="relative py-4 overflow-hidden md:hidden flex justify-center">
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Acc. psy - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="w-10/12 ml-5 py-10"
+                    class="w-10/12 py-5"
+                    style="max-width: 350px;"
                   />
                 </div>
               </div>
@@ -320,7 +321,7 @@
             <img
               src="$lib/assets/img/SVG/ORS_illustrations_Aide auteur.es &Detenus - Acc. collectif.svg"
               alt="illustration"
-              class="float-right relative hidden sm:block lg:hidden w-4/12 top-5"
+              class="float-right relative hidden sm:block lg:hidden w-4/12"
             />
             <SectionWithTitle title="Accompagnement collectif">
               <img

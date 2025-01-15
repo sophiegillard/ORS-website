@@ -3,11 +3,20 @@
   export let first_line_title
   export let custom_class = ""
   export let left = -10
-  export let top
+  let top
 
   let title_width = 0
+  let window_width = 0
+  let top_line = 0
+
+  $: if (window_width > 1280) {
+    top_line = 90
+  } else {
+    top_line = 9
+  }
 </script>
 
+<svelte:window innerWidth="{window_width}" />
 <div class=" md:pt-10 lg:pt-16"></div>
 <div class="{custom_class}">
   {#if title}
@@ -25,7 +34,7 @@
         src="$lib/assets/img/lines/trace_quiSommesNous_1.png"
         alt="title bottom border"
         class=" z-10 subtitle-line absolute"
-        style="{`width : ${title_width + 15}px; left: ${left}px; height: 12px; `}"
+        style="{`width : ${title_width + 15}px; left: ${left}px; height: 12px; --top_line: ${top}px;`}"
       />
     </div>
   {/if}
@@ -35,30 +44,31 @@
 </div>
 
 <style>
+  .subtitle-line {
+    height: 20px;
+    top: var(--top_line) !important;
+  }
+
   @media (min-width: 480px) {
     .subtitle-line {
       height: 20px;
-      top: 55px !important;
     }
   }
 
   @media (min-width: 768px) {
     .subtitle-line {
       height: 20px;
-      top: 65px !important;
     }
   }
 
   @media (min-width: 1024px) {
     .subtitle-line {
-      top: 65px !important;
       height: 20px !important;
     }
   }
 
   @media (min-width: 1280px) {
     .subtitle-line {
-      top: 90px !important;
       height: 20px !important;
     }
   }
