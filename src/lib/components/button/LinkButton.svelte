@@ -4,7 +4,7 @@
 
 <button
   on:click="{() => (window.location.href = href)}"
-  class="bg-blue hover:bg-blue-hover px-6 sm:py-1 lg:py-8 rounded-2xl lg:rounded-3xl border-grey border lg:w-1/5 grow button-width"
+  class="bg-blue hover:bg-blue-hover px-6 sm:py-1 md:py-6 lg:py-8 rounded-2xl lg:rounded-3xl border-grey border lg:w-1/5 grow button-width"
 >
   <slot />
 </button>
@@ -12,8 +12,8 @@
 <style>
   @media (max-width: 1024px) {
     button {
-      max-width: 220px;
-      min-height: 116px;
+      max-width: 260px;
+      min-height: 147px;
     }
   }
 

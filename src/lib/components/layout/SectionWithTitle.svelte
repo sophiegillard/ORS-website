@@ -8,7 +8,7 @@
   let title_width = 0
 </script>
 
-<div class="{custom_class}">
+<div class="{custom_class} pt-10">
   {#if title}
     <div class="relative z-0 md:pb-5">
       <h3 class="p-0 pb-0 {custom_class} ">
@@ -41,13 +41,13 @@
   @media (min-width: 480px) {
     .subtitle-line {
       top: 50px;
-      height: 20px;
+      height: 2px;
     }
   }
 
   @media (min-width: 1024px) {
     .subtitle-line {
-      top: 40px;
+      top: 90px !important;
       height: 20px;
     }
   }

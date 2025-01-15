@@ -70,12 +70,12 @@
             <p>contact@espacelibre.be</p>
           </InformationItem>
         </div>
-        <div class="grow md:block md:w-1/3 lg:w-auto">
+        <div class="grow md:block md:w-1/3 lg:w-auto sm:hidden">
           <InformationItem title="Horaire">
             <p>Du lundi au jeudi : 8h30 - 17h</p>
             <div class="flex flex-col justify-center">
               <p>Vendredi : 8h30 - 16h</p>
-              <p class="remarque text-xs mb-5 lg:ml-2">(possibilité d'adaptation)</p>
+              <div class="remarque_adapt mb-5 lg:ml-2">(possibilité d'adaptation)</div>
             </div>
 
             <p>Permanence téléphonique :</p>
@@ -83,7 +83,7 @@
             <p>Mercredi : 8h30 - 16h</p>
           </InformationItem>
         </div>
-        <div class="lg:pr-5 sm:w-1/4 md:grow-0 lg:w-auto">
+        <div class="lg:pr-5 sm:w-1/4 sm:grow md:grow-0 lg:w-auto">
           <InformationItem title="Téléphone" custom_class="{' sm:pb-8 '}">
             <a href="tel:+3271278800">
               <a class="phone_link" href="tel:071/27.88.00">071/27.88.00</a>
@@ -94,19 +94,19 @@
           </InformationItem>
         </div>
       </div>
-      <!-- <div class="grow hidden sm:block md:hidden">
+      <div class="grow hidden sm:block md:hidden">
         <InformationItem title="Horaire">
           <p>Du lundi au jeudi : 8h30 - 17h</p>
-          <div class="flex flex-row justify-center">
+          <div class="flex flex-col justify-center">
             <p>Vendredi : 8h30 - 16h</p>
-            <p class="remarque text-xs mb-5 lg:ml-2">(possibilité d'adaptation)</p>
+            <p class="remarque_adapt mb-5 lg:ml-2">(possibilité d'adaptation)</p>
           </div>
 
           <p>Permanence téléphonique :</p>
           <p>Mardi et jeudi : 8h30 - 11h30</p>
           <p>Mercredi : 8h30 - 16h</p>
         </InformationItem>
-      </div> -->
+      </div>
 
       <!-- Map Section -->
 

@@ -13,10 +13,9 @@
     <img
       src="$lib/assets/img/illustration/nos_missions_bonhomme.png"
       alt="illustration"
-      class="float-right hidden md:block w-1/3 relative"
-      style="max-width: 330px"
+      class="float-right hidden md:block w-1/3 relative mb-10"
+      style="max-width: 330px;"
     />
-
     <p>
       Notre service s’adresse à <span class="markup-text">tout justiciable</span>, victime ou
       auteur·e·s d’une infraction pénale, ainsi qu’à ses proches, en vue de leur apporter une

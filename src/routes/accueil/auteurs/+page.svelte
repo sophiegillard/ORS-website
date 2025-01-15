@@ -63,7 +63,7 @@
             src="$lib/assets/img/SVG/ORS_illustrations_Aide aux auteur.es.svg"
             alt="illustration"
             class="pb-6 w-4/5 sm:hidden"
-            style="max-width: 250px;"
+            style="max-width: 200px;"
           />
         </div>
         <img
@@ -90,7 +90,7 @@
             </li>
           </ul>
 
-          <p>Nous proposons :</p>
+          <p class="mt-4">Nous proposons :</p>
           <div class="flex flex-col items-center py-6">
             <div class=" flex flex-col items-center justify-center sm:hidden gap-6 w-2/3">
               <SecondaryLinkButton
@@ -129,6 +129,11 @@
     </div>
 
     <!-- DESKTOP -->
+    <img
+      src="$lib/assets/img/SVG/ORS_illustrations_Aide aux auteur.es.svg"
+      alt="illustration"
+      class="float-right relative hidden sm:block w-3/12 bottom-5 top-10"
+    />
     <SectionWithTitleMain
       first_line_title="Aide aux auteur·e·s non incarcéré·e·s"
       title="et à leurs proches"
@@ -143,11 +148,7 @@
           style="max-width: 300px;"
         />
       </div>
-      <img
-        src="$lib/assets/img/SVG/ORS_illustrations_Aide aux auteur.es.svg"
-        alt="illustration"
-        class="float-right relative hidden sm:block w-1/3 bottom-5"
-      />
+
       <div>
         <ul class="flex flex-col items-center lg:items-start">
           <li>
@@ -167,9 +168,12 @@
           </li>
         </ul>
 
-        <p>Nous proposons :</p>
+        <p class="my-2">Nous proposons :</p>
         <div class="flex flex-col items-center sm:items-start pb-20">
-          <div class="sm:flex flex-col hidden lg:flex-row gap-6 pt-3 pb-6 w-3/4">
+          <div
+            class="sm:flex flex-col hidden lg:flex-row gap-6 pt-3 pb-6 w-10/12 md:w-8/12"
+            style="max-width: 600px !important;"
+          >
             <div class="grid grid-cols-5 gap-6">
               <!-- First Column (Wider) -->
               <div class="col-span-3">
@@ -241,23 +245,23 @@
                 <!-- WEB -->
                 <img
                   src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Acc. psy - Web.svg"
-                  class=" hidden lg:block"
+                  class=" hidden lg:block py-10"
                   alt="ORS logo"
                 />
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Acc. psy - Tablette.svg"
-                  class=" hidden sm:block lg:hidden"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Auteurs - Acc. psy - Tablette.svg"
+                  class=" hidden sm:block lg:hidden py-10"
                   alt="ORS logo"
                 />
 
                 <!-- MOBILE -->
-                <div class="relative py-4 overflow-hidden sm:hidden">
+                <div class="relative overflow-hidden sm:hidden">
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Acc. psy - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="h-full w-full object-cover transition-transform duration-300 ease-in-out scale-140"
+                    class="w-10/12 ml-5 py-10"
                   />
                 </div>
               </div>
@@ -285,23 +289,23 @@
                 <!-- WEB -->
                 <img
                   src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide sociale - Web.svg"
-                  class=" hidden lg:block"
+                  class=" hidden lg:block py-10"
                   alt="ORS logo"
                 />
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide sociale - Tablette.svg"
-                  class=" hidden sm:block lg:hidden"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Auteurs - Aide sociale - Tablette.svg"
+                  class=" hidden sm:block lg:hidden py-10"
                   alt="ORS logo"
                 />
 
                 <!-- MOBILE -->
-                <div class="relative py-4 overflow-hidden md:hidden">
+                <div class="relative py-4 overflow-hidden sm:hidden">
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide sociale - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="sm:hidden h-full w-full object-cover transition-transform duration-300 ease-in-out scale-140"
+                    class="w-10/12 ml-5 py-10"
                   />
                 </div>
               </div>
@@ -314,17 +318,22 @@
         <div id="collectif" class="pt-5">
           <div in:fly="{{ y: 50, duration: 3000 }}">
             <img
-              src="$lib/assets/img/SVG/ORS_illustrations_Aide auteur.es & Detenus - Acc. collectif.svg"
+              src="$lib/assets/img/SVG/ORS_illustrations_Aide auteur.es &Detenus - Acc. collectif.svg"
               alt="illustration"
-              class="float-right relative hidden sm:block w-2/5 bottom-5"
+              class="float-right relative hidden sm:block lg:hidden w-4/12 top-5"
             />
-
             <SectionWithTitle title="Accompagnement collectif">
+              <img
+                src="$lib/assets/img/SVG/ORS_illustrations_Aide auteur.es &Detenus - Acc. collectif.svg"
+                alt="illustration"
+                class="float-right relative hidden lg:block w-5/12 top-5"
+              />
               <div class=" flex justify-center">
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Aide auteur.es & Detenus - Acc. collectif.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Aide auteur.es &Detenus - Acc. collectif.svg"
                   alt="illustration"
-                  class="zoomed w-4/5 sm:hidden"
+                  class=" sm:hidden pb-10 pt-5"
+                  style="max-width: 400px !important;"
                 />
               </div>
 
@@ -405,24 +414,23 @@
                 <!-- WEB -->
                 <img
                   src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide proches - Web.svg"
-                  class="hidden lg:block my-6"
+                  class="hidden lg:block py-10"
                   alt="ORS logo"
                 />
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide proche - Tablette.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Auteurs - Aide proche - Tablette.svg"
                   class="hidden sm:block lg:hidden my-6"
                   alt="ORS logo"
                 />
 
                 <!-- MOBILE -->
-                <div class="relative my-8 overflow-hidden md:hidden">
+                <div class="relative py-4 overflow-hidden sm:hidden">
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide proches - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="sm:hidden h-full w-full object-cover transition-transform duration-300 ease-in-out scale-140"
-                    style="padding-top:30px"
+                    class="w-12/12 ml-5 py-10"
                   />
                 </div>
               </div>

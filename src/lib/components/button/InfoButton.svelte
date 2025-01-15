@@ -21,7 +21,7 @@
 
   <div class=" items-center flex">
     <button
-      class="info-button hover:bg-brown-hover rounded-full hover:text-off-white px-4 py-1 pt-2 my-6 lg:py-3 font-light"
+      class="info-button hover:bg-brown-hover rounded-full hover:text-off-white px-4 py-1 pt-2 my-6 md:py-2 lg:py-3 xl:py-4 font-light"
       on:click="{() => dispatch('click')}"
     >
       {title}
@@ -44,13 +44,13 @@
   .info-button {
     border: 2px solid theme("colors.grey");
     font-family: Epilogue;
-    font-size: 20px;
+
     font-weight: 400;
     line-height: 20.5px;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
-    width: 158px;
+    width: 190px;
   }
   .info-button:hover {
     background-color: theme("colors.grey");

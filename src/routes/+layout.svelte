@@ -20,7 +20,7 @@
   let y
   $: {
     isMobile = innerWidth && innerWidth <= 480
-    isTablet = innerWidth && innerWidth <= 850
+    isTablet = innerWidth && innerWidth <= 768
   }
 
   $: console.log("location.pathname", $page.url, $page.url.pathname.includes("accueil/"))
@@ -40,7 +40,7 @@
     class:z-negative="{isMenuOpen}"
     style="{`top: ${!isMobile && !isTablet ? nav_height + 90 : mobile_nav_height}px; min-height: ${content_height}px;`}"
   >
-    <main class="p-8 px-6 lg:pt-15">
+    <main class="p-8 sm:px-12 lg:pt-15">
       <slot {isMobile} {isTablet} />
     </main>
 
@@ -80,7 +80,7 @@
     flex-direction: column;
 
     width: 100%;
-    max-width: 75rem;
+    max-width: 90rem;
     margin: 0 auto;
     box-sizing: border-box;
   }

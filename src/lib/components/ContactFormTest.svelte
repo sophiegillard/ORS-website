@@ -177,11 +177,14 @@
   input.error::placeholder,
   textarea.error::placeholder {
     color: theme("colors.dark-blue") !important;
+    font-weight: 400;
   }
 
   input.error,
   textarea.error {
     border-color: theme("colors.dark-blue");
+    border-width: 2px;
+
     color: theme("colors.dark-blue") !important;
   }
 </style>

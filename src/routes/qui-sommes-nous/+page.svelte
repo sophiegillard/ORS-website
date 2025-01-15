@@ -41,7 +41,7 @@
 
       <p>
         En <span class="markup-text">2005</span>, l’asbl prendra l’appellation de ce secteur pour se
-        dénommer « ORS - Espace Libre ».
+        <span class="inline-block">dénommer « ORS - Espace Libre »</span>.
       </p>
 
       <p>
@@ -112,8 +112,8 @@
 
       <div class=" flex justify-center">
         <img
-          src="$lib/assets/img/illustration/qui_sommes-nous_valeurs.svg"
-          class="md:w-2/3 lg:w-1/2 max-w-96 lg:max-w-none"
+          src="$lib/assets/img/SVG/ORS_illustrations_Qui_sommes_nous_Valeurs.svg"
+          class="sm:w-6/12 max-w-60 md:max-w-full md:w-5/12 lg:w-4/12 xl:w-4/12 pt-10"
           alt="ORS logo"
         />
       </div>
@@ -175,22 +175,23 @@
 
       <div class="flex justify-center">
         <img
-          src="$lib/assets/img/illustration/qui_sommes-nous_organigramme_web.svg"
-          class=" hidden md:block"
+          src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Web.svg"
+          class=" hidden md:block py-16"
           alt="ORS logo"
         />
 
         <!-- TABLET -->
         <img
           src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Tablette.svg"
-          class="hidden md:hidden sm:block"
+          class="hidden md:hidden sm:block py-10"
           alt="ORS logo"
         />
 
         <div class="image-container sm:hidden flex justify-center">
           <img
             src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Mobile.svg"
-            class="zoomed sm:hidden"
+            class=" sm:hidden py-10"
+            style="max-width: 300px"
             alt="ORS logo"
           />
         </div>

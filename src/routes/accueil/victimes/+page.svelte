@@ -6,13 +6,11 @@
   import SecondaryLinkButton from "$lib/components/button/SecondaryLinkButton.svelte"
   import { fly } from "svelte/transition"
 
-  let topValue = 90 // Default value for SSR
+  let topValue = 70 // Default value for SSR
   let page_width = 0
 
   $: if (page_width >= 590 && page_width < 977) {
     topValue = 50
-  } else {
-    topValue = 90
   }
   let selected_section = ""
 
@@ -47,9 +45,9 @@
     <!-- MOBILE -->
     <div class="sm:hidden">
       <SectionWithTitleMain
-        title="Aide aux victimes d’infractions pénales et à leurs proches"
+        first_line_title="Aide aux victimes d’infractions"
+        title="pénales et à leurs proches"
         custom_class="font-epilogue block sm:hidden"
-        top="{50}"
       >
         <div class="flex justify-center">
           <img
@@ -89,10 +87,10 @@
           <p class="py-5 sm:w-2/3 md:w-full">
             Que les faits soient <span class="markup-text">actuels</span> ou
             <span class="markup-text">passés</span>
-            ou qu'une <span class="markup-text">procédure judiciaire</span> soit en cours ou non.
+            ou qu'une <span class="markup-text">procédure judiciaire</span> soit en cours ou non,
           </p>
 
-          <p>Nous proposons :</p>
+          <p class="mb-6">Nous proposons :</p>
           <div class="flex flex-col items-center sm:items-start">
             <div
               class="flex flex-col sm:hidden items-center lg:flex-row gap-6 pt-3 pb-6"
@@ -144,16 +142,17 @@
         <img
           src="$lib/assets/img/illustration/victime_illu_mains.png"
           alt="illustration"
-          class="pb-6 w-4/5 sm:hidden"
+          class="pb-6 w-4/5 md:hidden"
           style="max-width: 300px;"
         />
       </div>
-      <img
-        src="$lib/assets/img/illustration/victime_illu_mains.png"
-        alt="illustration"
-        class="float-right relative hidden sm:block w-1/3 bottom-5"
-      />
+
       <div>
+        <img
+          src="$lib/assets/img/illustration/victime_illu_mains.png"
+          alt="illustration"
+          class="float-right relative hidden md:block w-1/3 bottom-12"
+        />
         <ul class="flex flex-col">
           <li>
             Vous êtes victime ou vous êtes <span class="markup-text">proche</span> d'une personne
@@ -161,6 +160,7 @@
             <span class="markup-text">d'infraction pénale</span> (agression physique, verbale, violence
             sexuelle, harcèlement, cambriolage, hold-up...)
           </li>
+
           <li>
             Vous vivez une <span class="markup-text">situation de violence conjugale</span>, de
             conflit de voisinage,...
@@ -178,12 +178,12 @@
         <p class="py-5 sm:w-2/3 md:w-full">
           Que les faits soient <span class="markup-text">actuels</span> ou
           <span class="markup-text">passés</span>
-          ou qu'une <span class="markup-text">procédure judiciaire</span> soit en cours ou non.
+          ou qu'une <span class="markup-text">procédure judiciaire</span> soit en cours ou non,
         </p>
 
         <p>Nous proposons :</p>
         <div class="flex flex-col lg:block items-center sm:items-start lg:pb-10">
-          <div class="sm:flex flex-col hidden lg:hidden gap-6 pt-3 pb-6 w-4/5 md:w-3/5">
+          <div class="sm:flex flex-col hidden lg:hidden gap-6 pt-3 pb-6 w-10/12 md:w-9/12">
             <div class="grid grid-cols-5 gap-6">
               <!-- First Column (Wider) -->
               <div class="col-span-3 flex">
@@ -283,18 +283,18 @@
                 </ul>
               </div>
 
-              <div class="">
+              <div>
                 <!-- WEB -->
                 <img
                   src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Acc. psy - Web.svg"
-                  class=" hidden lg:block"
+                  class=" hidden lg:block py-10"
                   alt="ORS logo"
                 />
 
                 <!-- DESKTOP -->
                 <img
                   src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Acc. psy - Tablette.svg"
-                  class=" hidden sm:block lg:hidden"
+                  class=" hidden sm:block lg:hidden py-10"
                   alt="ORS logo"
                 />
 
@@ -303,7 +303,8 @@
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Acc. psy - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="h-full w-full object-cover transition-transform duration-300 ease-in-out scale-140"
+                    class="w-8/12 ml-5 py-10"
+                    style="max-width: 250px;"
                   />
                 </div>
               </div>
@@ -324,27 +325,27 @@
                   <li>...</li>
                 </ul>
               </div>
-              <div class="">
+              <div>
                 <!-- WEB -->
                 <img
                   src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide sociale - Web.svg"
-                  class=" hidden lg:block"
+                  class=" hidden lg:block my-16"
                   alt="ORS logo"
                 />
 
                 <!-- DESKTOP -->
                 <img
                   src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide sociale - Tablette.svg"
-                  class=" hidden sm:block lg:hidden"
+                  class=" hidden sm:block lg:hidden my-8"
                   alt="ORS logo"
                 />
 
                 <!-- MOBILE -->
-                <div class="relative py-4 overflow-hidden md:hidden">
+                <div class="relative py-4 overflow-hidden sm:hidden">
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide sociale - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="sm:hidden h-full w-full object-cover transition-transform duration-300 ease-in-out scale-140"
+                    class="w-8/12 ml-5"
                   />
                 </div>
               </div>
@@ -363,8 +364,14 @@
               style="transform: rotate(-20deg);"
             />
 
+            <img
+              src="$lib/assets/img/illustration/victime_illu_visage.png"
+              alt="illustration"
+              class="float-right relative hidden md:block w-4/12 bottom-5"
+              style="transform: rotate(-15deg);"
+            />
             <SectionWithTitle title="Accompagnement collectif">
-              <p>
+              <p class="pb-10">
                 Nous vous proposons des <span class="markup-text">interventions en groupe</span>
                 : groupe de parole thérapeutique, intervention précoce lors d'évènement collectif (defusing/debriefing
                 psychologique).
@@ -382,29 +389,25 @@
                 <h8>Groupe de parole</h8>
                 <p class="projet">En projet</p>
                 <!-- <hr style="height:2px;border-width:0;color:gray;background-color:gray">  -->
-                <hr class="text-nude bg-nude w-3/5 mb-5" style="height:2px !important" />
+                <hr class="text-nude bg-nude w-3/5 mb-4 md:my-5" style="height:2px !important" />
+
                 <h8> Intervention en cas d’évènements traumatiques collectifs </h8>
                 <!-- IMAGE DESKTOP -->
-                <img
-                  src="$lib/assets/img/illustration/victime_illu_visage.png"
-                  alt="illustration"
-                  class="float-right relative hidden md:block w-2/5 bottom-5"
-                  style="transform: rotate(-20deg);"
-                />
-                <p class="blue_title" style="padding-left:10px">
+
+                <p class="blue_title sm:pl-3">
                   Defusing et debriefing psychologique immédiatement après un évènement
                 </p>
-                <ul class=" pl-1" style="padding-left:10px">
+                <ul class=" pl-1 sm:pl-3">
                   <li>Verbaliser immédiatement les émotions en lien avec l'événement</li>
                   <li>Mise en évidence des <span class="markup-text">besoins de chacun</span></li>
                   <li>Mutualiser les ressources</li>
                   <li>Eclaircir le processus de deuil</li>
                 </ul>
 
-                <p class="blue_title" style="padding-left:10px">
+                <p class="blue_title sm:pl-3">
                   Atelier de parole pour victimes d’un évènement de grande ampleur
                 </p>
-                <ul class=" pl-1" style="padding-left:10px">
+                <ul class=" pl-1 sm:pl-3">
                   <li>Permettre l'échange autour d'un vécu commun</li>
                   <li>Libérer la parole par rapport aux conséquences de l'événement</li>
                   <li>Assimiler le traumatisme et ses répercussions</li>
@@ -428,7 +431,7 @@
                 et/ou en
                 <span class="markup-text">questionnement</span> par rapport à cette situation?
               </p>
-              <p>Nous vous proposons :</p>
+              <p class="mb-3">Nous vous proposons :</p>
               <ul>
                 <li>Un soutien</li>
                 <li>Un accompagnement psychologique individuel</li>
@@ -440,27 +443,27 @@
                 <li>...</li>
               </ul>
 
-              <div class="">
+              <div>
                 <!-- WEB -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide proches - Web.svg"
-                  class="hidden md:block my-6"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide proches - Web .svg"
+                  class="hidden lg:block lg:my-20"
                   alt="ORS logo"
                 />
 
                 <!-- DESKTOP -->
                 <img
                   src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide proche - Tablette.svg"
-                  class="hidden sm:block md:hidden my-6"
+                  class="hidden sm:block lg:hidden my-10"
                   alt="ORS logo"
                 />
 
                 <!-- MOBILE -->
-                <div class="relative my-8 overflow-hidden md:hidden">
+                <div class="relative py-4 overflow-hidden sm:hidden">
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide proches - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="sm:hidden pt-8 sm:pt-0 h-full w-full object-cover transition-transform duration-300 ease-in-out scale-140"
+                    class="w-10/12 ml-5 my-10"
                   />
                 </div>
               </div>

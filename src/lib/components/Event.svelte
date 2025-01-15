@@ -39,7 +39,7 @@
           </p>
         {/if}
         {#if description}
-          <p>{description}</p>
+          <p class="pt-7">{description}</p>
         {/if}
       </div>
     </div>

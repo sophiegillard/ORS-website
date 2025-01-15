@@ -3,7 +3,9 @@
 </script>
 
 <footer class=" bg-grey flex justify-center flex-col pb-4 items-center">
-  <div class="bg-pink mention-service w-full text-center text-grey py-3 px-3 lg:py-8">
+  <div
+    class="bg-pink mention-service w-full text-center text-grey py-3 px-3 md:py-4 lg:py-5 xl:py-8"
+  >
     {#if isMobile}
       Service gratuit &nbsp;•&nbsp; Confidentiel <br /> Indépendant des instances judiciaires
     {:else}
@@ -53,7 +55,7 @@
     </div>
 
     <!-- TEXT -->
-    <div class="section section-text px-4 order-1 sm:order-2 text-center">
+    <div class="section section-text px-4 order-1 sm:order-2 text-center pt-4">
       <p class="footer-title uppercase inline-block">
         Ors-Espace Libre <span class="lowercase">Asbl</span>
       </p>
@@ -77,7 +79,7 @@
 
       <div>
         <a href="/mentions-legales" class="">
-          <p class="text-center mention-legales hidden sm:block lg:hidden">Mentions légales</p>
+          <p class="text-center mention-legales hidden sm:block xl:hidden">Mentions légales</p>
         </a>
       </div>
     </div>
@@ -89,7 +91,7 @@
       <div>
         <div>
           <a href="/mentions-legales" class="pb-4 lg:pb-32 pt-0 mention-legales">
-            <p class="pb-4 pt-0 text-center hidden lg:block sm:text-right mention-legales">
+            <p class=" pt-0 text-center hidden xl:block sm:text-right mention-legales">
               Mentions légales
             </p>
           </a>

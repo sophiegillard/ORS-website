@@ -28,7 +28,7 @@
     </p>
   </div>
 
-  <p class=" pb-0 lg:pb-8 p-secondary">Nous nous adressons dès lors :</p>
+  <p class=" pb-0 lg:pb-8 p-secondary">Nous nous adressons dès lors aux :</p>
 
   <AutorButtonsGroup />
 </div>

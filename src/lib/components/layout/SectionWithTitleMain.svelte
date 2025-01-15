@@ -8,10 +8,10 @@
   let title_width = 0
 </script>
 
-<div class=" lg:pt-16"></div>
+<div class=" md:pt-10 lg:pt-16"></div>
 <div class="{custom_class}">
   {#if title}
-    <div class="relative z-0">
+    <div class="relative z-0 pb-5 md:pb-0">
       <h2 class="p-0 pb-0 {custom_class} ">
         {#if first_line_title}
           {first_line_title}
@@ -25,7 +25,7 @@
         src="$lib/assets/img/lines/trace_quiSommesNous_1.png"
         alt="title bottom border"
         class=" z-10 subtitle-line absolute"
-        style="{`width : ${title_width + 15}px; left: ${left}px; height: 12px; top: ${top}px;`}"
+        style="{`width : ${title_width + 15}px; left: ${left}px; height: 12px; `}"
       />
     </div>
   {/if}
@@ -35,19 +35,30 @@
 </div>
 
 <style>
-  .subtitle-line {
-    top: 25px;
-  }
-
   @media (min-width: 480px) {
     .subtitle-line {
       height: 20px;
+      top: 55px !important;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .subtitle-line {
+      height: 20px;
+      top: 65px !important;
     }
   }
 
   @media (min-width: 1024px) {
     .subtitle-line {
-      top: 50px;
+      top: 65px !important;
+      height: 20px !important;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .subtitle-line {
+      top: 90px !important;
       height: 20px !important;
     }
   }

@@ -12,8 +12,11 @@ export default {
             white: "#FFF6F3",
             nude: "#FFBFA9",
         },
+
+
         fontFamily: {
             gyst: ['"gyst-variable"', "sans-serif"],
+            gysti: ['"gyst-variable-italic"', "sans-serif"], // Gyst Light Italic
             epilogue: ['"Epilogue"', "sans-serif"],
             sans: ['"Poppins"', "sans-serif"],
             serif: ['"Playfair Display"', "serif"],
