@@ -304,7 +304,6 @@
                     src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Acc. psy - Mobile.svg"
                     alt="Illustration of psychological support for victims"
                     class="w-8/12 ml-5 py-10"
-                    style="max-width: 250px;"
                   />
                 </div>
               </div>
