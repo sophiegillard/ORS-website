@@ -2,6 +2,7 @@
   export let title
   export let first_line_title
   export let custom_class = ""
+  export let custom_class_full = ""
   export let left = -10
   let top
 
@@ -17,8 +18,8 @@
 </script>
 
 <svelte:window innerWidth="{window_width}" />
-<div class=" md:pt-10 lg:pt-16"></div>
-<div class="{custom_class}">
+<div class=" md:pt-4 ld:pt-14 xl:pt-16"></div>
+<div class="{custom_class} {custom_class_full} md:mb-10 xl:mb-0">
   {#if title}
     <div class="relative z-0 pb-5 md:pb-0">
       <h2 class="p-0 pb-0 {custom_class} ">
@@ -38,7 +39,7 @@
       />
     </div>
   {/if}
-  <div class="text-content pt-5 px-5 sm:pt-8 md:pt-12">
+  <div class="text-content pt-2 px-5 md:pt-12">
     <slot />
   </div>
 </div>

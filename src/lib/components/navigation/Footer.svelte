@@ -56,7 +56,7 @@
 
     <!-- TEXT -->
     <div class="section section-text px-4 order-1 sm:order-2 text-center pt-4">
-      <p class="footer-title uppercase inline-block">
+      <p class="footer-title uppercase block">
         Ors-Espace Libre <span class="lowercase">Asbl</span>
       </p>
 

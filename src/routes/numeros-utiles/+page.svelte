@@ -8,13 +8,12 @@
 </svelte:head>
 
 <div class="text-column">
+  <img
+    src="$lib/assets/img/SVG/ORS_illustrations_Numeros utiles_1.png"
+    alt="illustration"
+    class="float-right hidden sm:block w-1/3 relative xl:top-12"
+  />
   <SectionWithTitleMain title="Numéros utiles" width="{220}">
-    <img
-      src="$lib/assets/img/SVG/ORS_illustrations_Numeros utiles_1.png"
-      alt="illustration"
-      class="float-right hidden sm:block w-1/3 relative"
-    />
-
     <p class="lg:mt-7">
       Télé-Accueil – Quelqu’un à qui parler 24h/24 : <a class="phone_link" href="tel:107">107</a>
     </p>

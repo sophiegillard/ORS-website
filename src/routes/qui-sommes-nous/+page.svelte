@@ -60,7 +60,7 @@
       </div>
     </SectionWithTitleMain>
 
-    <SectionWithTitleMain title="Objectifs et valeurs">
+    <SectionWithTitleMain title="Objectifs et valeurs" custom_class_full="mt-10 md:mt-0">
       <p>
         De par ses missions, notre service <span class="markup-text">offre une aide</span> à toute personne
         confrontée à la justice, qu’elle soit victime ou auteur·e des faits.
@@ -119,7 +119,7 @@
       </div>
     </SectionWithTitleMain>
 
-    <SectionWithTitleMain title="Equipe psychosociale">
+    <SectionWithTitleMain title="Equipe psychosociale" custom_class_full="mt-10 md:mt-0">
       <p>
         Notre <span class="markup-text">équipe</span> compte assistants sociaux, criminologues et psychologues.
       </p>
@@ -152,7 +152,7 @@
       </p>
     </SectionWithTitleMain>
 
-    <SectionWithTitleMain title="Collaborations">
+    <SectionWithTitleMain title="Collaborations" custom_class_full="mt-10 md:mt-0">
       <div>
         <p>
           Notre service porte une attention particulière à une approche globale de la personne, de
@@ -176,14 +176,14 @@
       <div class="flex justify-center">
         <img
           src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Web.svg"
-          class=" hidden md:block py-16"
+          class=" hidden lg:block py-16"
           alt="ORS logo"
         />
 
         <!-- TABLET -->
         <img
           src="$lib/assets/img/SVG/ORS_illustrations_Qui sommes-nous - Organigramme - Tablette.svg"
-          class="hidden md:hidden sm:block py-10"
+          class="hidden lg:hidden sm:block py-10"
           alt="ORS logo"
         />
 

@@ -15,7 +15,7 @@
   export let info_button_url = ""
 </script>
 
-<div class="{info_button && 'md:w-10/12'}">
+<div class="{info_button && 'md:w-11/12 lg:w-10/12'}">
   <div class="flex flex-col sm:flex-row justify-between">
     <div class="">
       {#if nom_evenement}
@@ -23,7 +23,7 @@
       {/if}
       <div>
         {#if is_detail}
-          <p class="pt-0">
+          <p class="py-0">
             {#if date}
               <span class="date">{date}</span>
             {/if}
@@ -39,7 +39,7 @@
           </p>
         {/if}
         {#if description}
-          <p class="pt-7">{description}</p>
+          <p class="">{description}</p>
         {/if}
       </div>
     </div>
@@ -62,7 +62,7 @@
   </div>
 
   {#if !is_last}
-    <hr class=" border border-nude my-4 md:my-0 lg:my-4" style="height:1px !important" />
+    <hr class=" border border-nude my-4 md:my-0 lg:my-10" style="height:1px !important" />
   {/if}
 </div>
 

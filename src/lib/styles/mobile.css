@@ -56,15 +56,19 @@
     line-height: 22px !important;
   }
 
-  .menu{     
-    top: 60px !important;
-  }
+  /* .menu{  
+    top : 50px !important;   
+    padding-inline: 20px !important;
+
+  } */
   
   .menu-button-p {
     font-variant: small-caps !important;
     font-size: 17px !important;
     padding-block: 2px !important;
     padding-inline: 4px !important;
+    font-weight: 400 !important;
+
   }
 
   .p-accueil {
@@ -139,7 +143,7 @@
 
   .footer-contact-info {
     font-size: 13px !important;
-    line-height: 22px !important;
+    line-height: 10px !important;
   }
 
   .mention-legales {
@@ -179,6 +183,22 @@
   .phone_link {
     font-size: 15px !important;
   }
+
+   /* ----------- ACTUALITES ----------- */
+
+   .nom_event {
+    font-size: 16px !important;
+    padding-bottom: 10px !important;
+  }
+  
+  .info-button {
+    font-family: "Epilogue";
+    font-size: 17px !important;
+    font-weight: 500;
+    width: 110px !important;
+    border: 1px solid theme("colors.grey") !important;
+  }
+
 
   /* ----------- VICTIMES ----------- */
 

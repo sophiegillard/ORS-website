@@ -28,7 +28,9 @@
 
 <svelte:window bind:innerWidth bind:innerHeight bind:scrollY="{y}" />
 <div class="">
-  {#if !isMobile && !isTablet}
+  {#if isMobile === undefined}
+    <div></div>
+  {:else if !isMobile && !isTablet}
     <TopNav bind:nav_height scrollY="{y}" />
   {:else}
     <MobileNav scrollY="{y}" bind:mobile_nav_height bind:isMenuOpen />

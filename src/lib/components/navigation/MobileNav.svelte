@@ -14,7 +14,7 @@
 
   export let scrollY
   export let mobile_nav_height = 0
-  export let isMenuOpen = true
+  export let isMenuOpen = false
 
   function toggleMenu() {
     isMenuOpen = !isMenuOpen
@@ -22,7 +22,7 @@
 </script>
 
 <div
-  class="bg-off-white flex justify-between md:px-6 py-4 fixed w-full z-10 p-10 md:pt-10 md:pb-5"
+  class="bg-off-white flex justify-between md:px-6 fixed w-full z-10 pb-4 pt-5 px-5 sm:px-10 sm:pt-10 md:pb-0 sm:pb-10"
   bind:offsetHeight="{mobile_nav_height}"
 >
   <a class="onglet" href="/">
@@ -40,11 +40,15 @@
   </button>
 
   {#if isMenuOpen}
-    <div class="menu bg-off-white" style="{`top: ${mobile_nav_height}px`}" transition:slide>
+    <div class="menu bg-off-white top-12 sm:mt-10 mt-4 px-5 sm:px-10" transition:slide>
       {#each pages as page, index}
-        <a class="menu-item nav-onglet" href="/{page.value}" on:click="{() => (isMenuOpen = false)}"
-          >{page.label}</a
+        <a
+          class="menu-item nav-onglet"
+          href="/{page.value}"
+          on:click="{() => (isMenuOpen = false)}"
         >
+          {page.label}
+        </a>
         {#if index !== pages.length - 1}
           <hr class="menu-divider" />
         {/if}
@@ -66,7 +70,7 @@
     position: fixed;
     left: 0;
     width: 100%;
-    padding-inline: 40px;
+
     overflow-y: scroll;
     display: flex;
     flex-direction: column;

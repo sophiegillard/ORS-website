@@ -132,6 +132,11 @@
     </div>
 
     <!-- DESKTOP -->
+    <img
+      src="$lib/assets/img/illustration/victime_illu_mains.png"
+      alt="illustration"
+      class="float-right relative hidden md:block w-4/12 top-12"
+    />
     <SectionWithTitleMain
       first_line_title="Aide aux victimes d’infractions pénales"
       title="et à leurs proches"
@@ -148,11 +153,6 @@
       </div>
 
       <div>
-        <img
-          src="$lib/assets/img/illustration/victime_illu_mains.png"
-          alt="illustration"
-          class="float-right relative hidden md:block w-1/3 bottom-12"
-        />
         <ul class="flex flex-col">
           <li>
             Vous êtes victime ou vous êtes <span class="markup-text">proche</span> d'une personne
@@ -175,7 +175,7 @@
           </li>
         </ul>
 
-        <p class="py-5 sm:w-2/3 md:w-full">
+        <p class="my-3">
           Que les faits soient <span class="markup-text">actuels</span> ou
           <span class="markup-text">passés</span>
           ou qu'une <span class="markup-text">procédure judiciaire</span> soit en cours ou non,

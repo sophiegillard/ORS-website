@@ -261,7 +261,7 @@
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Acc. psy - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="w-10/12 py-5"
+                    class="w-10/12 py-5 sm:hidden"
                     style="max-width: 350px;"
                   />
                 </div>
@@ -321,7 +321,7 @@
             <img
               src="$lib/assets/img/SVG/ORS_illustrations_Aide auteur.es &Detenus - Acc. collectif.svg"
               alt="illustration"
-              class="float-right relative hidden sm:block lg:hidden w-4/12"
+              class="float-right relative hidden sm:block lg:hidden w-5/12"
             />
             <SectionWithTitle title="Accompagnement collectif">
               <img
@@ -338,7 +338,7 @@
                 />
               </div>
 
-              <div>
+              <div class="pt-5">
                 <h8>Groupe de réflexion pour auteurs de violence conjugale</h8>
                 <ul class="pt-5">
                   <li>
@@ -371,12 +371,9 @@
                   </li>
                 </ul>
 
-                <hr
-                  class="text-nude bg-nude w-3/4 mb-5 lg:mb-9 mt-7"
-                  style="height:2px !important"
-                />
+                <hr class="text-nude bg-nude w-3/4 my-5 lg:my-9" style="height:2px !important" />
 
-                <h8 class="call_to_action"> Groupe de rencontre pour les proches </h8>
+                <h8 class=""> Groupe de rencontre pour les proches </h8>
 
                 <p>A venir</p>
               </div>

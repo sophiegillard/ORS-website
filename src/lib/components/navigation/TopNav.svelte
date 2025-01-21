@@ -17,10 +17,9 @@
 <header class="p-6 pt-10 flex-col-center fixed w-full bg-off-white z-10">
   <div class="flex-row-center gap-4 w-full" style="{' max-width: 90rem;'}">
     {#if !(scrollY < 130 && ($page.url.pathname === "/accueil" || $page.url.pathname === "/"))}
-      <a class="onglet" href="/">
+      <a class="onglet hidden" href="/">
         <img
           src="$lib/assets/img/logo/ors-logo.png"
-          class=""
           alt="ORS logo"
           style="{`max-height:${nav_height}px;`}"
         />

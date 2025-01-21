@@ -21,7 +21,7 @@
 
   <div class=" items-center flex">
     <button
-      class="info-button hover:bg-brown-hover rounded-full hover:text-off-white px-4 py-1 pt-2 my-6 md:py-2 lg:py-3 xl:py-4 font-light"
+      class="info-button hover:bg-brown-hover rounded-full hover:text-off-white px-4 py-1 pt-2 mr-8 md:py-2 lg:py-3 xl:py-4 font-light"
       on:click="{() => dispatch('click')}"
     >
       {title}

@@ -9,7 +9,7 @@
 </svelte:head>
 
 <div class="text-column">
-  <SectionWithTitleMain title="Nos missions" width="{220}">
+  <SectionWithTitleMain title="Nos missions" width="{220}" custom_class="{'mb-0'}">
     <img
       src="$lib/assets/img/illustration/nos_missions_bonhomme.png"
       alt="illustration"

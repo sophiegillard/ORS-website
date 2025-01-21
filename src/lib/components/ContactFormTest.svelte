@@ -124,7 +124,7 @@
           type="submit"
           class="{success
             ? 'bg-dark-blue'
-            : 'bg-grey'} text-white text-lg rounded-lg lg:rounded-xl py-2 md:py-3 px-4 w-100"
+            : 'bg-grey'} text-white rounded-lg lg:rounded-xl py-2 md:py-3 px-4 w-100"
         >
           {#if mail_sending}
             <Spinner />

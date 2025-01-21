@@ -59,9 +59,9 @@
 
 <div class="text-column">
   <SectionWithTitleMain title="Contact">
-    <section class="flex flex-col gap-6">
-      <div class="flex flex-col sm:flex-row">
-        <div class="flex flex-col sm:grow md:grow-0 md:w-1/ lg:w-auto">
+    <section class="flex flex-col gap-6 lg:px-28">
+      <div class="flex flex-col sm:flex-row bg-gray-100">
+        <div class="flex flex-col sm:grow md:grow-0 lg:w-auto">
           <InformationItem title="Adresse">
             <p>Rue Léon Bernus 27</p>
             <p>6000 Charleroi</p>
@@ -131,7 +131,7 @@
 
 <style>
   .map {
-    height: 300px;
+    height: 400px;
   }
 
   :global(.ol-viewport) {
@@ -162,6 +162,5 @@
   p {
     text-align: center;
     padding: 0 !important;
-    font-size: 22px;
   }
 </style>

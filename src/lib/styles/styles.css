@@ -227,8 +227,8 @@ li::marker {
   font-family: Epilogue;
   font-size: 20px;
   font-weight: 400;
-  line-height: 27px !important;
-  padding-block: 2px !important;
+  line-height: 27px ;
+  padding-block: 2pxt;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -237,10 +237,10 @@ li::marker {
 .footer-contact-info {
   font-family: Epilogue;
   font-size: 20px;
-  line-height: 27px !important;
+  line-height: 27px;
 
   font-weight: 300;
-  padding-block: 2px !important;
+  padding-block: 2px ;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -250,7 +250,7 @@ li::marker {
   font-family: Epilogue;
   font-size: 15px;
   font-weight: 200;
-  line-height: 5px;
+  line-height: 0px;
 }
 
 .mention-legales {
@@ -309,8 +309,8 @@ h4 {
   font-family: "Epilogue";
   font-size: 30px;
   font-weight: 500;
-  padding-bottom: 4px;
-  padding-top: 30px;
+
+
 }
 .info-button{
   font-family: "Epilogue";
@@ -336,6 +336,7 @@ h4 {
   padding-bottom: 3rem;
 }
 
+
 .blue_title {
   font-family: Epilogue;
   font-size: 26px;
@@ -356,6 +357,7 @@ h4 {
   padding-block: 18px;
 }
 
+
 h8 {
   font-family: Epilogue;
   font-size: 30px;
@@ -364,9 +366,11 @@ h8 {
   text-align: left;
 }
 
+
+
 .projet {
   font-family: Epilogue;
-  font-size: 26px;
+  font-size: 23px;
   font-weight: 300;
   line-height: 20px;
 }

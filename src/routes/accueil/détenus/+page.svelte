@@ -439,7 +439,7 @@
                 />
               </div>
 
-              <div>
+              <div class="pt-5">
                 <h8>Groupe de réflexion pour auteurs de violence conjugale</h8>
 
                 <ul class="pt-5">
@@ -563,14 +563,14 @@
                 <!-- WEB -->
                 <img
                   src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Aide proches - Web.svg"
-                  class="hidden md:block py-10"
+                  class="hidden lg:block py-10"
                   alt="ORS logo"
                 />
 
                 <!-- DESKTOP -->
                 <img
                   src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Aide proche - Tablette.svg"
-                  class="hidden sm:block md:hidden py-10"
+                  class="hidden sm:block lg:hidden py-10"
                   alt="ORS logo"
                 />
 

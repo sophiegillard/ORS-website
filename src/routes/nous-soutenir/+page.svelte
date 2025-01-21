@@ -13,7 +13,7 @@
     <div class="image-container flex justify-center">
       <img
         src="$lib/assets/img/SVG/ORS_illustrations_Nous soutenir-12.svg"
-        class=" pt-6 lg:pt-0 w-10/12 sm:w-9/12 md:w-8/12 lg:w-6/12 pb-10"
+        class=" pt-6 lg:pt-0 sm:w-9/12 md:w-8/12 lg:w-6/12 pb-10"
         alt="ORS logo"
       />
     </div>
@@ -47,7 +47,7 @@
   <div class="flex flex-col justify-center items-center gap-10">
     <img
       src="$lib/assets/img/SVG/ORS_illustrations_Nous soutenir-07_2.svg"
-      class=" sm:w-3/5 md:w-5/12 max-w-80 lg:max-w-none"
+      class=" sm:pt-0 sm:w-3/5 md:w-5/12 max-w-80 lg:max-w-none"
       alt="ORS logo"
     />
     <ContactButton />

@@ -45,7 +45,7 @@
   }
 
   h7 {
-    font-size: 20px !important;
+    font-size: 24px !important;
     font-weight: 400 !important;
     line-height: 29px !important;
   }
@@ -66,7 +66,6 @@
   }
 
   .menu {
-    top: 70px !important;
     font-variant: small-caps !important;
   }
 
@@ -88,8 +87,7 @@
 
   .menu-button-p {
     font-variant: small-caps !important;
-    font-size: 18px !important;
-    padding-block: 2px !important;
+    font-size: 19px !important;
   }
 
   .p-accueil {
@@ -119,7 +117,7 @@
 
   .nav-onglet {
     font-family: "Epilogue";
-    font-size: 15px;
+    font-size: 19px;
     font-weight: 300;
     text-align: right;
     font-variant: small-caps !important;
@@ -164,18 +162,18 @@
     font-family: Epilogue !important;
     font-size: 21px !important;
     font-weight: 400 !important;
-    line-height: 15px !important;
+    line-height: 17px !important;
     text-align: center !important;
   }
 
   .footer-secondary {
     font-size: 15.7px !important;
-    line-height: 23px !important;
+    line-height: 22px !important;
   }
 
   .footer-contact-info {
     font-size: 15.7px !important;
-    line-height: 23px !important;
+    line-height: 13px !important;
   }
 
   .mention-legales {
@@ -201,7 +199,7 @@
 
   /* ----------- CONTACT PAGE ----------- */
   h4 {
-    font-size: 18px !important;
+    font-size: 24px !important;
     line-height: 15px !important;
   }
   .remarque_adapt {
@@ -217,12 +215,13 @@
   /* ----------- ACTUALITES ----------- */
 
   .nom_event {
-    font-size: 19px !important;
-    padding-bottom: 4px !important;
+    font-size: 20px !important;
+    padding-bottom: 10px !important;
   }
+  
   .info-button {
     font-family: "Epilogue";
-    font-size: 16px !important;
+    font-size: 20px !important;
     font-weight: 500;
     width: 110px !important;
     border: 1px solid theme("colors.grey") !important;
@@ -237,7 +236,7 @@
   /* ----------- VICTIMES ----------- */
 
   .blue_title {
-    font-size: 2àpx !important;
+    font-size: 20px !important;
     line-height: 22px !important;
   }
 
@@ -260,9 +259,9 @@
   /* ----------- MENTIONS LEGALES ----------- */
 
   h6 {
-    font-size: 28px !important;
-    padding-bottom: 5px; /* Adjust the space between border and text */
-    margin-bottom: 10px;
+    font-size: 22px !important;
+    padding-bottom: 0px !important; /* Adjust the space between border and text */
+    margin-bottom: 10px !important;
     margin-top: 40px;
   }
 
