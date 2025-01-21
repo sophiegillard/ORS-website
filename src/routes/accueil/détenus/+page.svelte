@@ -69,7 +69,7 @@
       >
         <div class="flex justify-center">
           <img
-            src="$lib/assets/img/SVG/ORS_illustrations_Aides aux détenus.svg"
+            src="$lib/assets/img/SVG/ORS_illustrations_Aides aux detenus.svg"
             alt="illustration"
             class=" pb-7"
             style="max-width: 250px;"
@@ -164,7 +164,7 @@
 
       <div class="flex justify-center">
         <img
-          src="$lib/assets/img/SVG/ORS_illustrations_Aides aux détenus.svg"
+          src="$lib/assets/img/SVG/ORS_illustrations_Aides aux detenus.svg"
           alt="illustration"
           class="md:hidden pb-7"
           style="max-width: 250px;"
@@ -291,14 +291,14 @@
               <div class="">
                 <!-- WEB -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Acc. psy - Web.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Acc. psy - Web.svg"
                   class=" hidden lg:block py-10"
                   alt="ORS logo"
                 />
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Acc. psy - Tablette.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Acc. psy - Tablette.svg"
                   class=" hidden sm:block lg:hidden py-10"
                   alt="ORS logo"
                 />
@@ -306,7 +306,7 @@
                 <!-- MOBILE -->
                 <div class="relative py-4 overflow-hidden sm:hidden flex justify-center">
                   <img
-                    src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Acc. psy - Mobile.svg"
+                    src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Acc. psy - Mobile.svg"
                     alt="Illustration of psychological support for victims"
                     class="w-10/12 py-5"
                     style="max-width: 350px;"
@@ -345,14 +345,14 @@
               <div class="">
                 <!-- WEB -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Aide sociale - Web.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Aide sociale - Web.svg"
                   class=" hidden lg:block py-10"
                   alt="ORS logo"
                 />
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Aide sociale - Tablette.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Aide sociale - Tablette.svg"
                   class=" hidden sm:block lg:hidden py-10"
                   alt="ORS logo"
                 />
@@ -360,7 +360,7 @@
                 <!-- MOBILE -->
                 <div class="relative py-4 overflow-hidden sm:hidden flex justify-center">
                   <img
-                    src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Aide sociale - Mobile.svg"
+                    src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Aide sociale - Mobile.svg"
                     alt="Illustration of psychological support for victims"
                     class="w-10/12 py-5"
                     style="max-width: 350px;"
@@ -395,14 +395,14 @@
               <div class="">
                 <!-- WEB -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Détenus - AD Form - Web.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - AD Form - Web.svg"
                   class=" hidden lg:block py-10"
                   alt="ORS logo"
                 />
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Détenus - AD Form - Tablette.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - AD Form - Tablette.svg"
                   class=" hidden sm:block lg:hidden py-10"
                   alt="ORS logo"
                 />
@@ -410,7 +410,7 @@
                 <!-- MOBILE -->
                 <div class="relative py-4 overflow-hidden sm:hidden flex justify-center">
                   <img
-                    src="$lib/assets/img/SVG/ORS_illustrations_Détenus - AD Form - Mobile.svg"
+                    src="$lib/assets/img/SVG/ORS_illustrations_Detenus - AD Form - Mobile.svg"
                     alt="Illustration of psychological support for victims"
                     class="w-10/12 py-5"
                     style="max-width: 350px;"
@@ -562,14 +562,14 @@
               <div class="">
                 <!-- WEB -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Aide proches - Web.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Aide proches - Web.svg"
                   class="hidden lg:block py-10"
                   alt="ORS logo"
                 />
 
                 <!-- DESKTOP -->
                 <img
-                  src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Aide proche - Tablette.svg"
+                  src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Aide proche - Tablette.svg"
                   class="hidden sm:block lg:hidden py-10"
                   alt="ORS logo"
                 />
@@ -577,7 +577,7 @@
                 <!-- MOBILE -->
                 <div class="relative py-4 overflow-hidden sm:hidden flex justify-center">
                   <img
-                    src="$lib/assets/img/SVG/ORS_illustrations_Détenus - Aide proches - Mobile.svg"
+                    src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Aide proches - Mobile.svg"
                     alt="Illustration of psychological support for victims"
                     class="w-10/12 py-5"
                     style="max-width: 450px;"
