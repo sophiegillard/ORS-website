@@ -157,7 +157,7 @@
       top="{topValue}"
     >
       <img
-        src="$lib/assets/img/SVG/ORS_illustrations_Aides aux détenus.svg"
+        src="$lib/assets/img/SVG/ORS_illustrations_Aides aux detenus.svg"
         alt="illustration"
         class="float-right hidden md:block relative w-1/3 bottom-28"
       />
