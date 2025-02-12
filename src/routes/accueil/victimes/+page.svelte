@@ -299,11 +299,11 @@
                 />
 
                 <!-- MOBILE -->
-                <div class="relative py-4 overflow-hidden sm:hidden">
+                <div class="relative py-4 overflow-hidden sm:hidden flex justify-center">
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Acc. psy - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="w-8/12 ml-5 py-10"
+                    class="max-w-64 xs:w-8/12 py-7"
                   />
                 </div>
               </div>
@@ -340,11 +340,11 @@
                 />
 
                 <!-- MOBILE -->
-                <div class="relative py-4 overflow-hidden sm:hidden">
+                <div class="relative py-4 overflow-hidden sm:hidden flex justify-center">
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide sociale - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="w-8/12 ml-5"
+                    class="max-w-64 xs:w-8/12 py-7"
                   />
                 </div>
               </div>
@@ -458,11 +458,11 @@
                 />
 
                 <!-- MOBILE -->
-                <div class="relative py-4 overflow-hidden sm:hidden">
+                <div class="relative py-4 overflow-hidden sm:hidden flex justify-center">
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Victimes - Aide proches - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="w-10/12 ml-5 my-10"
+                    class=" xs:w-9/12 py-7"
                   />
                 </div>
               </div>

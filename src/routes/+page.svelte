@@ -12,24 +12,28 @@
 
 <svelte:window bind:scrollY="{y}" />
 <div class="text-column text-center flex flex-col items-center justify-center">
-  <div class="pb-6 w-64 md:py-0 md:w-1/2 md:pb-10 lg:w-5/14 xl:w-6/12 lg:pt-12 xl:pb-24 xl:pt-0">
-    <img src="$lib/assets/img/logo/ors-logo.png" alt="ORS logo" class:is-scrolled="{isScrolled}" />
+  <div class="pb-6 md:py-0 md:w-2/5 md:pb-14 lg:w-1/2 lg:pt-0 lg:pb-24 logo">
+    <img
+      src="$lib/assets/img/logo/ors-logo.png"
+      class="logo"
+      alt="ORS logo"
+      class:is-scrolled="{isScrolled}"
+    />
   </div>
 
   <p class="sub-title">Service d'Aide aux Justiciables</p>
 
-  <div class="pb-5">
-    <p class="p-accueil pb-10 lg:pb-14 xl:pb-8 sm:px-14 text-center inline-block">
-      Nous proposons une
-      <span class="markup-text-accueil block sm:inline-block">
-        aide psychologique et/ou sociale
-      </span>
-      <br class="hidden md:inline" />
+  <div class="pb-5 md:pb-0">
+    <p class="p-accueil pb-10 sm:px-14 md:px-28 text-center inline-block">
+      Nous proposons une <span class="markup-text-accueil block sm:inline-block">
+        aide psychologique et/ou sociale</span
+      >
+      <br class="hidden md-block" />
       à toute personne confrontée au monde judiciaire
     </p>
   </div>
 
-  <p class="mb-4 md:mb-5 lg:pb-6 xl:mb-3 p-secondary">Nous nous adressons dès lors aux :</p>
+  <p class=" pb-0 lg:pb-8 p-secondary">Nous nous adressons dès lors aux :</p>
 
   <AutorButtonsGroup />
 </div>

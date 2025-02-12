@@ -11,14 +11,14 @@
   <img
     src="$lib/assets/img/SVG/ORS_illustrations_Numeros utiles_1.png"
     alt="illustration"
-    class="float-right hidden sm:block w-1/3 relative xl:top-12"
+    class="float-right hidden sm:block w-1/3 relative xl:top-14"
   />
   <SectionWithTitleMain title="Numéros utiles" width="{220}">
     <p class="lg:mt-7">
       Télé-Accueil – Quelqu’un à qui parler 24h/24 : <a class="phone_link" href="tel:107">107</a>
     </p>
     <p>
-      Ecoute violences conjugales :
+      Écoute violences conjugales :
       <a class="phone_link" href="tel:0800 30 030 ">0800 30 030 </a>
     </p>
     <p>

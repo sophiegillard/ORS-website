@@ -174,6 +174,14 @@ li::marker {
   font-size: 0.75em; 
 }
 
+.contact-button{
+  font-family: "Epilogue", sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+    text-align: center;
+  }
+
+
 .p-accueil {
   font-family: "Epilogue";
   font-weight: 300;
@@ -227,8 +235,7 @@ li::marker {
   font-family: Epilogue;
   font-size: 20px;
   font-weight: 400;
-  line-height: 27px ;
-  padding-block: 2pxt;
+  padding-block: 2px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
@@ -237,7 +244,6 @@ li::marker {
 .footer-contact-info {
   font-family: Epilogue;
   font-size: 20px;
-  line-height: 27px;
 
   font-weight: 300;
   padding-block: 2px ;
@@ -258,13 +264,14 @@ li::marker {
   font-size: 20px;
   font-weight: 400;
   line-height: 20.5px;
-  padding-bottom: 6.6rem;
+  padding-bottom: 8.3rem;
 }
 
 .font-gyst {
   font-family: theme("fontFamily.gyst") !important;
   font-weight: 800 !important;
 }
+
 
 /* ----------- EVENT PAGE ----------- */
 

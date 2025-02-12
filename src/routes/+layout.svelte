@@ -20,7 +20,7 @@
   let y
   $: {
     isMobile = innerWidth && innerWidth <= 480
-    isTablet = innerWidth && innerWidth <= 768
+    isTablet = innerWidth && innerWidth <= 900
   }
 
   $: console.log("location.pathname", $page.url, $page.url.pathname.includes("accueil/"))
@@ -42,7 +42,7 @@
     class:z-negative="{isMenuOpen}"
     style="{`top: ${!isMobile && !isTablet ? nav_height + 90 : mobile_nav_height}px; min-height: ${content_height}px;`}"
   >
-    <main class="p-8 sm:px-12 lg:pt-15">
+    <main class=" main p-8 sm:px-12 lg:pt-15">
       <slot {isMobile} {isTablet} />
     </main>
 
@@ -105,7 +105,7 @@
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 900px) {
     /* .app {
       padding: 20px;
     } */

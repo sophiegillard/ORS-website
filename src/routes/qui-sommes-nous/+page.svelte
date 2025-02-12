@@ -41,7 +41,8 @@
 
       <p>
         En <span class="markup-text">2005</span>, l’asbl prendra l’appellation de ce secteur pour se
-        <span class="inline-block">dénommer « ORS - Espace Libre »</span>.
+        dénommer
+        <span class="inline-block">« ORS - Espace Libre ».</span>
       </p>
 
       <p>
@@ -119,7 +120,7 @@
       </div>
     </SectionWithTitleMain>
 
-    <SectionWithTitleMain title="Equipe psychosociale" custom_class_full="mt-10 md:mt-0">
+    <SectionWithTitleMain title="Équipe psychosociale" custom_class_full="mt-10 md:mt-0">
       <p>
         Notre <span class="markup-text">équipe</span> compte assistants sociaux, criminologues et psychologues.
       </p>

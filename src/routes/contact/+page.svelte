@@ -75,7 +75,7 @@
             <p>Du lundi au jeudi : 8h30 - 17h</p>
             <div class="flex flex-col justify-center">
               <p>Vendredi : 8h30 - 16h</p>
-              <div class="remarque_adapt mb-5 lg:ml-2">(possibilité d'adaptation)</div>
+              <div class="remarque_adapt mb-2 md:mb-3 lg:ml-2">(possibilité d'adaptation)</div>
             </div>
 
             <p>Permanence téléphonique :</p>
@@ -99,7 +99,7 @@
           <p>Du lundi au jeudi : 8h30 - 17h</p>
           <div class="flex flex-col justify-center">
             <p>Vendredi : 8h30 - 16h</p>
-            <p class="remarque_adapt mb-5 lg:ml-2">(possibilité d'adaptation)</p>
+            <p class="remarque_adapt mb-2 md:mb-3 lg:ml-2">(possibilité d'adaptation)</p>
           </div>
 
           <p>Permanence téléphonique :</p>

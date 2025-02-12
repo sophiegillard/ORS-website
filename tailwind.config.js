@@ -12,8 +12,6 @@ export default {
             white: "#FFF6F3",
             nude: "#FFBFA9",
         },
-
-
         fontFamily: {
             gyst: ['"gyst-variable"', "sans-serif"],
             gysti: ['"gyst-variable-italic"', "sans-serif"], // Gyst Light Italic
@@ -36,6 +34,10 @@ export default {
             },
             scale: {
                 140: "1.40",
+            },
+            screens: {
+                xs: "480px",
+                md: "900px",
             },
         },
     },

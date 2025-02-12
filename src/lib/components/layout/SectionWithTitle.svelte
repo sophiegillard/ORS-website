@@ -28,7 +28,7 @@
       />
     </div>
   {/if}
-  <div class="text-content pt-5 px-5 md:pt-0">
+  <div class="text-content pt-5 sm:px-5 md:pt-0">
     <slot />
   </div>
 </div>

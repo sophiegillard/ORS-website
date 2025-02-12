@@ -24,10 +24,12 @@
         publics, toute forme d’<span class="markup-text">implication citoyenne</span> est précieuse,
         que ce soit via un <span class="markup-text">volontariat</span>
         (par exemple en devenant
-        <a href="/accueil/détenus?selected_section=visiteurs">
-          <span class="markup-text text-dark-blue">visiteur·euse de prison</span>
-        </a>
-        ), ou via un
+        <span class="inline-block">
+          <span class="markup-text text-dark-blue">
+            <a href="/accueil/détenus?selected_section=visiteurs">visiteur·euse de prison</a></span
+          >),</span
+        >
+        ou via un
         <span class="markup-text">don</span>, financier ou matériel.
       </p>
 

@@ -1,5 +1,5 @@
 /* Tablet styles */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   h2 {
     font-size: 24px !important;
     line-height: 24px !important;
@@ -89,6 +89,11 @@
     font-variant: small-caps !important;
     font-size: 19px !important;
   }
+
+  .contact-button{
+    font-size: 20px !important;
+    line-height: 17px !important;
+}
 
   .p-accueil {
     font-family: "Epilogue" !important;
@@ -180,13 +185,13 @@
     font-size: 16px !important;
     font-weight: 300 !important;
     line-height: 0px !important;
-    padding-top: 50px !important;
-    padding-bottom: 6px !important;
+    padding-top: 0px !important;
+    padding-bottom: 30px !important;
   }
 
   .mention-footer {
     font-size: 12px !important;
-    line-height: 0px !important;
+    line-height: 5px !important;
   }
 
   /* ----------- EVENT PAGE ----------- */

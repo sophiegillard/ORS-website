@@ -89,6 +89,12 @@
     padding-block: 2px !important;
   }
 
+  .contact-button{
+    font-size: 20px !important;
+    line-height: 17px !important;
+}
+
+
   .p-accueil {
     font-family: "Epilogue" !important;
     font-size: 23px !important;

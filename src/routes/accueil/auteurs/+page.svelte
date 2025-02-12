@@ -56,6 +56,7 @@
         first_line_title="Aide aux auteur·e·s non incarcéré·e·s"
         title="et à leurs proches"
         custom_class="font-epilogue block sm:hidden"
+        is_wrap_text="{false}"
         top="{topValueMobile}"
       >
         <div class="flex justify-center">
@@ -257,11 +258,11 @@
                 />
 
                 <!-- MOBILE -->
-                <div class="relative py-4 overflow-hidden md:hidden flex justify-center">
+                <div class="relative py-4 overflow-hidden sm:hidden flex justify-center">
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Acc. psy - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="w-10/12 py-5 sm:hidden"
+                    class="max-w-64 xs:w-9/12 py-7"
                     style="max-width: 350px;"
                   />
                 </div>
@@ -302,11 +303,11 @@
                 />
 
                 <!-- MOBILE -->
-                <div class="relative py-4 overflow-hidden sm:hidden">
+                <div class="relative py-4 overflow-hidden sm:hidden flex justify-center">
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide sociale - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="w-10/12 ml-5 py-10"
+                    class="xs:w-9/12 py-7"
                   />
                 </div>
               </div>
@@ -403,7 +404,9 @@
                 </li>
                 <button on:click="{() => (selected_section = 'collectif')}">
                   <li>
-                    <span class="markup-text text-dark-blue"> Un accompagnement collectif</span>
+                    <span class="markup-text text-dark-blue text-nowrap"
+                      >Un accompagnement collectif</span
+                    >
                   </li>
                 </button>
               </ul>
@@ -424,11 +427,11 @@
                 />
 
                 <!-- MOBILE -->
-                <div class="relative py-4 overflow-hidden sm:hidden">
+                <div class="relative py-4 overflow-hidden sm:hidden flex justify-center">
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Aide proches - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="w-12/12 ml-5 py-10"
+                    class="xs:w-9/12 py-7"
                   />
                 </div>
               </div>

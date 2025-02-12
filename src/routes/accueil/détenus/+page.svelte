@@ -308,8 +308,8 @@
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Acc. psy - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="w-10/12 py-5"
-                    style="max-width: 350px;"
+                    class="max-w-64 xs:w-8/12 py-7"
+                    style="max-width: 300px;"
                   />
                 </div>
               </div>
@@ -362,8 +362,8 @@
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Aide sociale - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="w-10/12 py-5"
-                    style="max-width: 350px;"
+                    class="max-w-64 xs:w-8/12 py-7"
+                    style="max-width: 300px;"
                   />
                 </div>
               </div>
@@ -412,8 +412,8 @@
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Detenus - AD Form - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="w-10/12 py-5"
-                    style="max-width: 350px;"
+                    class="max-w-64 xs:w-8/12 py-7"
+                    style="max-width: 300px;"
                   />
                 </div>
               </div>
@@ -554,7 +554,9 @@
                 </li>
                 <button on:click="{() => (selected_section = 'collectif')}">
                   <li>
-                    <span class="markup-text text-dark-blue"> Un accompagnement collectif</span>
+                    <span class="markup-text text-dark-blue text-nowrap">
+                      Un accompagnement collectif</span
+                    >
                   </li>
                 </button>
               </ul>
@@ -579,8 +581,8 @@
                   <img
                     src="$lib/assets/img/SVG/ORS_illustrations_Detenus - Aide proches - Mobile.svg"
                     alt="Illustration of psychological support for victims"
-                    class="w-10/12 py-5"
-                    style="max-width: 450px;"
+                    class="max-w-64 xs:w-8/12 py-7"
+                    style="max-width: 300px;"
                   />
                 </div>
               </div>

@@ -13,10 +13,7 @@
     {/if}
   </div>
 
-  <div
-    class="flex flex-col sm:flex-row justify-center px-10 py-5 gap-8"
-    style="{'max-width: 80rem;'}"
-  >
+  <div class="flex flex-col sm:flex-row justify-center px-4 sm:px-10 py-5 gap-8 md:max-w-7xl">
     <!-- LOGOS -->
     <div
       class=" section section-logos order-2 sm:order-1 flex flex-col gap-4 lg:items-baseline lg:justify-end"
@@ -60,7 +57,7 @@
         Ors-Espace Libre <span class="lowercase">Asbl</span>
       </p>
 
-      <p class="footer-secondary sm:inline-block hidden">
+      <p class="footer-secondary sm:inline-block hidden text-nowrap">
         Service d’aide aux Justiciables de l’arrondissement
       </p>
       <p class="footer-secondary sm:inline-block hidden">
@@ -146,8 +143,25 @@
 
   @media (min-width: 1024px) {
     .image-parent {
-      width: 80px;
-      height: 80px;
+      width: 70px;
+      height: 70px;
+    }
+    .section {
+      width: 33%;
+    }
+    .section-text {
+      width: 60%;
+    }
+    .wallonie_logo {
+      min-width: 100px !important;
+      min-height: 100px !important;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .image-parent {
+      width: 70px;
+      height: 70px;
     }
     .section {
       width: 33%;

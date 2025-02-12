@@ -92,6 +92,12 @@
     padding-block: 2px !important;
   }
 
+  .contact-button{
+    font-size: 22px !important;
+    line-height: 25px !important;
+}
+
+
   .p-accueil {
     font-family: "Epilogue" !important;
     font-size: 23px !important;
@@ -164,18 +170,18 @@
     font-family: Epilogue !important;
     font-size: 24px !important;
     font-weight: 400 !important;
-    line-height: 15px !important;
+    line-height: 27px !important;
     text-align: center !important;
   }
 
   .footer-secondary {
-    font-size: 15.7px !important;
-    line-height: 23px !important;
+    font-size: 18px !important;
+    line-height: 17px !important;
   }
 
   .footer-contact-info {
-    font-size: 15.7px !important;
-    line-height: 23px !important;
+    font-size: 18px !important;
+    line-height: 17px !important;
   }
 
   .mention-legales {
@@ -187,7 +193,7 @@
   }
 
   .mention-footer {
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 5px !important;
   }
 
