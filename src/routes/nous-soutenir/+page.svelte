@@ -13,7 +13,7 @@
     <div class="image-container flex justify-center">
       <img
         src="$lib/assets/img/SVG/ORS_illustrations_Nous soutenir-12.svg"
-        class=" pt-6 lg:pt-0 sm:w-9/12 md:w-8/12 lg:w-6/12 pb-10"
+        class=" pt-6 max-w-96 md:max-w-none lg:pt-0 sm:w-9/12 md:w-8/12 lg:w-6/12 pb-10"
         alt="ORS logo"
       />
     </div>
