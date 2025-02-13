@@ -318,7 +318,7 @@
             <SectionWithTitle title="Aide sociale">
               <div>
                 <ul>
-                  <li>Accueil - Ecoute - Informations</li>
+                  <li>Accueil - Écoute - Informations</li>
                   <li>Accompagnement dans les démarches administratives, sociales, juridiques</li>
                   <li>Aide pour la procédure d’indemnisation</li>
                   <li>...</li>
