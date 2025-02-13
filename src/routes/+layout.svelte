@@ -82,7 +82,7 @@
     flex-direction: column;
 
     width: 100%;
-    max-width: 90rem;
+    max-width: 80rem;
     margin: 0 auto;
     box-sizing: border-box;
   }
