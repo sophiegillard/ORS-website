@@ -180,10 +180,7 @@
 
         <p class="my-2">Nous proposons :</p>
         <div class="flex flex-col items-center sm:items-start pb-20">
-          <div
-            class="sm:flex flex-col hidden lg:flex-row gap-6 pt-3 pb-6 w-10/12 md:w-8/12"
-            style="max-width: 600px !important;"
-          >
+          <div class="sm:flex flex-col hidden lg:flex-row gap-6 pt-3 pb-6 btn-box">
             <div class="grid grid-cols-5 gap-6">
               <!-- First Column (Wider) -->
               <div class="col-span-3">

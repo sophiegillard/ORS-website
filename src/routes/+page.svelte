@@ -12,7 +12,7 @@
 
 <svelte:window bind:scrollY="{y}" />
 <div class="text-column text-center flex flex-col items-center justify-center">
-  <div class="pb-6 md:py-0 md:w-2/5 md:pb-14 2xl:w-1/2 lg:pt-0 2xl:pb-24 logo">
+  <div class="pb-6 md:py-0 md:w-2/5 md:pb-9 2xl:w-5/12 lg:pt-0 xl:pb-10 2xl:pb-16 logo">
     <img
       src="$lib/assets/img/logo/ors-logo.png"
       class="logo"
@@ -23,7 +23,7 @@
 
   <p class="sub-title">Service d'Aide aux Justiciables</p>
 
-  <div class="pb-5 md:pb-0 lg:pb-10 hidden xs:block">
+  <div class="pb-5 lg:pb-10 hidden xs:block">
     <p class="p-accueil pb-10 sm:px-14 md:px-28 text-center inline-block">
       Nous proposons une <span class="markup-text-accueil block sm:inline-block">
         aide psychologique et/ou sociale</span
@@ -42,7 +42,7 @@
     </p>
   </div>
 
-  <p class=" pb-0 lg:pb-8 p-secondary">Nous nous adressons dès lors aux :</p>
+  <p class=" pb-0 md:mb-5 2xl:mb-8 p-secondary">Nous nous adressons dès lors aux :</p>
 
   <AutorButtonsGroup />
 </div>

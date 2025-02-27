@@ -4,7 +4,7 @@
 
 <footer class=" bg-grey flex justify-center flex-col pb-4 items-center">
   <div
-    class="bg-pink mention-service w-full text-center text-grey py-3 px-3 md:py-4 lg:py-5 xl:py-8"
+    class="bg-pink mention-service w-full text-center text-grey py-3 px-3 md:py-4 lg:py-5 2xl:py-8"
   >
     {#if isMobile}
       Service gratuit &nbsp;•&nbsp; Confidentiel <br /> Indépendant des instances judiciaires

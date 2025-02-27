@@ -62,7 +62,7 @@
   </div>
 
   {#if !is_last}
-    <hr class=" border border-nude my-4 md:my-0 lg:my-10" style="height:1px !important" />
+    <hr class=" border border-nude my-4 lg:my-10" style="height:1px !important" />
   {/if}
 </div>
 

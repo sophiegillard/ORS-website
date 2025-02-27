@@ -183,7 +183,7 @@
 
         <p>Nous proposons :</p>
         <div class="flex flex-col lg:block items-center sm:items-start lg:pb-10">
-          <div class="sm:flex flex-col hidden lg:hidden gap-6 pt-3 pb-6 w-10/12 md:w-9/12">
+          <div class="sm:flex flex-col hidden lg:hidden gap-6 pt-3 pb-6 w-10/12 btn-box">
             <div class="grid grid-cols-5 gap-6">
               <!-- First Column (Wider) -->
               <div class="col-span-3 flex">
