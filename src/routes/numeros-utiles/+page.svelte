@@ -42,7 +42,7 @@
 
   <div class="flex justify-center">
     <img
-      src="$lib/assets/img/SVG/ORS_illustrations_Numéros utiles.svg"
+      src="$lib/assets/img/SVG/ORS_illustrations_Numeros_utiles.svg"
       alt="illustration"
       class="md:hidden w-4/5 pb-10 pt-7 xs:w-7/12 sm:w-2/4"
     />
