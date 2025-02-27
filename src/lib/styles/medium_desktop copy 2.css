@@ -1,29 +1,26 @@
 /* Tablet styles */
-@media (max-width: 1440px) {
+@media (max-width: 1440) {
   .main{
     max-width: 70rem !important;
   }
 
-  .top-nav{
-    max-width: 70rem !important;
-  }
 
   h2 {
-    font-size: 30px !important;
+    font-size: 32px !important;
     line-height: 30px !important;
   }
 
 
 
   h3 {
-    font-size: 33px !important;
+    font-size: 35px !important;
     font-weight: 400 !important;
     line-height: 40px !important;
   }
 
   .sub-title {
     font-family: "Epilogue" !important;
-    font-size: 28px !important;
+    font-size: 30px !important;
     font-weight: 400 !important;
     line-height: 28px !important;
     text-align: center !important;
@@ -42,7 +39,7 @@
   }
 
   h5 {
-    font-size: 32px !important;
+    font-size: 34px !important;
     font-weight: 400;
     line-height: 30px !important;
   }
@@ -53,24 +50,24 @@
   }
 
   h7 {
-    font-size: 21px !important;
+    font-size: 23px !important;
     font-weight: 400 !important;
     line-height: 29px !important;
   }
 
   p {
-    font-size: 18px !important;
+    font-size: 20px !important;
     line-height: 26px !important;
     padding-block: 6px !important;
   }
 
   .markup-text {
-    font-size: 19px !important;
+    font-size: 21px !important;
     line-height: 26px !important;
   }
 
   li {
-    font-size: 18px !important;
+    font-size: 20px !important;
     margin-bottom: 0px !important;
   }
 
@@ -96,33 +93,33 @@
 
   .menu-button-p {
     font-variant: small-caps !important;
-    font-size: 18px !important;
+    font-size: 20px !important;
     padding-block: 2px !important;
   }
 
   .contact-button{
-    font-size: 20px !important;
+    font-size: 22px !important;
     line-height: 25px !important;
 }
 
 
   .p-accueil {
     font-family: "Epilogue" !important;
-    font-size: 21px !important;
+    font-size: 23px !important;
     font-weight: 300 !important;
-    line-height: 10px !important;
+    line-height: 30px !important;
     text-align: center !important;
   }
 
   .markup-text-accueil {
-    font-size: 22px !important;
+    font-size: 24px !important;
     font-weight: 550 !important;
     line-height: 30px !important;
   }
 
   .p-secondary {
     font-family: "Epilogue" !important;
-    font-size: 21px !important;
+    font-size: 23px !important;
     font-weight: 400 !important;
     line-height: 25px !important;
     text-align: center !important;
@@ -133,7 +130,7 @@
 
   .nav-onglet {
     font-family: "Epilogue";
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 300;
     text-align: right;
     font-variant: small-caps !important;
@@ -143,8 +140,8 @@
     font-family: "Epilogue";
     font-style: normal;
     font-weight: 300;
-    font-size: 17px !important;
-    line-height: 27px;
+    font-size: 16px !important;
+    line-height: 20px;
     display: flex;
     align-items: center;
     font-variant: small-caps !important;
@@ -152,7 +149,7 @@
 
   .form-text {
     font-family: Epilogue;
-    font-size: 16px !important;
+    font-size: 18px !important;
     font-weight: 400 !important;
     line-height: 21px !important;
     letter-spacing: 0em !important;
@@ -161,13 +158,13 @@
   }
 
   .btn-send {
-    font-size: 16px !important;
+    font-size: 18px !important;
     padding-block: 0px !important;
   }
 
   .mention-service {
     font-family: "Epilogue" !important;
-    font-size: 16px !important;
+    font-size: 18px !important;
     font-weight: 700 !important;
     line-height: 25px !important;
     text-align: center !important;
@@ -176,66 +173,67 @@
   /* ---------------- FOOTER ---------------- */
   .footer-title {
     font-family: Epilogue !important;
-    font-size: 22px !important;
+    font-size: 24px !important;
     font-weight: 400 !important;
     line-height: 27px !important;
     text-align: center !important;
   }
 
   .footer-secondary {
-    font-size: 16px !important;
+    font-size: 18px !important;
     line-height: 17px !important;
   }
 
   .footer-contact-info {
-    font-size: 16px !important;
+    font-size: 18px !important;
     line-height: 17px !important;
   }
 
   .mention-legales {
-    font-size: 14px !important;
+    font-size: 16px !important;
     font-weight: 300 !important;
     line-height: 0px !important;
-    padding-bottom: 7.4rem !important;
+    padding-top: 50px !important;
+    padding-bottom: 26px !important;
   }
 
   .mention-footer {
-    font-size: 12px !important;
+    font-size: 14px !important;
     line-height: 5px !important;
   }
 
   /* ----------- EVENT PAGE ----------- */
 
   .date {
-    font-size: 18px !important;
+    font-size: 20px !important;
     line-height: 22px !important;
     font-weight: 300 !important;
   }
 
   /* ----------- CONTACT PAGE ----------- */
   h4 {
-    font-size: 23px !important;
+    font-size: 25px !important;
     line-height: 15px !important;
   }
   .remarque_adapt {
-    font-size: 13px !important;
+    font-size: 15px !important;
     line-height: 15px !important;
     font-weight: 300 !important;
   }
   .error_message {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 12px;
   }
 
   /* ----------- ACTUALITES ----------- */
 
   .nom_event {
-    font-size: 19px !important;
+    font-size: 21px !important;
     padding-bottom: 4px !important;
   }
   .info-button {
     font-family: "Epilogue";
-    font-size: 18px !important;
+    font-size: 20px !important;
     font-weight: 500;
     width: 140px !important;
     border: 1px solid theme("colors.grey") !important;
@@ -244,44 +242,40 @@
   /* ----------- NUMEROS UTILES PAGE ----------- */
 
   .phone_link {
-    font-size: 18px !important;
+    font-size: 20px !important;
   }
 
   /* ----------- VICTIMES ----------- */
 
   .blue_title {
-    font-size: 20px !important;
+    font-size: 22px !important;
     line-height: 22px !important;
   }
 
   .objectif {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 18px;
   }
 
   h8 {
-    font-size: 20px !important;
+    font-size: 23px !important;
     font-weight: 500 !important;
     line-height: 0px !important;
   }
 
   .projet {
-    font-size: 16px !important;
+    font-size: 18px !important;
     line-height: 20px !important;
     padding-bottom: 16px !important;
   }
   /* ----------- MENTIONS LEGALES ----------- */
 
   h6 {
-    font-size: 26px !important;
+    font-size: 28px !important;
     padding-bottom: 5px; /* Adjust the space between border and text */
     margin-bottom: 10px;
     margin-top: 40px;
   }
 
   /* ----------- MISSIONS ----------- */
-
-  .btn-box{
-    max-width: 550px !important;
-  }
 }

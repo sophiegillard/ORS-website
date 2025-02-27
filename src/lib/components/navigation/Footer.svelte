@@ -76,7 +76,7 @@
 
       <div>
         <a href="/mentions-legales" class="">
-          <p class="text-center mention-legales hidden sm:block xl:hidden">Mentions légales</p>
+          <p class="text-center mention-legales hidden sm:block lg:hidden">Mentions légales</p>
         </a>
       </div>
     </div>
@@ -87,8 +87,8 @@
     >
       <div>
         <div>
-          <a href="/mentions-legales" class="pb-4 lg:pb-32 pt-0 mention-legales">
-            <p class=" pt-0 text-center hidden xl:block sm:text-right mention-legales">
+          <a href="/mentions-legales" class="pb-4 lg:pb-32 pt-0">
+            <p class=" pt-0 text-center hidden lg:block sm:text-right mention-legales">
               Mentions légales
             </p>
           </a>
@@ -127,7 +127,7 @@
   @media (min-width: 640px) and (max-width: 1024px) {
     .section-logos {
       position: absolute;
-      bottom: 30px;
+      bottom: 25px;
       left: 30px;
     }
     .section-text {
@@ -136,8 +136,13 @@
     }
     .section-legale {
       position: absolute;
-      bottom: 30px;
+      bottom: 25px;
       right: 30px;
+    }
+
+    .mention-legales {
+      padding-bottom: 0px !important;
+      margin-top: 50px !important;
     }
   }
 
@@ -158,7 +163,7 @@
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1440px) {
     .image-parent {
       width: 70px;
       height: 70px;

@@ -42,7 +42,7 @@
     class:z-negative="{isMenuOpen}"
     style="{`top: ${!isMobile && !isTablet ? nav_height + 90 : mobile_nav_height}px; min-height: ${content_height}px;`}"
   >
-    <main class=" main p-8 sm:px-12 lg:pt-15">
+    <main class=" main p-7 xs:px-12 lg:pt-15 xl:px-0">
       <slot {isMobile} {isTablet} />
     </main>
 
@@ -80,7 +80,6 @@
     flex: 1;
     display: flex;
     flex-direction: column;
-
     width: 100%;
     max-width: 80rem;
     margin: 0 auto;
@@ -105,9 +104,9 @@
     }
   }
 
-  @media (min-width: 900px) {
-    /* .app {
-      padding: 20px;
-    } */
+  @media (max-width: 300px) {
+    .main {
+      padding-inline: 30px !important;
+    }
   }
 </style>

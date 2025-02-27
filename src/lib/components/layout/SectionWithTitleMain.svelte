@@ -13,7 +13,7 @@
   let window_width = 0
   let top_line = 0
 
-  $: if (window_width > 1280) {
+  $: if (window_width > 1440) {
     top_line = 90
   } else {
     top_line = 9
@@ -66,6 +66,13 @@
     word-wrap: break-word;
   }
 
+  @media (max-width: 324px) {
+    h2 {
+      font-size: 17px !important;
+      line-height: 22px !important;
+    }
+  }
+
   @media (min-width: 480px) {
     .subtitle-line {
       height: 20px;
@@ -84,7 +91,7 @@
     }
   }
 
-  @media (min-width: 1280px) {
+  @media (min-width: 1440px) {
     .subtitle-line {
       height: 20px !important;
     }

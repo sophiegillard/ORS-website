@@ -11,7 +11,8 @@
   <img
     src="$lib/assets/img/SVG/ORS_illustrations_Numeros utiles_1.png"
     alt="illustration"
-    class="float-right hidden sm:block w-1/3 relative xl:top-14"
+    class="float-right hidden 2xl:pl-14 md:block w-1/3 relative 2xl:top-24"
+    style="max-width:450px;"
   />
   <SectionWithTitleMain title="Numéros utiles" width="{220}">
     <p class="lg:mt-7">
@@ -39,12 +40,11 @@
     </p>
   </SectionWithTitleMain>
 
-  <div class="flex justify-center" style="max-height:270px">
+  <div class="flex justify-center">
     <img
-      src="$lib/assets/img/SVG/ORS_illustrations_Numeros utiles.svg"
+      src="$lib/assets/img/SVG/ORS_illustrations_Numéros utiles.svg"
       alt="illustration"
-      class="sm:hidden object-cover"
-      style="max-height: 370px !important"
+      class="md:hidden w-4/5 pb-10 pt-7 xs:w-7/12 sm:w-2/4"
     />
   </div>
 </div>

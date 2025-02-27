@@ -133,14 +133,23 @@
     <img
       src="$lib/assets/img/SVG/ORS_illustrations_Aide aux auteur.es.svg"
       alt="illustration"
-      class="float-right relative hidden sm:block w-3/12 bottom-5 top-10"
+      class="float-right relative hidden md:block w-3/12 bottom-5 top-10"
     />
+
     <SectionWithTitleMain
       first_line_title="Aide aux auteur·e·s non incarcéré·e·s"
       title="et à leurs proches"
       custom_class="top-custom hidden sm:block"
       top="{topValue}"
     >
+      <div class="flex justify-center">
+        <img
+          src="$lib/assets/img/SVG/ORS_illustrations_Aide aux auteur.es.svg"
+          alt="illustration"
+          class="md:hidden pb-7"
+          style="max-width: 200px;"
+        />
+      </div>
       <div class="flex justify-center">
         <img
           src="$lib/assets/img/SVG/ORS_illustrations_Aide aux auteur.es.svg"

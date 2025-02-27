@@ -191,10 +191,7 @@
 
         <p class="my-3">Nous proposons :</p>
         <div class="flex flex-col items-center sm:items-start pb-20">
-          <div
-            class="sm:flex flex-col hidden lg:flex-row gap-6 pt-3 md:w-full"
-            style="max-width: 650px;"
-          >
+          <div class="sm:flex flex-col hidden lg:flex-row gap-6 pt-3 md:w-full btn-box">
             <div class="grid grid-cols-5 gap-6">
               <!-- First Column (Wider) -->
               <div class="col-span-3 flex">
@@ -479,10 +476,7 @@
                   </li>
                 </ul>
 
-                <hr
-                  class="text-nude bg-nude w-3/4 mb-5 lg:mb-9 mt-7"
-                  style="height:2px !important"
-                />
+                <hr class="text-nude bg-nude w-3/4 my-5" style="height:2px !important" />
 
                 <h8>Plate-forme d’informations</h8>
 
@@ -501,10 +495,7 @@
                   </li>
                 </ul>
 
-                <hr
-                  class="text-nude bg-nude w-3/4 mb-5 lg:mb-9 mt-7"
-                  style="height:2px !important"
-                />
+                <hr class="text-nude bg-nude w-3/4 my-5" style="height:2px !important" />
 
                 <h8>Brochure d’informations</h8>
                 <p>
@@ -520,10 +511,7 @@
                   </li>
                 </ul>
 
-                <hr
-                  class="text-nude bg-nude w-3/4 mb-5 lg:mb-9 mt-7"
-                  style="height:2px !important"
-                />
+                <hr class="text-nude bg-nude w-3/4 my-5" style="height:2px !important" />
                 <h8>Groupe de rencontre pour les proches</h8>
 
                 <p>A venir</p>

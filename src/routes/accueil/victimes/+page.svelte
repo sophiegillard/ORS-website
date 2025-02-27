@@ -135,7 +135,7 @@
     <img
       src="$lib/assets/img/illustration/victime_illu_mains.png"
       alt="illustration"
-      class="float-right relative hidden md:block w-4/12 top-12"
+      class="float-right relative hidden md:block w-4/12 top-12 xl:pl-5 2xl:px-8"
     />
     <SectionWithTitleMain
       first_line_title="Aide aux victimes d’infractions pénales"

@@ -15,7 +15,7 @@
 </script>
 
 <header class="p-6 pt-10 flex-col-center fixed w-full bg-off-white z-10">
-  <div class="flex-row-center gap-4 w-full" style="{' max-width: 90rem;'}">
+  <div class="flex-row-center gap-4 w-full top-nav" style="{' max-width: 80rem;'}">
     {#if !(scrollY < 130 && ($page.url.pathname === "/accueil" || $page.url.pathname === "/"))}
       <a class="onglet hidden" href="/">
         <img

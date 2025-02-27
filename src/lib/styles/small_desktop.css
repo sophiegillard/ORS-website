@@ -1,5 +1,13 @@
 /* Tablet styles */
 @media (max-width: 1024px) {
+  .main{
+    max-width: 20rem !important;
+  }
+
+  .top-nav{
+    max-width: 70rem !important;
+  }
+
   h2 {
     font-size: 18px !important;
     line-height: 24px !important;
@@ -136,7 +144,7 @@
     line-height: 20px;
     display: flex;
     align-items: center;
-    font-variant: all-small-caps;
+    font-variant: small-caps !important;
   }
 
   .form-text {
@@ -186,7 +194,7 @@
     font-weight: 300 !important;
     line-height: 0px !important;
     padding-top: 50px !important;
-    padding-bottom: 6px !important;
+    padding-bottom: 9px !important;
   }
 
   .mention-footer {
