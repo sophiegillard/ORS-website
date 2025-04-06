@@ -163,7 +163,7 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1366px) {
     .image-parent {
       width: 70px;
       height: 70px;

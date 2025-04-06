@@ -170,6 +170,9 @@
     text-align: center !important;
   }
 
+  .link_button{
+    min-height:80px !important; 
+  }
   /* ---------------- FOOTER ---------------- */
   .footer-title {
     font-family: Epilogue !important;

@@ -93,6 +93,7 @@
   .menu-button-p {
     font-variant: small-caps !important;
     font-size: 19px !important;
+    font-weight: 400;
   }
 
   .contact-button{
@@ -178,12 +179,12 @@
 
   .footer-secondary {
     font-size: 15.7px !important;
-    line-height: 22px !important;
+    line-height: 20px !important;
   }
 
   .footer-contact-info {
     font-size: 15.7px !important;
-    line-height: 13px !important;
+    line-height: 20px !important;
   }
 
   .mention-legales {

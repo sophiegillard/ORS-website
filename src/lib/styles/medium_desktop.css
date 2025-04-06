@@ -1,5 +1,5 @@
 /* Tablet styles */
-@media (max-width: 1440px) {
+@media (max-width: 1366px) {
   .main{
     max-width: 70rem !important;
   }

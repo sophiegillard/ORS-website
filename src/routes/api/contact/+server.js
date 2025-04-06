@@ -3,6 +3,18 @@ import nodemailer from 'nodemailer';
 export async function POST({ request }) {
   const { name, email, phone, message, subject } = await request.json();
 
+  // // Verify reCAPTCHA response
+  // const recaptchaSecret = process.env.RECAPTCHA_SECRET;
+  // const recaptchaUrl = `https://www.google.com/recaptcha/api/siteverify?secret=${recaptchaSecret}&response=${recaptchaToken}`;
+
+  // console.log("recaptchaUrl", recaptchaUrl)
+  // const recaptchaResponse = await fetch(recaptchaUrl, { method: 'POST' });
+  // const recaptchaData = await recaptchaResponse.json();
+
+  // if (!recaptchaData.success) {
+  //   console.log('reCAPTCHA verification failed:', recaptchaData['error-codes'], recaptchaData);
+  //   return new Response('reCAPTCHA verification failed.', { status: 400 });
+  // }
 
   const transporter = nodemailer.createTransport({
     host: 'smtp.gmail.com',

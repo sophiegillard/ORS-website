@@ -42,7 +42,9 @@
     </p>
   </div>
 
-  <p class=" pb-0 md:mb-5 2xl:mb-8 p-secondary">Nous nous adressons dès lors aux :</p>
+  <p class=" pb-0 md:mb-5 2xl:mb-8 p-secondary">
+    Nous nous adressons <span class="inline-block">dès lors aux :</span>
+  </p>
 
   <AutorButtonsGroup />
 </div>

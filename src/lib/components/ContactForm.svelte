@@ -5,9 +5,19 @@
   let message = ""
   let errorMessage = ""
   let errors = []
+  let recaptchaToken = ""
+
+  // const site_key = import.meta.env.RECAPTCHA_SECRET
 
   function handleSubmit(event) {
     event.preventDefault()
+
+    // Check reCAPTCHA response
+    // recaptchaToken = grecaptcha.getResponse()
+    // if (!recaptchaToken) {
+    //   errorMessage = "*Please complete the CAPTCHA"
+    //   return
+    // }
 
     if (!nom) {
       errorMessage =
@@ -98,6 +108,9 @@
           }}"
         ></textarea>
       </div>
+      <!--  reCAPTCHA widget here -->
+      <!-- <div class="g-recaptcha" data-sitekey="{site_key}"></div> -->
+
       <button type="submit" class="bg-grey text-white text-lg rounded-lg py-2 px-4">Envoyer</button>
     </div>
     {#if errorMessage}

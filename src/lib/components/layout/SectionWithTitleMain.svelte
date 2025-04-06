@@ -13,7 +13,7 @@
   let window_width = 0
   let top_line = 0
 
-  $: if (window_width > 1440) {
+  $: if (window_width > 1366) {
     top_line = 90
   } else {
     top_line = 9
@@ -91,7 +91,7 @@
     }
   }
 
-  @media (min-width: 1440px) {
+  @media (min-width: 1366px) {
     .subtitle-line {
       height: 20px !important;
     }

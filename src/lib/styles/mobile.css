@@ -156,15 +156,14 @@
   /* ---------------- FOOTER ---------------- */
   .footer-title {
     font-size: 17px !important;
-    font-weight: 300 !important;
+    font-weight: 400 !important;
     line-height: 20px !important;
     text-align: center !important;
   }
 
   .footer-secondary {
     font-size: 15px !important;
-    line-height: 22px !important;
-    font-weight: 300 !important;
+    line-height: 28px !important;
   }
 
   .footer-contact-info {

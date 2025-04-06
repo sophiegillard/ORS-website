@@ -10,7 +10,7 @@
 
 <button
   on:click="{() => dispatch('click')}"
-  class=" bg-blue hover:bg-blue-hover px-7 lg:px-8 py-2 rounded-full border-grey border w-auto {custom_class}"
+  class=" bg-blue hover:bg-blue-hover px-7 lg:px-8 py-2 rounded-full border-grey border w-auto {custom_class} link_button"
   style="min-width: 20%; width: fit-content;  min-height: 60px"
 >
   {#if title}
