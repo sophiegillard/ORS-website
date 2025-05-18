@@ -174,13 +174,13 @@
 
   .link_button{
     min-height:66px !important; 
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   .link_button *{
-    font-size: 16px !important;
+    font-size: 18px !important;
   }
   .link_button > p > .markup-text {
-    font-size: 17px !important;
+    font-size: 19px !important;
   }
   /* ---------------- FOOTER ---------------- */
   .footer-title {

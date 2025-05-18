@@ -164,7 +164,7 @@
       </div>
 
       <div>
-        <ul class="flex flex-col items-center lg:items-start">
+        <ul class="flex flex-col items-center sm:items-start">
           <li>
             Vous avez commis ou un des vos proches a commis un <span class="markup-text"
               >acte délictueux</span
@@ -187,9 +187,9 @@
           <div class="sm:flex flex-col hidden lg:flex-row gap-6 pt-3 pb-6 btn-box">
             <div class="grid grid-cols-5 gap-6">
               <!-- First Column (Wider) -->
-              <div class="col-span-3">
+              <div class="col-span-3 flex">
                 <SecondaryLinkButton
-                  class="w-full"
+                  custom_class="grow"
                   on:click="{() => handleGoToSection('psychologique')}"
                 >
                   <p class="text-center">
