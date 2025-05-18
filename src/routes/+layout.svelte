@@ -1,5 +1,6 @@
 <script>
   import { page } from "$app/stores"
+  import { onMount } from "svelte"
 
   import TopNav from "$lib/components/navigation/TopNav.svelte"
   import MobileNav from "$lib/components/navigation/MobileNav.svelte"
@@ -15,9 +16,15 @@
   let isMenuOpen = false
   let content_height
   let footer_height
+  let y
 
   $: content_height = innerHeight - (isMobile ? mobile_nav_height : nav_height) - 40
-  let y
+
+  onMount(() => {
+    isMobile = innerWidth <= 480
+    isTablet = innerWidth > 480 && innerWidth <= 900
+  })
+
   $: {
     isMobile = innerWidth && innerWidth <= 480
     isTablet = innerWidth && innerWidth <= 900
@@ -28,12 +35,12 @@
 
 <svelte:window bind:innerWidth bind:innerHeight bind:scrollY="{y}" />
 <div class="">
-  {#if isMobile === undefined}
-    <div></div>
-  {:else if !isMobile && !isTablet}
-    <TopNav bind:nav_height scrollY="{y}" />
-  {:else}
-    <MobileNav scrollY="{y}" bind:mobile_nav_height bind:isMenuOpen />
+  {#if innerWidth}
+    {#if !isMobile && !isTablet}
+      <TopNav bind:nav_height scrollY="{y}" />
+    {:else}
+      <MobileNav scrollY="{y}" bind:mobile_nav_height bind:isMenuOpen />
+    {/if}
   {/if}
 
   <div
@@ -84,24 +91,6 @@
     max-width: 80rem;
     margin: 0 auto;
     box-sizing: border-box;
-  }
-
-  footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 12px;
-  }
-
-  footer a {
-    font-weight: bold;
-  }
-
-  @media (min-width: 480px) {
-    footer {
-      padding: 12px 0;
-    }
   }
 
   @media (max-width: 300px) {

@@ -91,7 +91,7 @@
     }
   }
 
-  @media (min-width: 1366px) {
+  @media (min-width: 1600px) {
     .subtitle-line {
       height: 20px !important;
     }

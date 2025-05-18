@@ -85,9 +85,7 @@
         </div>
         <div class="lg:pr-5 sm:w-1/4 sm:grow md:grow-0 lg:w-auto">
           <InformationItem title="Téléphone" custom_class="{' sm:pb-8 '}">
-            <a href="tel:+3271278800">
-              <a class="phone_link" href="tel:071/27.88.00">071/27.88.00</a>
-            </a>
+            <a class="phone_link" href="tel:+3271278800">071/27.88.00</a>
           </InformationItem>
           <InformationItem title="Fax">
             <p>071/27.88.01</p>

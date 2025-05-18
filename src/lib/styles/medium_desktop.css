@@ -1,5 +1,5 @@
 /* Tablet styles */
-@media (max-width: 1366px) {
+@media  (min-width: 1024px ) and (max-width: 1600px) {
   .main{
     max-width: 70rem !important;
   }
@@ -53,14 +53,14 @@
   }
 
   h7 {
-    font-size: 27px !important;
+    font-size: 30px !important;
     font-weight: 400 !important;
-    line-height: 29px !important;
+    line-height: 40px !important;
   }
 
   p {
     font-size: 18px !important;
-    line-height: 26px !important;
+    line-height: 26px ;
     padding-block: 6px !important;
   }
 
@@ -108,21 +108,28 @@
 
   .p-accueil {
     font-family: "Epilogue" !important;
-    font-size: 21px !important;
+    font-size: 23px !important;
     font-weight: 300 !important;
-    line-height: 10px !important;
     text-align: center !important;
+    line-height: 35px !important; 
+
+  }
+
+  @supports (-moz-appearance: none) {
+    .p-accueil {
+      line-height: 15px !important; 
+    }
   }
 
   .markup-text-accueil {
-    font-size: 22px !important;
+    font-size: 24px !important;
     font-weight: 550 !important;
     line-height: 30px !important;
   }
 
   .p-secondary {
     font-family: "Epilogue" !important;
-    font-size: 21px !important;
+    font-size: 23px !important;
     font-weight: 400 !important;
     line-height: 25px !important;
     text-align: center !important;
@@ -133,7 +140,7 @@
 
   .nav-onglet {
     font-family: "Epilogue";
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 300;
     text-align: right;
     font-variant: small-caps !important;
@@ -161,7 +168,7 @@
   }
 
   .btn-send {
-    font-size: 16px !important;
+    font-size: 22px !important;
     padding-block: 0px !important;
   }
 
@@ -176,7 +183,7 @@
   /* ---------------- FOOTER ---------------- */
   .footer-title {
     font-family: Epilogue !important;
-    font-size: 20px !important;
+    font-size: 24px !important;
     font-weight: 400 !important;
     line-height: 27px !important;
     text-align: center !important;

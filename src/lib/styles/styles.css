@@ -1,8 +1,11 @@
+@import "reset.css";
 @import "small_desktop.css";
 @import "medium_desktop.css";
 @import "tablet.css";
 @import "mobile.css";
 @import "extra-small-mobile.css";
+
+
 
 @tailwind base;
 @tailwind components;
@@ -37,6 +40,10 @@
   src: url("/src/assets/fonts/Epilogue-Italic-VariableFont_wght.ttf") format("truetype");
   font-weight: normal;
   font-style: italic;
+}
+
+meta[name="format-detection"] {
+  content: "telephone=no";
 }
 
 .flex-col-center {
@@ -185,8 +192,14 @@ li::marker {
 .p-accueil {
   font-family: "Epilogue";
   font-weight: 300;
-  line-height: 20px;
+  line-height: 45px;
   font-size: 30px;
+}
+
+@supports (-moz-appearance: none) {
+  .p-accueil {
+    line-height: 18px; /* Adjusted line-height for Firefox */
+  }
 }
 
 .onglet {
@@ -250,6 +263,11 @@ li::marker {
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
+  text-decoration: none !important;
+  color: inherit;
+  -webkit-text-decoration: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
 }
 
 .mention-footer {

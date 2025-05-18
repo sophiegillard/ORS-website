@@ -4,6 +4,10 @@
   import ContactButton from "$lib/components/button/ContactButton.svelte"
   import SecondaryLinkButton from "$lib/components/button/SecondaryLinkButton.svelte"
   import { fly } from "svelte/transition"
+  import webSvg from "$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Acc. psy - Web.svg"
+  import tabletSvg from "$lib/assets/img/SVG/ORS_illustrations_Auteurs - Acc. psy - Tablette.svg"
+  import mobileSvg from "$lib/assets/img/SVG/ORS_illustrations_Auteur.es - Acc. psy - Mobile.svg"
+  import auteurSvg from "$lib/assets/img/SVG/ORS_illustrations_Aide aux auteur.es.svg?raw"
 
   let topValue = 90
   let topValueMobile = 90

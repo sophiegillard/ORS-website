@@ -1,7 +1,8 @@
 /* Tablet styles */
-@media (max-width: 1024px) {
+@media  (min-width: 900px ) and (max-width: 1024px) {
+
   .main{
-    max-width: 20rem !important;
+    max-width: 80rem !important;
   }
 
   .top-nav{
@@ -9,12 +10,12 @@
   }
 
   h2 {
-    font-size: 18px !important;
+    font-size: 27px !important;
     line-height: 24px !important;
   }
 
   h3 {
-    font-size: 25px !important;
+    font-size: 28px !important;
     font-weight: 400 !important;
     line-height: 29px !important;
   }
@@ -51,24 +52,24 @@
   }
 
   h7 {
-    font-size: 23px !important;
+    font-size: 27px !important;
     font-weight: 400 !important;
     line-height: 29px !important;
   }
 
   p {
-    font-size: 14px !important;
-    line-height: 18px !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
     padding-block: 6px !important;
   }
 
   .markup-text {
-    font-size: 15px !important;
+    font-size: 19px !important;
     line-height: 18px !important;
   }
 
   li {
-    font-size: 14px !important;
+    font-size: 18px !important;
   }
 
   .menu {
@@ -110,6 +111,7 @@
     line-height: 30px !important;
     text-align: center !important;
   }
+  
 
   .markup-text-accueil {
     font-size: 24px !important;
@@ -171,12 +173,19 @@
   }
 
   .link_button{
-    min-height:80px !important; 
+    min-height:66px !important; 
+    font-size: 16px !important;
+  }
+  .link_button *{
+    font-size: 16px !important;
+  }
+  .link_button > p > .markup-text {
+    font-size: 17px !important;
   }
   /* ---------------- FOOTER ---------------- */
   .footer-title {
     font-family: Epilogue !important;
-    font-size: 24px !important;
+    font-size: 22px !important;
     font-weight: 400 !important;
     line-height: 15px !important;
     text-align: center !important;
@@ -231,7 +240,7 @@
   /* ----------- ACTUALITES ----------- */
 
   .nom_event {
-    font-size: 15px !important;
+    font-size: 19px !important;
     padding-bottom: 4px !important;
   }
   .info-button {
