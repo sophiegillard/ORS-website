@@ -1,7 +1,6 @@
 <script>
   import { onMount } from "svelte"
   import ContactForm from "$lib/components/ContactForm.svelte"
-  import ContactFormTest from "$lib/components/ContactFormTest.svelte"
   import InformationItem from "$lib/components/InformationItem.svelte"
   import SectionWithTitleMain from "$lib/components/layout/SectionWithTitleMain.svelte"
 
@@ -16,10 +15,20 @@
   let map
   let marker
 
+  let showMessage = false
+
   // Coordinates for 27 Rue Léon Bernus, 6000 Charleroi
   const coordinates = fromLonLat([4.449926368761656, 50.414745108157106]) // [longitude, latitude]
 
   onMount(() => {
+    const urlParams = new URLSearchParams(window.location.search)
+    if (urlParams.get("is_sent") === "true") {
+      showMessage = true
+      setTimeout(() => {
+        showMessage = false
+      }, 3000) // Hide message after 3 seconds
+    }
+
     // Initialize the map
     map = new Map({
       target: "map", // Target div ID
@@ -58,6 +67,10 @@
 </svelte:head>
 
 <div class="text-column">
+  {#if showMessage}
+    <div class="success-message mb-10 xl:mb-0">Message envoyé avec succès !</div>
+  {/if}
+
   <SectionWithTitleMain title="Contact">
     <section class="flex flex-col gap-6 lg:px-28">
       <div class="flex flex-col sm:flex-row bg-gray-100">
@@ -122,7 +135,7 @@
         </a>
       </div>
 
-      <ContactFormTest></ContactFormTest>
+      <ContactForm></ContactForm>
     </section>
   </SectionWithTitleMain>
 </div>
@@ -160,5 +173,13 @@
   p {
     text-align: center;
     padding: 0 !important;
+  }
+
+  .success-message {
+    background-color: theme("colors.pink");
+    color: theme("colors.brown");
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
   }
 </style>

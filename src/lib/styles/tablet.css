@@ -218,8 +218,8 @@
     font-weight: 300 !important;
   }
   .error_message {
-    font-size: 12px;
-    line-height: 12px;
+    font-size: 13px !important;
+    line-height: 16px !important;;
   }
 
   /* ----------- ACTUALITES ----------- */

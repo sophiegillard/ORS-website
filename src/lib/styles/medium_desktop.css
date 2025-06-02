@@ -230,8 +230,8 @@
     font-weight: 300 !important;
   }
   .error_message {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 14px !important;
+    line-height: 12px !important;;
   }
 
   /* ----------- ACTUALITES ----------- */

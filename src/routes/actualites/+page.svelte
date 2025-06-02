@@ -11,24 +11,24 @@
 </svelte:head>
 
 <SectionWithTitleMain title="Actualités">
-  <MonthActualites month="{'Novembre'}" year="{'2024'}">
+  <MonthActualites month="{'Novembre'}" year="{'2025'}">
     <Event
       nom_evenement="Journées nationales de la prison"
-      date="Du 14 au 24 "
+      date="Du 13 au 23 "
       lieu="{'CAAP Culture'}"
       is_last="{false}"
       info_button_url="http://www.jnpndg.be/"
     />
     <Event
       nom_evenement="Campagne Ruban Blanc"
-      date="Du 22 au 06 "
+      date="Du 21 au 05 "
       lieu="{'Plate-forme Ruban Blanc'}"
       btn_line_img_src="lib/assets/img/SVG/ORS_illustrations_Actu_trace_2.svg"
       info_button_url="http://www.plateformerubanblanc.be/"
     />
   </MonthActualites>
 
-  <MonthActualites month="{'Mars'}" year="{'2025'}">
+  <MonthActualites month="{'Septembre'}" year="{'2025'}">
     <Event
       nom_evenement="Groupe de réflexion pour auteurs de violence conjugale"
       lieu="{'ORS-Espace Libre'}"

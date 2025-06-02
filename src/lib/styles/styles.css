@@ -323,7 +323,7 @@ h4 {
 .error_message {
   color: theme("colors.dark-blue") !important;
   font-family: "Epilogue";
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
 }
 

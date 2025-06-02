@@ -7,9 +7,41 @@
   let errors = []
   let recaptchaToken = ""
 
-  // const site_key = import.meta.env.RECAPTCHA_SECRET
+  let form
 
   function handleSubmit(event) {
+    event.preventDefault()
+    errors = [] // reset
+
+    if (!nom) {
+      errorMessage =
+        "*Il est nécessaire de mentionner votre nom ainsi qu’un numéro de téléphone ou une adresse mail"
+      errors["nom"] = true
+      return
+    }
+
+    if (!email && !phone) {
+      errorMessage =
+        "*Il est nécessaire de mentionner votre nom ainsi qu’un numéro de téléphone ou une adresse mail"
+      errors["email"] = true
+      errors["phone"] = true
+      return
+    }
+
+    if (message.length < 10) {
+      errorMessage = "*Merci d’indiquer l’objet de votre demande"
+      errors["message"] = true
+      return
+    }
+
+    // ✅ Tout est valide, on soumet le formulaire vers FormSubmit
+    form.action = "https://formsubmit.co/sophie.x.gillard@gmail.com"
+    form.submit()
+  }
+
+  // const site_key = import.meta.env.RECAPTCHA_SECRET
+
+  function handleSubmitTest(event) {
     event.preventDefault()
 
     // Check reCAPTCHA response
@@ -46,7 +78,13 @@
 
 <div class="contact-form flex flex-col justify-center items-center pt-10">
   <h5>Formulaire de contact</h5>
-  <form on:submit="{handleSubmit}" class="w-full pt-10">
+  <form bind:this="{form}" on:submit="{handleSubmit}" method="POST" class="w-full pt-10">
+    <!-- Champ anti-spam caché -->
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_subject" value="Nouveau message du site ORS Charleroi" />
+    <!-- Redirection après envoi (optionnel) -->
+    <input type="hidden" name="_next" value="http://localhost:5173/contact?is_sent=true" />
+
     <div class="flex flex-col gap-8">
       <div class="flex flex-col gap-">
         <input
