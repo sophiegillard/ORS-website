@@ -11,22 +11,23 @@
 </svelte:head>
 
 <SectionWithTitleMain title="Actualités">
-  <MonthActualites month="{'Novembre'}" year="{'2024'}">
+  <MonthActualites month="{'Novembre'}" year="{'2026'}">
     <Event
       nom_evenement="Journées nationales de la prison"
-      date="Du 14 au 24 "
+      date="Du 12 au 22 "
       lieu="{'CAAP Culture'}"
       is_last="{false}"
+      link="https://www.jnpndg.be/"
     />
     <Event
       nom_evenement="Campagne Ruban Blanc"
-      date="Du 22 au 06 "
+      date="Du 23 au 04 décembre"
       lieu="{'Plate-forme Ruban Blanc'}"
       btn_line_img_src="ORS_illustrations_Actu trace_2.svg"
     />
   </MonthActualites>
 
-  <MonthActualites month="{'Mars'}" year="{'2025'}">
+  <MonthActualites month="{'Janvier'}" year="{'2027'}">
     <Event
       nom_evenement="Groupe de réflexion pour auteurs de violence conjugale"
       lieu="{'ORS-Espace Libre'}"
@@ -37,7 +38,7 @@
 
   <MonthActualites month="{'Stage'}">
     <Event
-      description="Les candidatures pour les stages d’assistant·e social·e et de psychologue sont clôturées pour l’année académique 2024/2025"
+      description="Les candidatures pour les stages d’assistant·e social·e et de psychologue sont clôturées pour l’année académique 2026/2027"
       is_detail="{false}"
       info_button="{false}"
     />

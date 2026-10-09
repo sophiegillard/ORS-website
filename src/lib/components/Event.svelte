@@ -12,6 +12,7 @@
   export let btn_line_img_src = "ORS_illustrations_Actu_trace_2.svg"
   export let info_button = true
   export let btn_title = "Infos"
+  export let link = ""
 </script>
 
 <div class="{info_button && 'md:w-10/12'}">
@@ -48,9 +49,13 @@
         title="{btn_title}"
         line_img_src="{btn_line_img_src}"
         on:click="{() => {
-          const url = new URL('/contact', window.location.origin)
-          url.searchParams.append('title', nom_evenement)
-          window.location.href = url.toString()
+          if (link) {
+            window.open(link, '_blank')
+          } else {
+            const url = new URL('/contact', window.location.origin)
+            url.searchParams.append('title', nom_evenement)
+            window.location.href = url.toString()
+          }
         }}"
       ></InfoButton>
     {/if}
